@@ -1,3 +1,5 @@
+//this data is sent to the browser from the airborne server once every few seconds, not all the data is utilized by the browser but is most likely used and available via the "CrewApp" at the front of the plane for the flight attendants to see.//
+
 {td_id_decompression: "0", td_id_weight_on_wheels: "0", td_id_all_doors_closed: "1",…}
 td_id_airframe_tail_number
 :
