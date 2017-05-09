@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1493794389" profile_name="Intense scan, all TCP ports" xmloutputversion="1.04" scanner="nmap" version="7.40" startstr="Wed May  3 14:53:09 2017" args="nmap -p 1-65535 -T4 -A -v 172.19.248.2"><scaninfo services="1-65535" protocol="tcp" numservices="65535" type="syn"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">
+Starting Nmap 7.40 ( https://nmap.org ) at 2017-05-03 14:53 +08
+NSE: Loaded 143 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:53
+Completed NSE at 14:53, 0.00s elapsed
+Initiating NSE at 14:53
+Completed NSE at 14:53, 0.00s elapsed
+Initiating ARP Ping Scan at 14:53
+Scanning 172.19.248.2 [1 port]
+Completed ARP Ping Scan at 14:53, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:53
+Completed Parallel DNS resolution of 1 host. at 14:53, 0.00s elapsed
+Initiating SYN Stealth Scan at 14:53
+Scanning www.scootwifi.com (172.19.248.2) [65535 ports]
+Discovered open port 443/tcp on 172.19.248.2
+Discovered open port 80/tcp on 172.19.248.2
+SYN Stealth Scan Timing: About 4.76% done; ETC: 15:04 (0:10:20 remaining)
+SYN Stealth Scan Timing: About 9.86% done; ETC: 15:03 (0:09:17 remaining)
+SYN Stealth Scan Timing: About 15.65% done; ETC: 15:03 (0:08:43 remaining)
+SYN Stealth Scan Timing: About 20.77% done; ETC: 15:03 (0:08:05 remaining)
+SYN Stealth Scan Timing: About 25.76% done; ETC: 15:03 (0:07:32 remaining)
+SYN Stealth Scan Timing: About 31.48% done; ETC: 15:03 (0:07:00 remaining)
+SYN Stealth Scan Timing: About 26.78% done; ETC: 15:07 (0:10:10 remaining)
+SYN Stealth Scan Timing: About 31.81% done; ETC: 15:07 (0:09:28 remaining)
+Discovered open port 50710/tcp on 172.19.248.2
+SYN Stealth Scan Timing: About 37.66% done; ETC: 15:07 (0:08:43 remaining)
+SYN Stealth Scan Timing: About 33.02% done; ETC: 15:10 (0:11:42 remaining)
+SYN Stealth Scan Timing: About 38.49% done; ETC: 15:10 (0:10:49 remaining)
+SYN Stealth Scan Timing: About 43.35% done; ETC: 15:10 (0:09:49 remaining)
+SYN Stealth Scan Timing: About 47.69% done; ETC: 15:10 (0:08:54 remaining)
+SYN Stealth Scan Timing: About 53.17% done; ETC: 15:10 (0:08:02 remaining)
+SYN Stealth Scan Timing: About 57.98% done; ETC: 15:10 (0:07:09 remaining)
+SYN Stealth Scan Timing: About 63.45% done; ETC: 15:10 (0:06:16 remaining)
+SYN Stealth Scan Timing: About 68.76% done; ETC: 15:10 (0:05:22 remaining)
+SYN Stealth Scan Timing: About 74.03% done; ETC: 15:10 (0:04:30 remaining)
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61218 &gt; 172.19.248.2:19460 S ttl=55 id=14544 iplen=44  seq=3386043754 win=1024 &lt;mss 1460&gt;
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61214 &gt; 172.19.248.2:9045 S ttl=43 id=12885 iplen=44  seq=3386305902 win=1024 &lt;mss 1460&gt;
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61215 &gt; 172.19.248.2:9045 S ttl=43 id=31710 iplen=44  seq=3386371439 win=1024 &lt;mss 1460&gt;
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61216 &gt; 172.19.248.2:9045 S ttl=51 id=63634 iplen=44  seq=3386174828 win=1024 &lt;mss 1460&gt;
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61217 &gt; 172.19.248.2:9045 S ttl=40 id=35113 iplen=44  seq=3386240365 win=1024 &lt;mss 1460&gt;
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61342 &gt; 172.19.248.2:8080 S ttl=39 id=26695 iplen=44  seq=3017185134 win=1024 &lt;mss 1460&gt;
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61218 &gt; 172.19.248.2:9045 S ttl=50 id=42776 iplen=44  seq=3386043754 win=1024 &lt;mss 1460&gt;
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61214 &gt; 172.19.248.2:783 S ttl=57 id=51877 iplen=44  seq=3386305902 win=1024 &lt;mss 1460&gt;
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61215 &gt; 172.19.248.2:783 S ttl=45 id=19699 iplen=44  seq=3386371439 win=1024 &lt;mss 1460&gt;
+sendto in send_ip_packet_sd: sendto(6, packet, 44, 0, 172.19.248.2, 16) =&gt; Network is unreachable
+Offending packet: TCP 172.19.249.178:61216 &gt; 172.19.248.2:783 S ttl=56 id=14550 iplen=44  seq=3386174828 win=1024 &lt;mss 1460&gt;
+Omitting future Sendto error messages now that 10 have been shown.  Use -d2 if you really want to see them.
+SYN Stealth Scan Timing: About 80.30% done; ETC: 15:11 (0:03:34 remaining)
+Discovered open port 58000/tcp on 172.19.248.2
+SYN Stealth Scan Timing: About 85.52% done; ETC: 15:11 (0:02:37 remaining)
+Discovered open port 58001/tcp on 172.19.248.2
+SYN Stealth Scan Timing: About 90.62% done; ETC: 15:11 (0:01:42 remaining)
+SYN Stealth Scan Timing: About 95.65% done; ETC: 15:11 (0:00:47 remaining)
+Completed SYN Stealth Scan at 15:11, 1092.41s elapsed (65535 total ports)
+Initiating Service scan at 15:11
+Scanning 5 services on www.scootwifi.com (172.19.248.2)
+Completed Service scan at 15:13, 126.32s elapsed (5 services on 1 host)
+Initiating OS detection (try #1) against www.scootwifi.com (172.19.248.2)
+adjust_timeouts2: packet supposedly had rtt of -174693 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -174693 microseconds.  Ignoring time.
+NSE: Script scanning 172.19.248.2.
+Initiating NSE at 15:13
+Completed NSE at 15:13, 10.40s elapsed
+Initiating NSE at 15:13
+Completed NSE at 15:13, 1.03s elapsed
+Nmap scan report for www.scootwifi.com (172.19.248.2)
+Host is up (0.0042s latency).
+Not shown: 65498 filtered ports, 32 closed ports
+PORT      STATE SERVICE  VERSION
+80/tcp    open  http     nginx
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: PAC Web Server
+|_http-title: Site doesn't have a title (text/html).
+443/tcp   open  ssl/http nginx
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: PAC Web Server
+|_http-title: Did not follow redirect to http://www.scootwifi.com
+| ssl-cert: Subject: commonName=api.airpana.com/organizationName=Panasonic Avionics Corporation/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:api.airpana.com
+| Issuer: commonName=DigiCert SHA2 Secure Server CA/organizationName=DigiCert Inc/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2015-10-22T00:00:00
+| Not valid after:  2019-01-04T12:00:00
+| MD5:   fcf6 205c a858 e054 e967 e0b1 b3d6 677e
+|_SHA-1: 0a86 7a23 fd2f ffa2 0109 10e4 d8c5 5c01 5ad7 cf98
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|_  http/1.1
+50710/tcp open  unknown
+58000/tcp open  http     lighttpd
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: webserver
+|_http-title: 404 - Not Found
+58001/tcp open  ssl/http lighttpd
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: webserver
+|_http-title: 403 - Forbidden
+| ssl-cert: Subject: commonName=streaming.inflightpanasonic.aero/organizationName=Panasonic Avionics Corporation/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:streaming.inflightpanasonic.aero, DNS:airpana.com
+| Issuer: commonName=DigiCert SHA2 Secure Server CA/organizationName=DigiCert Inc/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2016-06-14T00:00:00
+| Not valid after:  2019-06-19T12:00:00
+| MD5:   794c 7ed8 367e edcb b66a 14f0 57fa 53d8
+|_SHA-1: 096f cdbc 3a28 9210 e961 7331 abbf 2107 4c3f d238
+|_ssl-date: 2017-05-03T07:12:52+00:00; -42s from scanner time.
+MAC Address: 00:0D:2E:00:00:A8 (Matsushita Avionics Systems)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.6
+Uptime guess: 1.686 days (since Mon May  1 22:46:04 2017)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Host script results:
+|_clock-skew: mean: -42s, deviation: 0s, median: -42s
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   4.17 ms www.scootwifi.com (172.19.248.2)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:13
+Completed NSE at 15:13, 0.00s elapsed
+Initiating NSE at 15:13
+Completed NSE at 15:13, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1233.04 seconds
+           Raw packets sent: 328129 (14.440MB) | Rcvd: 1179 (83.734KB)
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="172.19.248.2"></address><address addrtype="mac" vendor="Matsushita Avionics Systems" addr="00:0D:2E:00:00:A8"></address><hostnames><hostname type="PTR" name="www.scootwifi.com"></hostname></hostnames><ports><extraports count="65498" state="filtered"></extraports><extraports count="32" state="closed"></extraports><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="64"></state><service product="nginx" method="probed" conf="10" name="http"></service></port><port protocol="tcp" portid="443"><state reason="syn-ack" state="open" reason_ttl="64"></state><service product="nginx" method="probed" conf="10" name="http"></service></port><port protocol="tcp" portid="50710"><state reason="syn-ack" state="open" reason_ttl="64"></state><service></service></port><port protocol="tcp" portid="58000"><state reason="syn-ack" state="open" reason_ttl="64"></state><service product="lighttpd" method="probed" conf="10" name="http"></service></port><port protocol="tcp" portid="58001"><state reason="syn-ack" state="open" reason_ttl="64"></state><service product="lighttpd" method="probed" conf="10" name="http"></service></port></ports><os><portused state="open" portid="80" proto="tcp"></portused><portused state="closed" portid="8080" proto="tcp"></portused><osmatch line="62027" name="Linux 3.2 - 4.6" accuracy="100"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="100"></osclass></osmatch></os><uptime lastboot="Mon May  1 22:46:04 2017" seconds="145658"></uptime><tcpsequence index="262" values="9383F314,3E50B0A1,DB1A3F29,D3738A75,4D6BC7D7,FAD3CD64" difficulty="Good luck!"></tcpsequence><ipidsequence values="0,0,0,0,0,0" class="All zeros"></ipidsequence><tcptssequence values="8AE61A9,8AE620D,8AE6271,8AE62D6,8AE633A,8AE639E" class="1000HZ"></tcptssequence><trace port="" proto=""><hop rtt="4.17" host="www.scootwifi.com" ipaddr="172.19.248.2" ttl="1"></hop></trace></host><runstats><finished timestr="Wed May  3 15:13:42 2017" time="1493795622"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>
