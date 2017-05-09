@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO CALLOUT
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO CALLOUT $
+$ SCO CALLOUT IMG $
+$ SCO CALLOUT CAPTION $
+$ SCO CALLOUT HOVER $
+$ SCO CALLOUT LEAD TOGGLE $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ SCO CALLOUT $
+--------------------*/
+.sco-m-callout
+{
+	display:block;
+	margin-bottom:10px;
+	overflow:hidden;
+	position:relative;
+	text-decoration:none;
+}
+
+.sco-m-callout:after
+{
+	content:"";
+	display:block;
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+.sco-m-callout--skin1
+{
+	background:rgb(112,113,117);
+}
+
+.sco-m-callout--skin2
+{
+	background:rgb(255,255,255);
+	border:1px solid rgb(0,0,0);
+}
+
+
+/*--------------------
+$ SCO CALLOUT IMG $
+--------------------*/
+.sco-m-callout img
+{
+	color:transparent;
+	display:block;
+	margin-bottom:0;
+	width:100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.sco-m-callout img.sco-m-callout-img
+{
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+.sco-m-callout--skin1 img.sco-m-callout-spacer
+{
+	background:rgb(112,113,117) url('../../img/sco_callout/ajax_loader_skin1.gif') no-repeat 10px 10px;
+}
+
+.sco-m-callout--skin2 img.sco-m-callout-spacer
+{
+	background:rgb(255,255,255) url('../../img/sco_callout/ajax_loader_skin2.gif') no-repeat 10px 10px;
+}
+
+
+/*--------------------
+$ SCO CALLOUT CAPTION $
+--------------------*/
+.sco-m-callout .sco-m-callout__caption
+{
+	padding:5px 9px;
+}
+
+.sco-m-callout .sco-m-callout__caption .itk-h-text-overflow
+{
+	display:block;
+
+	-ms-text-overflow:ellipsis;
+}
+
+.sco-m-callout .sco-m-callout__caption p
+{
+	margin-bottom:0;
+}
+
+.sco-m-callout--skin1 .sco-m-callout__caption
+{
+	background:rgb(255,255,255);
+	border:1px solid rgb(254,229,0);
+	border-top:none;
+}
+
+.sco-m-callout--skin2 .sco-m-callout__caption
+{
+	background:rgb(0,0,0);
+	background:rgba(0,0,0,.7);
+	bottom:0;
+	left:0;
+	position:absolute;
+	width:100%;
+}
+
+.sco-m-callout__caption-height-restriction
+{
+	min-height:50px;
+	max-height:50px;
+}
+/*--------------------
+$ SCO CALLOUT HOVER $
+--------------------*/
+a.sco-m-callout:focus,
+a.sco-m-callout:hover
+{
+	text-decoration:none;
+}
+
+a.sco-m-callout:focus:after,
+a.sco-m-callout:hover:after
+{
+	box-shadow:inset 0 0 2px 2px rgba(0,0,0,.2);
+}
+
+
+/*--------------------
+$ SCO CALLOUT LEAD TOGGLE $
+--------------------*/
+.sco-m-callout .sco-m-callout__lead-toggle i
+{
+	display:block;
+	float:right;
+	width:17px;
+
+	-webkit-transition:all .3s;
+	   -moz-transition:all .3s;
+	    -ms-transition:all .3s;
+	     -o-transition:all .3s;
+	        transition:all .3s;
+}
+
+.sco-m-callout .sco-m-callout__lead
+{
+	max-height:0;
+	overflow:hidden;
+
+	-webkit-transition:max-height .3s;
+	   -moz-transition:max-height .3s;
+	    -ms-transition:max-height .3s;
+	     -o-transition:max-height .3s;
+	        transition:max-height .3s;
+}
+
+.sco-m-callout__lead--expanded .sco-m-callout__lead-toggle i
+{
+	-webkit-transform:rotate(180deg);
+	   -moz-transform:rotate(180deg);
+	    -ms-transform:rotate(180deg);
+	     -o-transform:rotate(180deg);
+	        transform:rotate(180deg);
+}
+
+.sco-m-callout__lead--expanded .sco-m-callout__lead
+{
+	max-height:100px;
+}

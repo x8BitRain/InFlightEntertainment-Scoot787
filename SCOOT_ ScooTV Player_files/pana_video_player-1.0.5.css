@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+PANA VIDEO PLAYER
+v1
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ VIDEO PLAYER $
+$ VIDEO ERRORS $
+$ VIDEO PA $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ PANA VIDEO PLAYER $
+--------------------*/
+.pana-m-video-player
+{
+	background:rgb(0,0,0);
+	color:rgb(255,255,255);
+	border:1px solid rgb(0,0,0);
+	overflow:hidden;
+	position:relative;
+}
+
+.pana-m-video-player img.pana-m-video-scale
+{
+	background:none;
+	margin-bottom:0;
+	width:100%;
+}
+
+.pana-m-video-player .ae-comp
+{
+	left:0;
+	position:absolute;
+	top:0;
+}
+
+.pana-m-video-player .ae-comp,
+.pana-m-video-player .ae-comp .avod-wrapper
+{
+	height:100%;
+	width:100%;
+}
+
+.avod-wrapper.avod-fs-off
+{
+	position:relative;
+}
+
+.avod-wrapper.avod-fs-off video
+{
+	position:absolute;
+}
+
+
+/*--------------------
+$ VIDEO ERRORS $
+--------------------*/
+.ae-media-player-error-1001 .pana-m-video-player .ae-comp .avod-wrapper,
+.ae-media-player-error-1002 .pana-m-video-player .ae-comp .avod-wrapper,
+.ae-media-player-error-1003 .pana-m-video-player .ae-comp .avod-wrapper,
+.ae-media-player-error-1004 .pana-m-video-player .ae-comp .avod-wrapper
+{
+	display:none;
+}
+
+.pana-m-video-player .pana-m-video-error
+{
+	background:rgb(0,0,0);
+	color:rgb(255,255,255);
+	display:none;
+	padding:10px;
+}
+
+html.ae-media-player-error-1001 .pana-m-video-player .ae-i-video-error-1001,
+html.ae-media-player-error-1002 .pana-m-video-player .ae-i-video-error-1002,
+html.ae-media-player-error-1003 .pana-m-video-player .ae-i-video-error-1003,
+html.ae-media-player-error-1004 .pana-m-video-player .ae-i-video-error-1004
+{
+	display:block;
+}
+
+
+/*--------------------
+$ VIDEO PA $
+--------------------*/
+.ae-flash-video.ae-pa-video .pana-m-video-player .ae-comp,
+.ae-flash-video.ae-pa-audio .pana-m-video-player .ae-comp,
+.ae-flash-video.ae-pa-video-a .pana-m-video-player .ae-comp,
+.ae-flash-video.ae-pa-other .pana-m-video-player .ae-comp
+{
+	visibility:hidden;
+}
+
+html.ae-pa-audio .avod-wrapper.avod-fs-off video
+{
+	top: -1000px;
+}

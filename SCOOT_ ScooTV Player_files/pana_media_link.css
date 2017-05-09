@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+PANA MEDIA LINK
+v1.1
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ PANA MEDIA LINK $
+$ PANA DRM MEDIA LINK $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ PANA MEDIA LINK $
+--------------------*/
+.pana-m-media-link
+{
+	background:rgb(234,234,234);/*Variable: media-link-background*/
+	display:block;
+	margin-bottom:10px;
+	position:relative;
+}
+
+.pana-m-media-link.pana-s-current,
+.pana-m-media-link:active,
+.pana-m-media-link:focus,
+.pana-m-media-link:hover
+{
+	background:rgb(51,51,51);/*Variable: media-link-active-background*/
+}
+
+.pana-m-media-link img
+{
+	background:rgb(0,0,0);
+	margin:0 auto;
+	width:100%;
+}
+
+.pana-m-media-link img,
+.pana-m-media-link span
+{
+	display:block;
+	margin-bottom:0;
+}
+
+.pana-m-media-link span
+{
+	background:rgb(51,51,51);/*Variable: media-link-text-background*/
+	padding:5px 10px;
+}
+
+.pana-m-media-link span,
+.pana-m-media-link.pana-m-drm-media-link.pana-s-current span,
+.pana-m-media-link.pana-m-drm-media-link:active span,
+.pana-m-media-link.pana-m-drm-media-link:focus span,
+.pana-m-media-link.pana-m-drm-media-link:hover span
+{
+	color:rgb(255,255,255);/*Variable: media-link-text-color*/
+}
+
+.pana-m-media-link.pana-s-current span,
+.pana-m-media-link:active span,
+.pana-m-media-link:focus span,
+.pana-m-media-link:hover span
+{
+	background:rgb(0,0,0);/*Variable: media-link-active-text-background*/
+	color:rgb(255,255,255);/*Variable: media-link-active-text-color*/
+}
+
+
+/*--------------------
+$ PANA DRM MEDIA LINK $
+--------------------*/
+.pana-m-media-link.pana-m-drm-media-link:after
+{
+	background:rgba(0,0,0,0.7);/*Variable: drm-overlay-background*/
+	content:"";
+	top:0;
+}
+
+.pana-m-media-link.pana-m-drm-media-link:after,
+.pana-m-drm-media-link .pana-m-drm-media-link-inner
+{
+	height:100%;
+	position:absolute;
+	width:100%;
+}
+
+.pana-m-drm-media-link .pana-m-drm-media-link-inner
+{
+	color:rgb(255,255,255);/*Variable: drm-text-color*/
+}
+
+.pana-m-drm-media-link .pana-m-drm-media-link-msg
+{
+	padding:0 10px;
+}
+
+.pana-m-drm-media-link .pana-m-drm-media-link-inner a
+{
+	background:rgb(234,234,234);/*Variable: drm-link-background*/
+	color:rgb(0,0,0);/*Variable: drm-link-text-color*/
+	display:block;
+	padding:5px 10px;
+}
+
+.pana-m-drm-media-link .pana-m-drm-media-link-inner a:active,
+.pana-m-drm-media-link .pana-m-drm-media-link-inner a:focus,
+.pana-m-drm-media-link .pana-m-drm-media-link-inner a:hover
+{
+	background:rgb(51,51,51);/*Variable: drm-link-active-background*/
+	color:rgb(255,255,255);/*Variable: drm-link-active-text-color*/
+}
+
+.pana-m-media-link.pana-m-drm-media-link.pana-s-current span,
+.pana-m-media-link.pana-m-drm-media-link:active span,
+.pana-m-media-link.pana-m-drm-media-link:focus span,
+.pana-m-media-link.pana-m-drm-media-link:hover span
+{
+	background:inherit;
+}

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+PANA AUDIO PLAYER
+v1
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ PANA AUDIO PLAYER $
+$ AUDIO ERRORS $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ PANA AUDIO PLAYER $
+--------------------*/
+.pana-m-audio-player
+{
+	background:rgb(255,255,255);/*Variable: audio-player-background*/
+	border:1px solid rgb(170,170,170);/*Variable: audio-player-border*/
+	height:72px;
+	overflow:hidden;
+	position:relative;
+}
+
+
+/*--------------------
+$ AUDIO ERRORS $
+--------------------*/
+.ae-media-player-error-1001 .pana-m-audio-player .video-js,
+.ae-media-player-error-1002 .pana-m-audio-player .video-js,
+.ae-media-player-error-1003 .pana-m-audio-player .video-js,
+.ae-media-player-error-1004 .pana-m-audio-player .video-js
+{
+	display:none;
+}
+
+.pana-m-audio-player .pana-m-audio-error
+{
+	background:rgb(0,0,0);
+	color:rgb(255,255,255);
+	display:none;
+	padding:10px;
+}
+
+html.ae-media-player-error-1001 .pana-m-audio-player .ae-i-audio-error-1001,
+html.ae-media-player-error-1002 .pana-m-audio-player .ae-i-audio-error-1002,
+html.ae-media-player-error-1003 .pana-m-audio-player .ae-i-audio-error-1003,
+html.ae-media-player-error-1004 .pana-m-audio-player .ae-i-audio-error-1004
+{
+	display:block;
+}

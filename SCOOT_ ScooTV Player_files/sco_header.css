@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+HEADER
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ HEADER $
+$ MID BAR $
+$ LOGO $
+$ SCOOTV $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ HEADER $
+--------------------*/
+.sco-m-header
+{
+	left:0;
+	position:fixed;
+	top:0;
+	width:100%;
+
+	/*fix for older android devices when position fixed is set*/
+	-webkit-backface-visibility:hidden;
+	        backface-visibility:hidden;
+}
+
+.sco-m-header__lng a.current
+{
+	cursor:default;
+	pointer-events:none;
+}
+
+
+/*--------------------
+$ MID BAR $
+--------------------*/
+.sco-m-header .sco-m-header__mid-bar
+{
+	min-height:62px;
+}
+
+
+/*--------------------
+$ LOGO $
+--------------------*/
+.sco-m-header .sco-m-header__logo
+{
+	background:url(../../img/sco_header/logo.png) center center no-repeat;
+	background-size:cover;
+	height:45px;
+	margin:7px 0 3px 0;
+	width:46px;
+}
+
+.borderradius .sco-m-header .sco-m-header__logo
+{
+	border-radius:50%;
+	box-shadow:0 0 10px rgb(100,100,100);
+	box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+
+.borderradius.no-touch .sco-m-header .sco-m-header__logo:hover
+{
+	box-shadow:0 0 10px rgb(100,100,100);
+	box-shadow:0 0 10px rgba(0,0,0,1);
+}
+
+.ae-page-active-home .sco-m-header .sco-m-header__logo a
+{
+	pointer-events:none;
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-header .sco-m-header__logo
+	{
+		margin:3px 0;
+	}
+}
+
+
+/*--------------------
+$ SCOOTV $
+--------------------*/
+.sco-m-header .sco-m-header__scootv
+{
+	display:none;
+	margin-left:40px;
+}
+
+.ae-page-active-scootv_genre .sco-m-header .sco-m-header__scootv,
+.ae-page-active-scootv_player .sco-m-header .sco-m-header__scootv
+{
+	display:block;
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-header .sco-m-header__mid-bar
+	{
+		min-height:0;
+	}
+
+	.sco-m-header .sco-m-header__logo
+	{
+		height:96px;
+		left:0;
+		position:absolute;
+		top:0;
+		width:98px;
+	}
+}
+
+@media only screen and (min-width:992px) and (-webkit-min-device-pixel-ratio:1.5),
+       only screen and (min-width:992px) and (-o-min-device-pixel-ratio:3/2),
+       only screen and (min-width:992px) and (min--moz-device-pixel-ratio:1.5),
+       only screen and (min-width:992px) and (min-device-pixel-ratio:1.5)
+{
+	/*.csstransforms3d makes the retina image only target later devices as was giving flase positive on certain browsers with non-retina screens*/
+	.csstransforms3d .sco-m-header .sco-m-header__logo
+	{
+		background:url(../../img/sco_header/logo@2x.png) center center no-repeat;
+		background-size:98px auto;
+	}
+}

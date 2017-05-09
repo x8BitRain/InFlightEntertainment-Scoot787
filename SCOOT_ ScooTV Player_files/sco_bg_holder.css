@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO BG HOLDER
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ BG HOLDER $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ BG HOLDER $
+--------------------*/
+.sco-m-bg-holder__img_preloader
+{
+	height:1px;
+	background:rgb(1,0,6) url(../../img/main/sky.jpg) fixed no-repeat bottom center;
+	width:1px;
+}
+
+.sco-m-bg-holder
+{
+	background:rgb(238,238,238);
+	height:1px;
+	width:1px;
+}

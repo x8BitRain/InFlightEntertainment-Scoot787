@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+NAV
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ NAV LIST $
+$ NAV LIST ITEMS $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ NAV LIST $
+--------------------*/
+.sco-m-nav .sco-m-nav__ul
+{
+	margin-bottom:0;
+	margin-left:75px;
+}
+
+
+/*--------------------
+$ NAV LIST ITEMS $
+--------------------*/
+.sco-m-nav .sco-m-nav__ul li
+{
+	display:block;
+	float:left;
+	margin-bottom:0;
+	width:109px;
+}
+
+.sco-m-nav .sco-m-nav__ul li a
+{
+	display:block;
+	padding:10px 0;
+	text-align:center;
+}
+
+.sco-m-nav .sco-m-nav__ul li a:hover,
+.sco-m-nav .sco-m-nav__ul li a:focus,
+.sco-m-nav .sco-m-nav__ul li a:active
+{
+	background:rgb(50,50,50);
+	box-shadow:inset 1px 0px 10px rgb(100,100,100);
+}
+
+.sco-m-nav .sco-m-nav__ul li a.current
+{
+	pointer-events:none;
+}
+
+.sco-m-nav .sco-m-nav__ul.sco-m-width-nav__ul li
+{
+	width:105px;
+}
+
+.sco-m-nav .sco-m-nav__ul.sco-m-width-nav__ul li:nth-child(6)
+{
+	width:130px;
+}

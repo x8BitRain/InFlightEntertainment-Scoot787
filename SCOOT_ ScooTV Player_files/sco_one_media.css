@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+ONE MEDIA
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ ONE MEDIA BANNERS $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ ONE MEDIA BANNERS $
+--------------------*/
+.sco-m-one-media .sco-m-one-media__col__banner
+{
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+	position:relative;
+}
+
+.sco-m-one-media .sco-m-one-media__col__banner--mid
+{
+	height:250px;
+	width:280px;
+}
+
+.sco-m-one-media .sco-m-one-media__col__banner--med
+{
+	height:250px;
+	width:300px;
+}
+
+.sco-m-one-media .sco-m-one-media__col__banner--tall
+{
+	height:400px;
+	width:280px;
+}
+
+.sco-m-one-media .sco-m-one-media__col__banner--full
+{
+	width:100%;
+	margin-top:15px;
+}
+
+.sco-m-one-media-home-banner{
+	height: 241px;
+}
+
+.sco-m-one-media-home-banner img{
+	width: 100%;
+	height: 241px;
+}
+
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{
+	.sco-m-one-media .sco-m-one-media__col__banner--full
+	{
+		width:468px;
+		height:60px;
+	}
+}

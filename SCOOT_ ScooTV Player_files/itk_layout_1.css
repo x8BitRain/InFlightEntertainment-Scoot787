@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+LAYOUT v1
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ RESETS $
+--------------------*/
+
+
+/*--------------------
+$ SPLIT $
+--------------------*/
+.itk-l-split
+{
+	min-height:1px;
+}
+
+.itk-l-split-2 > .itk-l-split
+{
+	float:left;
+	width:50%;
+}
+
+.itk-l-split-3 > .itk-l-split
+{
+	float:left;
+	width:33%;
+}
+
+.itk-l-split-4 > .itk-l-split
+{
+	float:left;
+	width:25%;
+}
+
+.itk-l-split-5 > .itk-grid
+{
+	float:left;
+	width:20%;
+}

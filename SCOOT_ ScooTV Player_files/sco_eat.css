@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO EAT
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO EAT HEADER $
+$ SCO EAT SIDE MENU $
+$ SCO EAT ACCORDION $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+/*--------------------
+$ SCO EAT HEADER $
+--------------------*/
+.sco-m-eat-header
+{
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	background:url(../../img/content/eat/scoot_cafe.png) scroll no-repeat center center;
+	height:117px;
+}
+
+
+/*--------------------
+$ SCO EAT SIDE MENU $
+--------------------*/
+.sco-m-category
+{
+	background:rgb(254,229,0);
+	cursor:pointer;
+	display:block;
+	padding:5px 20px;
+}
+
+.sco-m-category-title
+{
+	display:inline-block;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-top:5px;
+}
+
+.sco-m-side-menu-item
+{
+	padding:0 10px;
+}
+ 
+.sco-m-tab .sco-m-tab__navigation.sco-m-side-menu li
+{
+	width:100%;
+}
+
+.sco-m-tab .sco-m-tab__navigation.sco-m-side-menu a
+{
+	border-right:none;
+	border-right-width:0;
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-tab  .sco-m-tab__navigation .sco-m-side-menu-body a
+	{
+		padding:5px 0;
+		text-align:left;
+	}
+}
+
+
+/*--------------------
+$ SCO EAT ACCORDION $
+--------------------*/
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading.sco-m-category
+{
+	background:transparent;
+	padding:0;
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading.sco-m-category a
+{
+	color:rgb(255,255,255);
+	text-align:left;
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading.sco-m-category:hover *
+{
+	color:rgb(0,0,0);
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading.sco-m-category .sco-m-category-title *
+{
+	color:rgb(255,255,255);
+}
+
+.sco-m-accordion .sco-m-accordion-item.active .sco-m-accordion-heading.sco-m-category .sco-m-category-title
+{
+	background:rgb(254,229,0);
+	display:inline-block;
+	width:100%;
+}
+
+.sco-m-accordion .sco-m-accordion-item.active .sco-m-accordion-heading.sco-m-category + .sco-m-accordion-collapse
+{
+	width:100%;
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading.sco-m-category a.current,
+.sco-m-accordion .sco-m-accordion-item.active .sco-m-accordion-heading.sco-m-category a,
+.sco-m-accordion .sco-m-accordion-item.active .sco-m-accordion-heading.sco-m-category .sco-m-category-title *
+{
+	color:rgb(0,0,0);
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading.sco-m-category.sco-m-no-subcategory + .sco-m-accordion-collapse
+{
+	position:absolute;
+	top:0;
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-body.sco-m-sub-menu
+{
+	padding:0;
+}

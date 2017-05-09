@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+AMBIENCE
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+
+$ LINKS (see portal_base.css) $
+$ GENERIC PAGE (see portal_base.css) $
+$ COLOURS (see portal_type.css) $
+$ BACKGROUNDS (see portal_helpers.css) $
+$ COLUMN BACKGROUND (see portal_helpers.css) $
+$ BRAND COLOURS (see portal_helpers.css) $
+$ SCO BUTTON SKIN 1 (see sco_button.css) $
+$ SCO BUTTON SKIN 2 (see sco_button.css) $
+$ CALLOUT (see sco_callout.css) $
+$ NAV MOBILE (see sco_nav_mobile.css) $
+$ IMG OVERWRITES $
+$ TRANSITION $
+$ CUSTOM EXTENSIONS $
+$ SERVICE BLOCKING $
+$ PANA MEDIA LINK $
+$ SCO ONE MEDIA $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ LINKS (see portal_base.css) $
+--------------------*/
+.dim.auto-dim a
+{
+	color:rgb(255,255,255);
+}
+
+.dim.auto-dim a:focus,
+.dim.auto-dim a:hover
+{
+	color:rgb(204,204,204);
+}
+
+
+/*--------------------
+$ GENERIC PAGE (see portal_base.css) $
+--------------------*/
+.dim.auto-dim main
+{
+	background:transparent;
+	color:rgb(255,255,255);
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	html.dim.auto-dim
+	{
+		background:rgb(1,0,6) url(../../img/main/sky.jpg) fixed no-repeat bottom center;
+	}
+
+html.dim.auto-dim
+}
+
+
+/*--------------------
+$ COLOURS (see portal_type.css) $
+--------------------*/
+.dim.auto-dim .sco-t-white,
+.dim.auto-dim a.sco-t-white,
+
+.dim.auto-dim a:focus .sco-t-white-active,
+.dim.auto-dim a:hover .sco-t-white-active,
+.dim.auto-dim a.sco-t-white-active:focus,
+.dim.auto-dim a.sco-t-white-active:hover,
+
+.dim.auto-dim .sco-m-tab .sco-m-tab__navigation a
+{
+	color:rgb(255,255,255);
+}
+
+.dim.auto-dim .sco-t-brand1,
+.dim.auto-dim a.sco-t-brand1,
+.dim.auto-dim #itk-wrapper a.sco-t-brand1-active.current,
+.dim.auto-dim a.sco-t-brand1-active:focus,
+.dim.auto-dim a.sco-t-brand1-active:hover
+{
+	color:rgb(253,175,23);
+}
+
+.dim.auto-dim .sco-t-brand2,
+.dim.auto-dim a.sco-t-brand2,
+
+.dim.auto-dim .sco-m-tab .sco-m-tab__navigation-toggle:focus,
+.dim.auto-dim .sco-m-tab .sco-m-tab__navigation-toggle:hover,
+.dim.auto-dim .sco-m-tab .sco-m-tab__navigation a.current,
+.dim.auto-dim .sco-m-tab .sco-m-tab__navigation a:focus,
+.dim.auto-dim .sco-m-tab .sco-m-tab__navigation a:hover
+{
+	color:rgb(0,0,0);
+}
+
+
+/*--------------------
+$ BACKGROUNDS (see portal_helpers.css) $
+--------------------*/
+.dim.auto-dim .sco-h-bg1
+{
+	background-color:rgb(0,0,0);
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.dim.auto-dim .sco-h-bg1
+	{
+		background-color:rgba(0,0,0,.7);
+	}
+}
+
+
+/*--------------------
+$ COLUMN BACKGROUND (see portal_helpers.css) $
+--------------------*/
+.dim.auto-dim .sco-h-grey-background
+{
+	background-color:transparent;
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.dim.auto-dim .sco-h-grey-background:after
+	{
+		background-color:transparent;
+	}
+}
+
+
+/*--------------------
+$ BRAND COLOURS (see portal_helpers.css) $
+--------------------*/
+.dim.auto-dim .sco-h-bkcol-brand1,
+
+.dim.auto-dim #itk-wrapper .sco-h-bkcol-brand1-active.current,
+
+.dim.auto-dim a.sco-h-bkcol-brand1-active:focus,
+.dim.auto-dim a.sco-h-bkcol-brand1-active:hover,
+.dim.auto-dim a:focus .sco-h-bkcol-brand1-active,
+.dim.auto-dim a:hover .sco-h-bkcol-brand1-active,
+
+.dim.auto-dim .sco-m-tab .sco-m-tab__navigation a:focus,
+.dim.auto-dim .sco-m-tab .sco-m-tab__navigation a:hover,
+.dim.auto-dim .sco-m-tab .sco-m-tab__navigation a.current
+{
+	background:rgb(253,175,23);
+}
+
+.dim.auto-dim .sco-h-bkcol-brand2,
+
+.dim.auto-dim a.sco-h-bkcol-brand2-active:focus,
+.dim.auto-dim a.sco-h-bkcol-brand2-active:hover,
+.dim.auto-dim a:focus .sco-h-bkcol-brand2-active,
+.dim.auto-dim a:hover .sco-h-bkcol-brand2-active
+{
+	background:rgb(0,0,0);
+}
+
+
+/*--------------------
+$ SCO BUTTON SKIN 1 (see sco_button.css) $
+--------------------*/
+.dim.auto-dim .sco-m-btn-skin-1
+{
+	background:rgb(0,0,0);
+}
+
+.dim.auto-dim a.sco-m-btn-skin-1:focus,
+.dim.auto-dim a.sco-m-btn-skin-1:hover
+{
+	color:rgb(0,0,0);
+}
+
+
+/*--------------------
+$ SCO BUTTON SKIN 2 (see sco_button.css) $
+--------------------*/
+.dim.auto-dim .sco-m-btn-skin-2
+{
+	color:rgb(0,0,0);
+}
+
+.dim.auto-dim a.sco-m-btn-skin-2:focus,
+.dim.auto-dim a.sco-m-btn-skin-2:hover
+{
+	background:rgb(0,0,0);
+}
+
+
+/*--------------------
+$ CALLOUT (see sco_callout.css) $
+--------------------*/
+.dim.auto-dim .sco-m-callout--skin1 img.sco-m-callout-spacer
+{
+	background-image:url('../../img/sco_callout/ajax_loader_skin1_ambiance.gif');
+}
+
+.dim.auto-dim .sco-m-callout--skin1 .sco-m-callout__caption
+{
+	background:rgb(210,210,210);
+	border-color:rgb(253,175,23);
+}
+
+
+/*--------------------
+$ NAV MOBILE (see sco_nav_mobile.css) $
+--------------------*/
+.dim.auto-dim .sco-m-nav-mobile .sco-m-nav-mobile__list li a:hover,
+.dim.auto-dim .sco-m-nav-mobile .sco-m-nav-mobile__list li a:focus,
+.dim.auto-dim .sco-m-nav-mobile .sco-m-nav-mobile__list li a:active
+{
+	background:rgb(48,48,48);
+}
+
+
+/*--------------------
+$ IMG OVERWRITES $
+--------------------*/
+.dim.auto-dim .sco-m-scootv
+{
+	background-image:url('../../img/content/entertainment/scootv_ambiance.png');
+}
+
+.dim.auto-dim .sco-m-preloader .sco-m-preloader__loading-indicator
+{
+	background-image:url('../../img/sco_preloader/ajax-loader_ambiance.gif');
+}
+
+.dim.auto-dim .sco-m-promos a.sco-m-promo:after
+{
+	background-image:url('../../img/sco_promos/promo_link_btn_ambiance.png');
+}
+
+
+/*--------------------
+$ TRANSITION $
+--------------------*/
+html,
+.sco-t-brand1,
+div.sco-h-bkcol-brand1,
+.sco-h-bg1,
+.sco-h-grey-background,
+.sco-h-grey-background:after,
+.sco-m-bg-holder
+{
+	-webkit-transition:background-color 1s, border-color 1s, color 1s;
+	   -moz-transition:background-color 1s, border-color 1s, color 1s;
+	    -ms-transition:background-color 1s, border-color 1s, color 1s;
+	     -o-transition:background-color 1s, border-color 1s, color 1s;
+	        transition:background-color 1s, border-color 1s, color 1s;
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.dim.auto-dim .sco-m-bg-holder
+	{
+		background-color:transparent;
+		height:100%;
+		width:100%;
+	}
+}
+
+
+/*--------------------
+$ CUSTOM EXTENSIONS $
+--------------------*/
+.dim.auto-dim header,
+.dim.auto-dim footer
+{
+	box-shadow:0 0 15px 5px rgba(255, 255, 255, 0.3);
+}
+
+/*--------------------
+$ SERVICE BLOCKING $
+--------------------*/
+.ae-ifapi-services-svcPedAVOD-disabled .ae-ifapi-services-svcPedAVOD-state-dependent{
+	color:rgba(255,255,255,0.5);
+	cursor:default !important;
+	pointer-events:none !important;
+}
+
+/*--------------------
+$ PANA MEDIA LINK $
+--------------------*/
+.pana-m-media-link.pana-s-current,
+.pana-m-media-link:active,
+.pana-m-media-link:focus,
+.pana-m-media-link:hover
+{
+	background:none;/*Variable: media-link-active-background*/
+}
+.pana-m-drm-media-link .pana-m-drm-media-link-inner a{
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+}
+
+/*-------------------------
+$ SCO HOME ONE MEDIA BANNER $
+---------------------------*/
+.sco-home-onemedia-banner
+{
+	position: relative;
+}
+
+.sco-home-onemedia-banner .sco-om-link
+{
+	position: absolute; 
+	right:5px; 
+	bottom:0; 
+	z-index:2; 
+	color: rgb(0, 150, 187); 
+	font-size: 0.5em;
+	text-decoration: none;
+}
+
+.sco-om-link:active,
+.sco-om-link:focus,
+.sco-om-link:hover
+{
+	background-color:transparent;
+	color: rgb(0, 150, 187); 
+}

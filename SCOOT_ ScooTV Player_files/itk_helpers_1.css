@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+HELPERS v1
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ ANIMATION DELAY $
+$ BOTTOM MARGIN $
+$ CLEARFIX $
+$ CENTER BLOCK $
+$ DEVICE VISIBILITY TOGGLERS $
+	$ DEVICE VISIBILITY TOGGLERS MEDIA QUERIES $
+$ ELEMENT FILL $
+$ FAUX TABLE $
+$ FIXED OVERLAY $
+$ PRINT $
+$ REPLACED $
+$ SCREEN READER HIDDEN $
+$ STRETCHY $
+$ TEXT ALIGNMENT $
+$ TEXT OVERFLOW $
+$ VIEWPORT CLOAK $
+$ VIEWPORT OFFSET $
+--------------------*/
+
+
+/*--------------------
+$ ANIMATION DELAY $
+--------------------*/
+.itk-h-anim-delay-1  { -moz-animation-delay:0ms;    -ms-animation-delay:0ms;    -o-animation-delay:0ms;    -webkit-animation-delay:0ms;    animation-delay:0ms     }
+.itk-h-anim-delay-2  { -moz-animation-delay:50ms;   -ms-animation-delay:50ms;   -o-animation-delay:50ms;   -webkit-animation-delay:50ms;   animation-delay:50ms;   }
+.itk-h-anim-delay-3  { -moz-animation-delay:100ms;  -ms-animation-delay:100ms;  -o-animation-delay:100ms;  -webkit-animation-delay:100ms;  animation-delay:100ms;  }
+.itk-h-anim-delay-4  { -moz-animation-delay:150ms;  -ms-animation-delay:150ms;  -o-animation-delay:150ms;  -webkit-animation-delay:150ms;  animation-delay:150ms;  }
+.itk-h-anim-delay-5  { -moz-animation-delay:200ms;  -ms-animation-delay:200ms;  -o-animation-delay:200ms;  -webkit-animation-delay:200ms;  animation-delay:200ms;  }
+.itk-h-anim-delay-6  { -moz-animation-delay:250ms;  -ms-animation-delay:250ms;  -o-animation-delay:250ms;  -webkit-animation-delay:250ms;  animation-delay:250ms;  }
+.itk-h-anim-delay-7  { -moz-animation-delay:300ms;  -ms-animation-delay:300ms;  -o-animation-delay:300ms;  -webkit-animation-delay:300ms;  animation-delay:300ms;  }
+.itk-h-anim-delay-8  { -moz-animation-delay:350ms;  -ms-animation-delay:350ms;  -o-animation-delay:350ms;  -webkit-animation-delay:350ms;  animation-delay:350ms;  }
+.itk-h-anim-delay-9  { -moz-animation-delay:400ms;  -ms-animation-delay:400ms;  -o-animation-delay:400ms;  -webkit-animation-delay:400ms;  animation-delay:400ms;  }
+.itk-h-anim-delay-10 { -moz-animation-delay:450ms;  -ms-animation-delay:450ms;  -o-animation-delay:450ms;  -webkit-animation-delay:450ms;  animation-delay:450ms;  }
+.itk-h-anim-delay-11 { -moz-animation-delay:500ms;  -ms-animation-delay:500ms;  -o-animation-delay:500ms;  -webkit-animation-delay:500ms;  animation-delay:500ms;  }
+.itk-h-anim-delay-12 { -moz-animation-delay:550ms;  -ms-animation-delay:550ms;  -o-animation-delay:550ms;  -webkit-animation-delay:550ms;  animation-delay:550ms;  }
+.itk-h-anim-delay-13 { -moz-animation-delay:600ms;  -ms-animation-delay:600ms;  -o-animation-delay:600ms;  -webkit-animation-delay:600ms;  animation-delay:600ms;  }
+.itk-h-anim-delay-14 { -moz-animation-delay:650ms;  -ms-animation-delay:650ms;  -o-animation-delay:650ms;  -webkit-animation-delay:650ms;  animation-delay:650ms;  }
+.itk-h-anim-delay-15 { -moz-animation-delay:700ms;  -ms-animation-delay:700ms;  -o-animation-delay:700ms;  -webkit-animation-delay:700ms;  animation-delay:700ms;  }
+.itk-h-anim-delay-16 { -moz-animation-delay:750ms;  -ms-animation-delay:750ms;  -o-animation-delay:750ms;  -webkit-animation-delay:750ms;  animation-delay:750ms;  }
+.itk-h-anim-delay-17 { -moz-animation-delay:800ms;  -ms-animation-delay:800ms;  -o-animation-delay:800ms;  -webkit-animation-delay:800ms;  animation-delay:800ms;  }
+.itk-h-anim-delay-18 { -moz-animation-delay:850ms;  -ms-animation-delay:850ms;  -o-animation-delay:850ms;  -webkit-animation-delay:850ms;  animation-delay:850ms;  }
+.itk-h-anim-delay-19 { -moz-animation-delay:900ms;  -ms-animation-delay:900ms;  -o-animation-delay:900ms;  -webkit-animation-delay:900ms;  animation-delay:900ms;  }
+.itk-h-anim-delay-20 { -moz-animation-delay:950ms;  -ms-animation-delay:950ms;  -o-animation-delay:950ms;  -webkit-animation-delay:950ms;  animation-delay:950ms;  }
+.itk-h-anim-delay-21 { -moz-animation-delay:1000ms; -ms-animation-delay:1000ms; -o-animation-delay:1000ms; -webkit-animation-delay:1000ms; animation-delay:1000ms; }
+.itk-h-anim-delay-22 { -moz-animation-delay:1050ms; -ms-animation-delay:1050ms; -o-animation-delay:1050ms; -webkit-animation-delay:1050ms; animation-delay:1050ms; }
+.itk-h-anim-delay-23 { -moz-animation-delay:1100ms; -ms-animation-delay:1100ms; -o-animation-delay:1100ms; -webkit-animation-delay:1100ms; animation-delay:1100ms; }
+.itk-h-anim-delay-24 { -moz-animation-delay:1150ms; -ms-animation-delay:1150ms; -o-animation-delay:1150ms; -webkit-animation-delay:1150ms; animation-delay:1150ms; }
+.itk-h-anim-delay-25 { -moz-animation-delay:1200ms; -ms-animation-delay:1200ms; -o-animation-delay:1200ms; -webkit-animation-delay:1200ms; animation-delay:1200ms; }
+.itk-h-anim-delay-26 { -moz-animation-delay:1250ms; -ms-animation-delay:1250ms; -o-animation-delay:1250ms; -webkit-animation-delay:1250ms; animation-delay:1250ms; }
+.itk-h-anim-delay-27 { -moz-animation-delay:1300ms; -ms-animation-delay:1300ms; -o-animation-delay:1300ms; -webkit-animation-delay:1300ms; animation-delay:1300ms; }
+.itk-h-anim-delay-28 { -moz-animation-delay:1350ms; -ms-animation-delay:1350ms; -o-animation-delay:1350ms; -webkit-animation-delay:1350ms; animation-delay:1350ms; }
+.itk-h-anim-delay-29 { -moz-animation-delay:1400ms; -ms-animation-delay:1400ms; -o-animation-delay:1400ms; -webkit-animation-delay:1400ms; animation-delay:1400ms; }
+.itk-h-anim-delay-30 { -moz-animation-delay:1450ms; -ms-animation-delay:1450ms; -o-animation-delay:1450ms; -webkit-animation-delay:1450ms; animation-delay:1540ms; }
+.itk-h-anim-delay-31 { -moz-animation-delay:1500ms; -ms-animation-delay:1500ms; -o-animation-delay:1500ms; -webkit-animation-delay:1500ms; animation-delay:1500ms; }
+.itk-h-anim-delay-32 { -moz-animation-delay:1550ms; -ms-animation-delay:1550ms; -o-animation-delay:1550ms; -webkit-animation-delay:1550ms; animation-delay:1550ms; }
+.itk-h-anim-delay-33 { -moz-animation-delay:1600ms; -ms-animation-delay:1600ms; -o-animation-delay:1600ms; -webkit-animation-delay:1600ms; animation-delay:1600ms; }
+.itk-h-anim-delay-34 { -moz-animation-delay:1650ms; -ms-animation-delay:1650ms; -o-animation-delay:1650ms; -webkit-animation-delay:1650ms; animation-delay:1650ms; }
+.itk-h-anim-delay-35 { -moz-animation-delay:1700ms; -ms-animation-delay:1700ms; -o-animation-delay:1700ms; -webkit-animation-delay:1700ms; animation-delay:1700ms; }
+.itk-h-anim-delay-36 { -moz-animation-delay:1750ms; -ms-animation-delay:1750ms; -o-animation-delay:1750ms; -webkit-animation-delay:1750ms; animation-delay:1750ms; }
+.itk-h-anim-delay-37 { -moz-animation-delay:1800ms; -ms-animation-delay:1800ms; -o-animation-delay:1800ms; -webkit-animation-delay:1800ms; animation-delay:1800ms; }
+.itk-h-anim-delay-38 { -moz-animation-delay:1850ms; -ms-animation-delay:1850ms; -o-animation-delay:1850ms; -webkit-animation-delay:1850ms; animation-delay:1850ms; }
+.itk-h-anim-delay-39 { -moz-animation-delay:1900ms; -ms-animation-delay:1900ms; -o-animation-delay:1900ms; -webkit-animation-delay:1900ms; animation-delay:1900ms; }
+.itk-h-anim-delay-40 { -moz-animation-delay:1950ms; -ms-animation-delay:1950ms; -o-animation-delay:1950ms; -webkit-animation-delay:1950ms; animation-delay:1950ms; }
+.itk-h-anim-delay-41 { -moz-animation-delay:2000ms; -ms-animation-delay:2000ms; -o-animation-delay:2000ms; -webkit-animation-delay:2000ms; animation-delay:2000ms; }
+.itk-h-anim-delay-42 { -moz-animation-delay:2050ms; -ms-animation-delay:2050ms; -o-animation-delay:2050ms; -webkit-animation-delay:2050ms; animation-delay:2050ms; }
+.itk-h-anim-delay-43 { -moz-animation-delay:2100ms; -ms-animation-delay:2100ms; -o-animation-delay:2100ms; -webkit-animation-delay:2100ms; animation-delay:2100ms; }
+.itk-h-anim-delay-44 { -moz-animation-delay:2150ms; -ms-animation-delay:2150ms; -o-animation-delay:2150ms; -webkit-animation-delay:2150ms; animation-delay:2150ms; }
+.itk-h-anim-delay-45 { -moz-animation-delay:2200ms; -ms-animation-delay:2200ms; -o-animation-delay:2200ms; -webkit-animation-delay:2200ms; animation-delay:2200ms; }
+.itk-h-anim-delay-46 { -moz-animation-delay:2250ms; -ms-animation-delay:2250ms; -o-animation-delay:2250ms; -webkit-animation-delay:2250ms; animation-delay:2250ms; }
+.itk-h-anim-delay-47 { -moz-animation-delay:2300ms; -ms-animation-delay:2300ms; -o-animation-delay:2300ms; -webkit-animation-delay:2300ms; animation-delay:2300ms; }
+.itk-h-anim-delay-48 { -moz-animation-delay:2350ms; -ms-animation-delay:2350ms; -o-animation-delay:2350ms; -webkit-animation-delay:2350ms; animation-delay:2350ms; }
+.itk-h-anim-delay-49 { -moz-animation-delay:2400ms; -ms-animation-delay:2400ms; -o-animation-delay:2400ms; -webkit-animation-delay:2400ms; animation-delay:2400ms; }
+.itk-h-anim-delay-50 { -moz-animation-delay:2450ms; -ms-animation-delay:2450ms; -o-animation-delay:2450ms; -webkit-animation-delay:2450ms; animation-delay:2450ms; }
+
+
+/*--------------------
+$ BOTTOM MARGIN $
+--------------------*/
+#itk-wrapper .itk-h-bottom-margin
+{
+	margin-bottom:1em;
+}
+
+
+/*--------------------
+$ CLEARFIX $
+http://nicolasgallagher.com/micro-itk-clearfix-hack/
+--------------------*/
+.itk-h-clearfix::before,
+.itk-h-clearfix::after
+{
+	content:"";
+	display:table;
+}
+
+.itk-h-clearfix::after
+{
+	clear:both;
+}
+
+body.ie8 .itk-h-clearfix:before,
+body.ie8 .itk-h-clearfix:after
+{
+	content:"";
+	display:table;
+}
+
+body.ie8 .itk-h-clearfix:after
+{
+	clear:both;
+}
+
+
+/*--------------------
+$ CENTER BLOCK $
+--------------------*/
+.itk-h-center-block
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	/*USAGE*/
+	/*width:*/
+}
+
+
+/*--------------------
+$ DEVICE VISIBILITY TOGGLERS $
+--------------------*/
+#itk-wrapper .itk-h-show-on-phones,
+#itk-wrapper .itk-h-hide-on-tablets,
+#itk-wrapper .itk-h-hide-on-desktops
+{
+	display:block;
+}
+
+#itk-wrapper .itk-h-show-on-tablets,
+#itk-wrapper .itk-h-show-on-desktops,
+#itk-wrapper .itk-h-hide-on-phones
+{
+	display:none;
+}
+
+
+/*--------------------
+$ DEVICE VISIBILITY TOGGLERS MEDIA QUERIES $
+--------------------*/
+@media only screen and (min-width:641px)
+{
+	#itk-wrapper .itk-h-hide-on-phones,
+	#itk-wrapper .itk-h-hide-on-desktops,
+	#itk-wrapper .itk-h-show-on-tablets
+	{
+		display:block;
+	}
+
+	#itk-wrapper .itk-h-show-on-phones,
+	#itk-wrapper .itk-h-show-on-desktops,
+	#itk-wrapper .itk-h-hide-on-tablets
+	{
+		display:none;
+	}
+}
+
+@media only screen and (min-width:1382px)
+{
+	#itk-wrapper .itk-h-hide-on-phones,
+	#itk-wrapper .itk-h-hide-on-tablets,
+	#itk-wrapper .itk-h-show-on-desktops
+	{
+		display:block;
+	}
+
+	#itk-wrapper .itk-h-show-on-phones,
+	#itk-wrapper .itk-h-show-on-tablets,
+	#itk-wrapper .itk-h-hide-on-desktops
+	{
+		display:none;
+	}
+}
+
+
+/*--------------------
+$ ELEMENT FILL $
+--------------------*/
+.itk-h-element-fill
+{
+	display:block;
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+
+/*--------------------
+$ FAUX TABLE $
+--------------------*/
+.itk-h-faux-table
+{
+	display:table;
+	height:100%;
+	width:100%;
+}
+
+.itk-h-faux-table > .itk-h-faux-table-cell
+{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+/*--------------------
+$ FIXED OVERLAY $
+--------------------*/
+.itk-h-fixed-overlay
+{
+	height:100%;
+	left:0;
+	position:fixed;
+	top:0;
+	width:100%;
+}
+
+
+/*--------------------
+$ PRINT $
+--------------------*/
+.itk-h-print
+{
+	display:none;
+}
+
+
+/*--------------------
+$ REPLACED $
+Lowe & Behold method
+--------------------*/
+#itk-wrapper .itk-h-replaced
+{
+	background-attachment:scroll;
+	background-position:center center;
+	background-repeat:no-repeat;
+	color:rgba(0,0,0,0);
+	display:block;
+	overflow:hidden;
+	text-indent:0;
+	text-shadow:none;
+	white-space:nowrap;
+	word-wrap:normal;
+
+	/*USAGE*/
+	/*background-image:*/
+	/*height:*/
+	/*width:*/
+}
+
+.no-rgba #itk-wrapper .itk-h-replaced
+{
+	font-size:0;
+	line-height:0;
+}
+
+#itk-wrapper .itk-h-replaced::-moz-selection
+{
+	background:transparent;
+	color:rgba(0,0,0,0);
+}
+
+#itk-wrapper .itk-h-replaced::-ms-selection
+{
+	background:transparent;
+	color:rgba(0,0,0,0);
+}
+
+#itk-wrapper .itk-h-replaced::-o-selection
+{
+	background:transparent;
+	color:rgba(0,0,0,0);
+}
+
+#itk-wrapper .itk-h-replaced::-webkit-selection
+{
+	background:transparent;
+	color:rgba(0,0,0,0);
+}
+
+#itk-wrapper .itk-h-replaced::selection
+{
+	background:transparent;
+	color:rgba(0,0,0,0);
+}
+
+
+/*--------------------
+$ SCREEN READER HIDDEN $
+http://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+--------------------*/
+.itk-h-screen-reader-hidden
+{
+	display:none;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+
+
+/*--------------------
+$ STRETCHY $
+--------------------*/
+.itk-h-stretchy
+{
+	width:100%;
+}
+
+
+/*--------------------
+$ TEXT ALIGNMENT $
+--------------------*/
+.itk-h-text-left
+{
+	text-align:left;
+}
+
+.itk-h-text-center
+{
+	text-align:center;
+}
+
+.itk-h-text-right
+{
+	text-align:right;
+}
+
+.itk-text-justify
+{
+	text-align:justify;
+}
+
+
+/*--------------------
+$ TEXT OVERFLOW $
+--------------------*/
+.itk-h-text-overflow
+{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+
+	/*USAGE*/
+	/*display:block| inline-block;*/
+	/*max-width:*/
+}
+
+
+/*--------------------
+$ VIEWPORT CLOAK $
+--------------------*/
+#itk-wrapper .itk-h-viewport-cloak
+{
+	visibility:hidden;
+}
+
+
+/*--------------------
+$ VIEWPORT OFFSET $
+http://developer.yahoo.com/blogs/ydn/posts/2012/10/clip-your-hidden-content-for-better-accessibility/
+--------------------*/
+#itk-wrapper .itk-h-viewport-offset
+{
+	background:transparent;
+	border:0;
+	clip:rect(1px, 1px, 1px, 1px);
+	display:block;
+	height:1px;
+	left:0;
+	line-height:0;
+	margin:0;
+	overflow:hidden;
+	padding:0;
+	position:absolute;
+	top:0;
+	width:1px;
+}

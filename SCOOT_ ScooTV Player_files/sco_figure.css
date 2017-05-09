@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO FIGURE
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO FIGURE $
+$ SCO FIGURE MEDIA QUERIES $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ SCO FIGURE $
+--------------------*/
+.sco-m-figure
+{
+	overflow:hidden;
+	position:relative;
+}
+
+.sco-m-figure > img
+{
+	color:transparent;
+	margin-bottom:0;
+	width:100%;
+}
+
+.sco-m-figure img.sco-m-figure-spacer
+{
+	background:rgb(112,113,117) url('../../img/sco_figure/ajax_loader.gif') no-repeat 10px 10px;
+}
+
+.sco-m-figure img.sco-m-figure-img
+{
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+.sco-m-figure figcaption
+{
+	background:rgb(0,0,0);
+	padding:5px 10px;
+}
+
+
+/*--------------------
+$ SCO FIGURE MEDIA QUERIES $
+--------------------*
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-figure figcaption
+	{
+		background:-moz-linear-gradient(left,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 67%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0.64) 75%, rgba(0,0,0,0.2) 90%, rgba(0,0,0,0.06) 96%, rgba(0,0,0,0) 100%);
+		background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.8)), color-stop(67%,rgba(0,0,0,0.8)), color-stop(70%,rgba(0,0,0,0.75)), color-stop(75%,rgba(0,0,0,0.64)), color-stop(90%,rgba(0,0,0,0.2)), color-stop(96%,rgba(0,0,0,0.06)), color-stop(100%,rgba(0,0,0,0)));
+		background:-webkit-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 67%,rgba(0,0,0,0.75) 70%,rgba(0,0,0,0.64) 75%,rgba(0,0,0,0.2) 90%,rgba(0,0,0,0.06) 96%,rgba(0,0,0,0) 100%);
+		background:-o-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 67%,rgba(0,0,0,0.75) 70%,rgba(0,0,0,0.64) 75%,rgba(0,0,0,0.2) 90%,rgba(0,0,0,0.06) 96%,rgba(0,0,0,0) 100%);
+		background:-ms-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 67%,rgba(0,0,0,0.75) 70%,rgba(0,0,0,0.64) 75%,rgba(0,0,0,0.2) 90%,rgba(0,0,0,0.06) 96%,rgba(0,0,0,0) 100%);
+		background:linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 67%,rgba(0,0,0,0.75) 70%,rgba(0,0,0,0.64) 75%,rgba(0,0,0,0.2) 90%,rgba(0,0,0,0.06) 96%,rgba(0,0,0,0) 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#00000000',GradientType=1 );
+		bottom:0;
+		left:0;
+		position:absolute;
+		width:100%;
+	}
+}

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO BUTTON HEADER
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO BUTTON HEADER $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ SCO BUTTON HEADER $
+--------------------*/
+.sco-m-btn-header
+{
+	border-bottom:1px solid rgb(0,0,0);
+	font-size:14px;
+	font-weight:400;
+	line-height:inherit;
+	padding:0;
+}
+
+.sco-m-btn-header .sco-m-btn
+{
+	bottom:-0.7em;
+	left:10px;
+	position:relative;
+}

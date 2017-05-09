@@ -1,0 +1,685 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO PRELOADER
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO PRELOADER $
+$ SCO PRELOADER BARS $
+$ SCO PRELOADER LOGO $
+$ SCO PRELOADER LOADING INDICATOR $
+$ SCO PRELOADER LOGO + SCO PRELOADER LOADING INDICATOR MEDIA QUERIES $
+$ SCO PRELOADER STATE $
+$ SCO PRELOADER ANIMATIONS $
+	$ SCO PRELOADER ANIMATIONS - MOVE LEFT $
+	$ SCO PRELOADER ANIMATIONS - MOVE RIGHT $
+	$ SCO PRELOADER ANIMATIONS - MOVE UP $
+	$ SCO PRELOADER ANIMATIONS - MOVE UP LEGACY $
+	$ SCO PRELOADER ANIMATIONS - MOVE DOWN $
+	$ SCO PRELOADER ANIMATIONS - MOVE DOWN LEGACY $
+	$ SCO PRELOADER ANIMATIONS ASSIGNMENT $
+$ SCO DEVICE OVERRIDES $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ SCO PRELOADER $
+--------------------*/
+.sco-m-preloader
+{
+	overflow:hidden;
+	bottom:0;
+	top:auto;
+	height:100%;
+	position:absolute;
+}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{
+	.sco-m-preloader
+	{
+		height:100%;
+	}
+}
+
+
+/*--------------------
+$ SCO PRELOADER BARS $
+--------------------*/
+.sco-m-preloader .sco-m-preloader__bar--bottom,
+.sco-m-preloader .sco-m-preloader__bar--top
+{
+	background-color:rgb(39,39,39);
+	height:15%;
+	left:0;
+	max-height:90px;
+	position:absolute;
+	width:100%;
+}
+
+.sco-m-preloader .sco-m-preloader__bar--bottom
+{
+	bottom:0;
+}
+
+.sco-m-preloader .sco-m-preloader__bar--top
+{
+	top:0;
+}
+
+
+/*--------------------
+$ SCO PRELOADER LOGO $
+--------------------*/
+.sco-m-preloader .sco-m-preloader__logo
+{
+	background:transparent url(../../img/sco_preloader/logo.png) no-repeat 0 0;
+	height:140px;
+	left:50%;
+	margin-left:-140px;
+	margin-top:-70px;
+	position:absolute;
+	top:50%;
+	width:140px;
+}
+
+.borderradius .sco-m-preloader .sco-m-preloader__logo
+{
+	border-radius:50%;
+	box-shadow:0 0 10px rgb(100,100,100);
+	box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+
+
+/*--------------------
+$ SCO PRELOADER LOADING INDICATOR $
+--------------------*/
+.sco-m-preloader .sco-m-preloader__loading-indicator
+{
+	background:url(../../img/sco_preloader/ajax-loader.gif) no-repeat center center;
+	height:60px;
+	left:50%;
+	margin-left:15px;
+	margin-top:-30px;
+	position:absolute;
+	top:50%;
+	width:60px;
+}
+
+
+/*--------------------
+$ SCO PRELOADER LOGO + SCO PRELOADER LOADING INDICATOR MEDIA QUERIES $
+--------------------*/
+
+@media screen and (min-height:500px)
+{
+	.sco-m-preloader .sco-m-preloader__logo
+	{
+		margin-left:-70px;
+		margin-top:-150px;
+	}
+
+	.sco-m-preloader .sco-m-preloader__loading-indicator
+	{
+		margin-left:-30px;
+		margin-top:10px;
+	}
+}
+
+
+/*--------------------
+$ SCO PRELOADER STATE $
+--------------------*/
+.sco-m-preloader
+{
+	display:none;
+}
+
+.hide-until-app-initialised .sco-m-preloader
+{
+	display:block;
+}
+
+
+/*--------------------
+$ SCO PRELOADER ANIMATIONS $
+--------------------*/
+
+
+/*--------------------
+$ SCO PRELOADER ANIMATIONS - MOVE LEFT $
+--------------------*/
+@-moz-keyframes sco-animation-moveLeft
+{
+	0%
+	{
+		-moz-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-moz-transform:translate3d(-100%,0,0);
+	}
+}
+
+@-ms-keyframes sco-animation-moveLeft
+{
+	0%
+	{
+		-ms-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-ms-transform:translate3d(-100%,0,0);
+	}
+}
+
+@-o-keyframes sco-animation-moveLeft
+{
+	0%
+	{
+		-o-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-o-transform:translate3d(-100%,0,0);
+	}
+}
+
+@-webkit-keyframes sco-animation-moveLeft
+{
+	0%
+	{
+		-webkit-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-webkit-transform:translate3d(-100%,0,0);
+	}
+}
+
+@keyframes sco-animation-moveLeft
+{
+	0%
+	{
+		transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		transform:translate3d(-100%,0,0);
+	}
+}
+
+
+/*--------------------
+$ SCO PRELOADER ANIMATIONS - MOVE RIGHT $
+--------------------*/
+@-moz-keyframes sco-animation-moveRight
+{
+	0%
+	{
+		-moz-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-moz-transform:translate3d(100%,0,0);
+	}
+}
+
+@-ms-keyframes sco-animation-moveRight
+{
+	0%
+	{
+		-ms-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-ms-transform:translate3d(100%,0,0);
+	}
+}
+
+@-o-keyframes sco-animation-moveRight
+{
+	0%
+	{
+		-o-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-o-transform:translate3d(100%,0,0);
+	}
+}
+
+@-webkit-keyframes sco-animation-moveRight
+{
+	0%
+	{
+		-webkit-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-webkit-transform:translate3d(100%,0,0);
+	}
+}
+
+@keyframes sco-animation-moveRight
+{
+	0%
+	{
+		transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		transform:translate3d(100%,0,0);
+	}
+}
+
+
+/*--------------------
+$ SCO PRELOADER ANIMATIONS - MOVE UP $
+--------------------*/
+@-moz-keyframes sco-animation-moveUp
+{
+	0%
+	{
+		-moz-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		bottom:100%;
+		height:0;
+
+		-moz-transform:translate3d(0,-100%,0);
+	}
+}
+
+@-ms-keyframes sco-animation-moveUp
+{
+	0%
+	{
+		-ms-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		bottom:100%;
+		height:0;
+
+		-ms-transform:translate3d(0,-100%,0);
+	}
+}
+
+@-o-keyframes sco-animation-moveUp
+{
+	0%
+	{
+		-o-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		bottom:100%;
+		height:0;
+
+		-o-transform:translate3d(0,-100%,0);
+	}
+}
+
+@-webkit-keyframes sco-animation-moveUp
+{
+	0%
+	{
+		-webkit-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		bottom:100%;
+		height:0;
+
+		-webkit-transform:translate3d(0,-100%,0);
+	}
+}
+
+@keyframes sco-animation-moveUp
+{
+	0%
+	{
+		transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		transform:translate3d(0,-100%,0);
+		bottom:100%;
+		height:0;
+	}
+}
+
+
+/*--------------------
+$ SCO PRELOADER ANIMATIONS - MOVE UP LEGACY $
+--------------------*/
+@-moz-keyframes sco-animation-moveUp-legacy
+{
+	0%
+	{
+		bottom:0;
+	}
+	100%
+	{
+		bottom:100%;
+	}
+}
+
+@-ms-keyframes sco-animation-moveUp-legacy
+{
+	0%
+	{
+		bottom:0;
+	}
+	100%
+	{
+		bottom:100%;
+	}
+}
+
+@-o-keyframes sco-animation-moveUp-legacy
+{
+	0%
+	{
+		bottom:0;
+	}
+	100%
+	{
+		bottom:100%;
+	}
+}
+
+@-webkit-keyframes sco-animation-moveUp-legacy
+{
+	0%
+	{
+		bottom:0;
+	}
+	100%
+	{
+		bottom:100%;
+	}
+}
+
+@keyframes sco-animation-moveUp-legacy
+{
+	0%
+	{
+		bottom:0;
+	}
+	100%
+	{
+		bottom:100%;
+	}
+}
+
+
+/*--------------------
+$ SCO PRELOADER ANIMATIONS - MOVE DOWN $
+--------------------*/
+@-moz-keyframes sco-animation-moveDown
+{
+	0%
+	{
+		-moz-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-moz-transform:translate3d(0,5%,0);
+	}
+}
+
+@-ms-keyframes sco-animation-moveDown
+{
+	0%
+	{
+		-ms-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-ms-transform:translate3d(0,5%,0);
+	}
+}
+
+@-o-keyframes sco-animation-moveDown
+{
+	0%
+	{
+		-o-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-o-transform:translate3d(0,5%,0);
+	}
+}
+
+@-webkit-keyframes sco-animation-moveDown
+{
+	0%
+	{
+		-webkit-transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		-webkit-transform:translate3d(0,5%,0);
+	}
+}
+
+@keyframes sco-animation-moveDown
+{
+	0%
+	{
+		transform:translate3d(0,0,0);
+	}
+	100%
+	{
+		transform:translate3d(0,5%,0);
+	}
+}
+
+
+/*--------------------
+$ SCO PRELOADER ANIMATIONS - MOVE DOWN LEGACY $
+--------------------*/
+@-moz-keyframes sco-animation-moveDown-legacy
+{
+	0%
+	{
+		top:0;
+	}
+	100%
+	{
+		top:5%;
+	}
+}
+
+@-ms-keyframes sco-animation-moveDown-legacy
+{
+	0%
+	{
+		top:0;
+	}
+	100%
+	{
+		top:5%;
+	}
+}
+
+@-o-keyframes sco-animation-moveDown-legacy
+{
+	0%
+	{
+		top:0;
+	}
+	100%
+	{
+		top:5%;
+	}
+}
+
+@-webkit-keyframes sco-animation-moveDown-legacy
+{
+	0%
+	{
+		top:0;
+	}
+	100%
+	{
+		top:5%;
+	}
+}
+
+@keyframes sco-animation-moveDown-legacy
+{
+	0%
+	{
+		top:0;
+	}
+	100%
+	{
+		top:5%;
+	}
+}
+
+
+/*--------------------
+$ SCO PRELOADER ANIMATIONS ASSIGNMENT $
+--------------------*/
+.cssanimations.csstransforms3d .sco-m-preloader,
+.cssanimations.csstransforms3d .hide-until-app-initialised .sco-m-preloader
+{
+	display:block;
+}
+
+.cssanimations.csstransforms3d .hide-until-app-initialised .sco-m-preloader .sco-m-preloader__bar--bottom,
+.cssanimations.csstransforms3d .hide-until-app-initialised .sco-m-preloader .sco-m-preloader__bar--top,
+.cssanimations.csstransforms3d .hide-until-app-initialised .sco-m-preloader .sco-m-preloader__logo,
+.cssanimations.csstransforms3d .hide-until-app-initialised .sco-m-preloader
+{
+	-webkit-animation:none;
+	   -moz-animation:none;
+	    -ms-animation:none;
+	     -o-animation:none;
+	        animation:none;
+}
+
+.cssanimations.csstransforms3d .sco-m-preloader .sco-m-preloader__bar--bottom
+{
+	-webkit-animation:sco-animation-moveLeft .75s linear 1s;
+	   -moz-animation:sco-animation-moveLeft .75s linear 1s;
+	    -ms-animation:sco-animation-moveLeft .75s linear 1s;
+	     -o-animation:sco-animation-moveLeft .75s linear 1s;
+	        animation:sco-animation-moveLeft .75s linear 1s;
+
+	-webkit-animation-fill-mode:forwards;
+	   -moz-animation-fill-mode:forwards;
+	    -ms-animation-fill-mode:forwards;
+	     -o-animation-fill-mode:forwards;
+}
+
+.cssanimations.csstransforms3d .sco-m-preloader .sco-m-preloader__bar--top
+{
+	-webkit-animation:sco-animation-moveRight .75s linear 1s;
+	   -moz-animation:sco-animation-moveRight .75s linear 1s;
+	    -ms-animation:sco-animation-moveRight .75s linear 1s;
+	     -o-animation:sco-animation-moveRight .75s linear 1s;
+	        animation:sco-animation-moveRight .75s linear 1s;
+
+	-webkit-animation-fill-mode:forwards;
+	   -moz-animation-fill-mode:forwards;
+	    -ms-animation-fill-mode:forwards;
+	     -o-animation-fill-mode:forwards;
+}
+
+.sco-m-preloader .sco-m-preloader__element-wrapper
+{
+	-webkit-animation:sco-animation-moveDown-legacy .2s ease-out 2s;
+	   -moz-animation:sco-animation-moveDown-legacy .2s ease-out 2s;
+	    -ms-animation:sco-animation-moveDown-legacy .2s ease-out 2s;
+	     -o-animation:sco-animation-moveDown-legacy .2s ease-out 2s;
+	        animation:sco-animation-moveDown-legacy .2s ease-out 2s;
+
+	-webkit-animation-fill-mode:forwards;
+	   -moz-animation-fill-mode:forwards;
+	    -ms-animation-fill-mode:forwards;
+	     -o-animation-fill-mode:forwards;
+}
+
+.sco-m-preloader
+{
+	-webkit-animation:sco-animation-moveUp-legacy .5s ease-out 2s;
+	   -moz-animation:sco-animation-moveUp-legacy .5s ease-out 2s;
+	    -ms-animation:sco-animation-moveUp-legacy .5s ease-out 2s;
+	     -o-animation:sco-animation-moveUp-legacy .5s ease-out 2s;
+	        animation:sco-animation-moveUp-legacy .5s ease-out 2s;
+
+	-webkit-animation-fill-mode:forwards;
+	   -moz-animation-fill-mode:forwards;
+	    -ms-animation-fill-mode:forwards;
+	     -o-animation-fill-mode:forwards;
+}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{
+	.cssanimations.csstransforms3d .hide-until-app-initialised .sco-m-preloader
+	{
+		-webkit-animation:none;
+		   -moz-animation:none;
+		    -ms-animation:none;
+		     -o-animation:none;
+		        animation:none;
+	}
+
+	.cssanimations.csstransforms3d .sco-m-preloader
+	{
+		-webkit-animation:sco-animation-moveUp .5s ease-out 2s;
+		   -moz-animation:sco-animation-moveUp .5s ease-out 2s;
+		    -ms-animation:sco-animation-moveUp .5s ease-out 2s;
+		     -o-animation:sco-animation-moveUp .5s ease-out 2s;
+		        animation:sco-animation-moveUp .5s ease-out 2s;
+
+		-webkit-animation-fill-mode:forwards;
+		   -moz-animation-fill-mode:forwards;
+		    -ms-animation-fill-mode:forwards;
+		     -o-animation-fill-mode:forwards;
+	}
+}

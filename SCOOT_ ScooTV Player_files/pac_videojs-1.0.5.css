@@ -1,0 +1,942 @@
+/*
+	VideoJS Default Styles (http://videojs.com)
+	Version PAC (3.2.0 Modified)
+*/
+
+.video-js
+{
+	/*LIBRARY*/
+	background-color:#000;
+	font-size:10px;
+	padding:0;
+	position:relative;
+	vertical-align:middle;
+}
+
+.video-js .vjs-tech
+{
+	/*LIBRARY*/
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+
+/*--------------------
+FULL SCREEN DISPLAY
+--------------------*/
+.video-js:-moz-full-screen
+{
+	/*LIBRARY*/
+	position:absolute;
+}
+
+.video-js:-webkit-full-screen
+{
+	/*LIBRARY*/
+	height:100% !important;
+	width:100% !important;
+}
+
+body.vjs-full-window
+{
+	/*LIBRARY*/
+	height:100%;
+	margin:0;
+	overflow-y:auto;
+	padding:0;
+}
+
+.video-js.vjs-fullscreen
+{
+	/*LIBRARY*/
+	bottom:0;
+	height:100% !important;
+	left:0;
+	overflow:hidden;
+	position:fixed;
+	_position:absolute;
+	right:0;
+	top:0;
+	width:100% !important;
+	z-index:1000;
+}
+
+
+/*--------------------
+POSTER
+--------------------*/
+.vjs-poster
+{
+	/*LIBRARY*/
+	cursor:pointer;
+	margin:0 auto;
+	max-height:100%;
+	padding:0;
+	position:relative;
+	width:100%;
+	display:none !important;
+}
+
+
+/*--------------------
+TEXT TRACK
+--------------------*/
+.video-js .vjs-text-track-display
+{
+	/*LIBRARY*/
+	bottom:4em;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	left:1em;
+	position:absolute;
+	right:1em;
+	text-align:center;
+}
+
+.video-js .vjs-text-track
+{
+	/*LIBRARY*/
+	background:rgb(0, 0, 0);
+	background:rgba(0, 0, 0, 0.50);
+	color:#fff;
+	display:none;
+	font-size:1.4em;
+	margin-bottom:0.1em;
+	text-align:center;
+}
+
+.video-js .vjs-subtitles
+{
+	/*LIBRARY*/
+	color:#fff;
+}
+
+.video-js .vjs-captions
+{
+	/*LIBRARY*/
+	color:#fc6;
+}
+
+.vjs-tt-cue
+{
+	/*LIBRARY*/
+	display:block;
+}
+
+
+/*--------------------
+FADE IN / FADE OUT FUNCTION
+--------------------*/
+.vjs-fade-in
+{
+	/*LIBRARY*/
+	opacity:1 !important;
+	-webkit-transition:visibility 0s linear 0s, opacity 0.3s linear;
+	-moz-transition:visibility 0s linear 0s, opacity 0.3s linear;
+	-ms-transition:visibility 0s linear 0s, opacity 0.3s linear;
+	-o-transition:visibility 0s linear 0s, opacity 0.3s linear;
+	transition:visibility 0s linear 0s, opacity 0.3s linear;
+	visibility:visible !important;
+}
+
+.vjs-fade-out
+{
+	/*LIBRARY*/
+	opacity:0 !important;
+	-webkit-transition:visibility 0s linear 1.5s,opacity 1.5s linear;
+	-moz-transition:visibility 0s linear 1.5s,opacity 1.5s linear;
+	-ms-transition:visibility 0s linear 1.5s,opacity 1.5s linear;
+	-o-transition:visibility 0s linear 1.5s,opacity 1.5s linear;
+	transition:visibility 0s linear 1.5s,opacity 1.5s linear;
+	visibility:hidden !important;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------
+VJS DEFAULT SKIN
+--------------------*/
+
+
+/*--------------------
+CONTROLS
+--------------------*/
+.vjs-default-skin .vjs-controls
+{
+	/*LIBRARY*/
+	background:#000;
+	bottom:0;
+	color:#fff;
+	height:2.6em;
+	left:0;
+	margin:0;
+	opacity:0;
+	padding:0;
+	position:absolute;
+	right:0;
+	visibility:hidden;
+}
+
+.vjs-default-skin .vjs-control
+{
+	/*LIBRARY*/
+	float:left;
+	height:2.6em;
+	margin:0;
+	padding:0;
+	position:relative;
+	text-align:center;
+	width:2.6em;
+}
+
+.vjs-default-skin .vjs-control:focus
+{
+	/*LIBRARY*/
+	outline:0;
+}
+
+.vjs-default-skin .vjs-control-text
+{
+	/*LIBRARY*/
+	border:0;
+	clip:rect(0 0 0 0);
+	height:1px;
+	margin:-1px;
+	overflow:hidden;
+	padding:0;
+	position:absolute;
+	width:1px;
+}
+
+.vjs-default-skin .vjs-inactive
+{
+	/*LIBRARY*/
+	display:none;
+}
+
+
+/*--------------------
+CONTROLS > PLAY
+--------------------*/
+.vjs-default-skin .vjs-play-control div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') 0 0;
+	cursor:pointer !important;
+	height:17px;
+	margin:0.5em auto 0;
+	width:15px;
+}
+
+
+/*--------------------
+CONTROLS > PAUSE
+--------------------*/
+.vjs-default-skin .vjs-pause-button div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -25px 0;
+	cursor:pointer !important;
+	height:17px;
+	margin:0.5em auto 0;
+	width:15px;
+}
+
+
+/*--------------------
+CONTROLS > PLAY/PAUSE
+--------------------*/
+
+/* Play/Pause */
+.vjs-default-skin .vjs-play-control
+{
+	/*LIBRARY*/
+	cursor: pointer !important;
+	padding-left: 1em;
+}
+
+.vjs-default-skin.vjs-paused .vjs-play-control div
+{
+	/*LIBRARY*/
+	background: url('../img/video-js.png') 0 0;
+	height: 17px;
+	margin: 0.5em auto 0;
+	width: 15px;
+}
+
+.vjs-default-skin.vjs-playing .vjs-play-control div
+{
+	height: 17px;
+	background: url('../img/video-js.png') -25px 0;
+	margin: 0.5em auto 0;
+	width: 15px;
+}
+
+
+/*--------------------
+CONTROLS > STOP
+--------------------*/
+.vjs-default-skin .vjs-stop-control
+{
+	/*LIBRARY*/
+	cursor:pointer !important;
+	display:none
+}
+
+.vjs-default-skin .vjs-stop-control div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png');
+	height:17px;
+	margin:0;
+	width:15px;
+}
+
+
+/*--------------------
+CONTROLS > NEXT
+--------------------*/
+.vjs-default-skin .vjs-next-control
+{
+	/*LIBRARY*/
+	cursor:pointer !important;
+}
+
+.vjs-default-skin .vjs-next-control div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -50px -50px;
+	height:18px;
+	margin:0.5em auto 0;
+	width:20px;
+}
+
+
+/*--------------------
+CONTROLS > PREVIOUS
+--------------------*/
+.vjs-default-skin .vjs-previous-control
+{
+	/*LIBRARY*/
+	cursor:pointer !important;
+}
+
+.vjs-default-skin .vjs-previous-control div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -75px -50px;
+	height:18px;
+	margin:0.5em auto 0;
+	width:20px;
+}
+
+.vjs-default-skin .vjs-previous-control.vjs-disabled,
+.vjs-default-skin .vjs-next-control.vjs-disabled
+{
+	/*LIBRARY*/
+	cursor:auto !important;
+	opacity:0.5;
+}
+
+
+/*--------------------
+CONTROLS > REWIND
+--------------------*/
+.vjs-default-skin .vjs-rewind-control
+{
+	/*LIBRARY*/
+	cursor:pointer !important;
+	width:5em;
+}
+
+.vjs-default-skin .vjs-rewind-control div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png');
+	height:16px;
+	margin:0.5em auto 0;
+	width:19px;
+}
+
+
+/*--------------------
+CONTROLS > MUTE
+--------------------*/
+.vjs-default-skin .vjs-mute-control
+{
+	/*LIBRARY*/
+	cursor:pointer !important;
+	float:right;
+	width:3.8em;
+}
+
+.vjs-default-skin .vjs-mute-control div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -75px -25px;
+	height:16px;
+	margin:0.5em auto 0;
+	width:22px;
+}
+
+.vjs-default-skin .vjs-mute-control.vjs-vol-0 div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') 0 -25px;
+}
+
+.vjs-default-skin .vjs-mute-control.vjs-vol-1 div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -25px -25px;
+}
+
+.vjs-default-skin .vjs-mute-control.vjs-vol-2 div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -50px -25px;
+}
+
+
+/*--------------------
+CONTROLS > VOLUME CONTROL
+--------------------*/
+.vjs-default-skin .vjs-volume-control
+{
+	/*LIBRARY*/
+	float:right;
+	width:5em;
+}
+
+.vjs-default-skin .vjs-volume-bar
+{
+	/*LIBRARY*/
+	background:#666;
+	cursor:pointer !important;
+	height:0.6em;
+	margin:1em auto 0;
+	position:relative;
+	width:5em;
+}
+
+.vjs-default-skin .vjs-volume-level
+{
+	/*LIBRARY*/
+	background:#efefef;
+	height:0.6em;
+	left:0;
+	position:absolute;
+	top:0;
+}
+
+.vjs-default-skin .vjs-volume-handle
+{
+	/*LIBRARY*/
+	background:#ccc;
+	border:1px solid #fff;
+	border-radius:0.6em;
+	-moz-border-radius:0.6em;
+	-webkit-border-radius:0.6em;
+	height:0.8em;
+	left:0;
+	margin-left:-0.4em;
+	position:absolute;
+	top:-0.1em;
+	width:0.8em;
+}
+
+
+/*--------------------
+CONTROLS > PROGRESS BAR
+--------------------*/
+.vjs-default-skin div.vjs-progress-control
+{
+	/*LIBRARY*/
+	height:1.0em;
+	left:4.8em;
+	position:absolute;
+	right:4.8em;
+	top:-1em;
+	width:auto;
+}
+
+.vjs-default-skin .vjs-progress-holder
+{
+	/*LIBRARY*/
+	background:#111;
+	cursor:pointer !important;
+	height:1.0em;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+
+.vjs-default-skin .vjs-progress-holder .vjs-play-progress,
+.vjs-default-skin .vjs-progress-holder .vjs-load-progress
+{
+	/*LIBRARY*/;
+	display:block;
+	height:1.0em;
+	left:0;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:0;
+}
+
+.vjs-default-skin .vjs-play-progress
+{
+	/*LIBRARY*/
+	background:#efefef;
+}
+
+.vjs-default-skin .vjs-load-progress
+{
+	/*LIBRARY*/
+	opacity:0.8;
+	background:#666;
+}
+
+
+/*--------------------
+CONTROLS > SEEK HANDLE
+--------------------*/
+.vjs-default-skin div.vjs-seek-handle
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') 0 -50px;
+	border-radius:0.8em;
+	-moz-border-radius:0.8em;
+	-webkit-border-radius:0.8em;
+	box-shadow:0 2px 4px 0 #000;
+	-moz-box-shadow:0 2px 4px 0 #000;
+	-webkit-box-shadow:0 2px 4px 0 #000;
+	height:16px;
+	left:0;
+	margin-left:-8px;
+	margin-top:-0.3em;
+	position:absolute;
+	top:0;
+	width:16px;
+}
+
+
+/*--------------------
+FULL SCREEN CONTROLS
+--------------------*/
+.vjs-secondary-controls
+{
+	/*LIBRARY*/
+	float:right;
+}
+
+.vjs-default-skin .vjs-fullscreen-control
+{
+	/*LIBRARY*/
+	cursor:pointer !important;
+	float:right;
+	width:3.8em;
+}
+
+.vjs-default-skin .vjs-fullscreen-control div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -50px 0;
+	height:16px;
+	margin:0.5em auto 0;
+	width:16px;
+}
+
+.vjs-default-skin.avod-fs-on .vjs-fullscreen-control div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -75px 0;
+}
+
+
+/*--------------------
+LIVE TV
+--------------------*/
+@-moz-keyframes livetv
+{
+	/*LIBRARY*/
+	from
+	{
+		background-position:0 50%;
+	}
+	to
+	{
+		background-position:100% 50%;
+	}
+}
+
+@-webkit-keyframes livetv
+{
+	/*LIBRARY*/
+	from
+	{
+		background-position:0 50%;
+	}
+	to
+	{
+		background-position:100% 50%;
+	}
+}
+
+.vjs-default-skin .vjs-controls.live .vjs-load-progress
+{
+	/*LIBRARY*/
+	-moz-animation:livetv 30s linear infinite;
+	-webkit-animation:livetv 30s linear infinite;
+	background-color:#FFF;
+	background-image:-moz-repeating-linear-gradient(-45deg, transparent, transparent 10px, #FFFFFF 10px, rgba(255, 255, 255, 0.25) 18px), -moz-linear-gradient(#333333, #666666);
+	background-image:-webkit-repeating-linear-gradient(-45deg, transparent, transparent 10px, #fff 10px, rgba(255, 255, 255, 0.5) 18px), -webkit-linear-gradient(#333333, #666666);
+	background-position:0 50%;
+	background-size:51px 60px;
+	cursor:default;
+	width:100% !important;
+}
+
+.vjs-default-skin .vjs-controls.live .vjs-play-progress
+{
+	/*LIBRARY*/
+	width:0% !important;
+}
+
+.vjs-default-skin .vjs-controls.live .vjs-time-controls,
+.vjs-default-skin .vjs-controls.live .vjs-seek-handle
+{
+	/*LIBRARY*/
+	display:none;
+}
+
+
+/*--------------------
+TIME DISPLAY
+--------------------*/
+.vjs-default-skin .vjs-time-controls
+{
+	/*LIBRARY*/
+	background:#000;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:1em;
+	font-weight:normal;
+	height:1.0em;
+	line-height:1.0em;
+	position:absolute;
+	right:0;
+	top:-1em;
+	width:4.8em;
+}
+
+.vjs-default-skin .vjs-current-time
+{
+	/*LIBRARY*/
+	left:0;
+}
+
+.vjs-default-skin .vjs-duration
+{
+	/*LIBRARY*/
+	display:none;
+	right:0;
+}
+
+.vjs-default-skin .vjs-remaining-time
+{
+	/*LIBRARY*/
+	right:0;
+}
+
+.vjs-time-divider
+{
+	/*LIBRARY*/
+	display:none;
+}
+
+.vjs-default-skin .vjs-time-control
+{
+	/*LIBRARY*/
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:1em;
+	font-weight:normal;
+	line-height:1;
+}
+
+.vjs-default-skin .vjs-time-control span
+{
+	/*LIBRARY*/
+	line-height:25px;
+}
+
+
+/*--------------------
+BIG PLAY BUTTON
+--------------------*/
+.vjs-default-skin .vjs-big-play-button
+{
+	/*LIBRARY*/
+	border-radius:25px;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	box-shadow:4px 4px 8px #000;
+	-moz-box-shadow:4px 4px 8px #000;
+	-webkit-box-shadow:4px 4px 8px #000;
+	cursor:pointer !important;
+	display:block;
+	height:8.0em;
+	left:50%;
+	margin:-42px 0 0 -42px;
+	position:absolute;
+	text-align:center;
+	top:50%;
+	vertical-align:center;
+	width:8.0em;
+	z-index:2;
+}
+
+.vjs-default-skin div.vjs-big-play-button:hover
+{
+	/*LIBRARY*/
+	-webkit-box-shadow:0 0 80px #fff;
+	-moz-box-shadow:0 0 80px #fff;
+	box-shadow:0 0 80px #fff;
+}
+
+.vjs-default-skin div.vjs-big-play-button span
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -118px 0;
+	display:block;
+	height:85px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-42px 0 0 -42px;
+	width:85px;
+}
+
+
+/*--------------------
+MENU
+--------------------*/
+.vjs-default-skin .vjs-menu-button
+{
+	/*LIBRARY*/
+	background:#4d4d4d;
+	background:-moz-linear-gradient(top, #4d4d4d 0%, #3f3f3f 50%, #333333 50%, #252525 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#4d4d4d), color-stop(50%,#3f3f3f), color-stop(50%,#333333), color-stop(100%,#252525));
+	background:-webkit-linear-gradient(top, #4d4d4d 0%,#3f3f3f 50%,#333333 50%,#252525 100%);
+	background:-o-linear-gradient(top, #4d4d4d 0%,#3f3f3f 50%,#333333 50%,#252525 100%);
+	background:-ms-linear-gradient(top, #4d4d4d 0%,#3f3f3f 50%,#333333 50%,#252525 100%);
+	background:linear-gradient(top, #4d4d4d 0%,#3f3f3f 50%,#333333 50%,#252525 100%);
+	border:1px solid #111;
+	border-radius:0.3em;
+	-moz-border-radius:0.3em;
+	-webkit-border-radius:0.3em;
+	cursor:pointer !important;
+	float:right;
+	height:2em;
+	margin:0.2em 0.5em 0 0;
+	padding:0;
+	width:3em;
+}
+
+.vjs-default-skin .vjs-menu-button div
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') 0px -75px no-repeat;
+	height:16px;
+	margin:0.2em auto 0;
+	padding:0;
+	width:16px;
+}
+
+.vjs-default-skin .vjs-menu-button ul
+{
+	/*LIBRARY*/
+	background-color:#111;
+	border:2px solid #333;
+	border-radius:.5em;
+	-moz-border-radius:0.7em;
+	-webkit-border-radius:1em;
+	bottom:2em;
+	box-shadow:0 2px 4px 0 #000;
+	-moz-box-shadow:0 2px 4px 0 #000;
+	-webkit-box-shadow:0 2px 4px 0 #000;
+	display:none;
+	opacity:0.8;
+	left:-3.5em;
+	margin:0;
+	max-height:15em;
+	overflow:auto;
+	padding:0;
+	position:absolute;
+	width:10em;
+}
+
+.vjs-default-skin .vjs-menu-button:focus ul,
+.vjs-default-skin .vjs-menu-button:hover ul
+{
+	/*LIBRARY*/
+	display:block;
+	list-style:none;
+}
+
+.vjs-default-skin .vjs-menu-button ul li
+{
+	/*LIBRARY*/
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1.2em;
+	line-height:1.4em;
+	list-style:none;
+	margin:0;
+	padding:0.3em 0 0.3em 20px;
+	text-align:left;
+}
+
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected
+{
+	/*LIBRARY*/
+	background:url('../img/video-js.png') -125px -50px no-repeat;
+	text-decoration:underline;
+}
+
+.vjs-default-skin .vjs-menu-button ul li:focus,
+.vjs-default-skin .vjs-menu-button ul li:hover,
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected:focus,
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected:hover
+{
+	/*LIBRARY*/
+	background-color:#ccc;
+	color:#111;
+	outline:0;
+}
+
+.vjs-default-skin .vjs-menu-button ul li.vjs-menu-title
+{
+	/*LIBRARY*/
+	background:#4d4d4d;
+	background:-moz-linear-gradient(top, #4d4d4d 0%, #3f3f3f 50%, #333333 50%, #252525 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#4d4d4d), color-stop(50%,#3f3f3f), color-stop(50%,#333333), color-stop(100%,#252525));
+	background:-webkit-linear-gradient(top, #4d4d4d 0%,#3f3f3f 50%,#333333 50%,#252525 100%);
+	background:-o-linear-gradient(top, #4d4d4d 0%,#3f3f3f 50%,#333333 50%,#252525 100%);
+	background:-ms-linear-gradient(top, #4d4d4d 0%,#3f3f3f 50%,#333333 50%,#252525 100%);
+	background:linear-gradient(top, #4d4d4d 0%,#3f3f3f 50%,#333333 50%,#252525 100%);
+	color:#fff;
+	cursor:default;
+	font-size:1em;
+	font-weight:bold;
+	line-height:2em;
+	margin:0 0 0.3em 0;
+	padding:0;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.vjs-default-skin .vjs-captions-button div
+{
+	/*LIBRARY*/
+	background-position:-25px -75px;
+}
+
+.vjs-default-skin .vjs-chapters-button div
+{
+	/*LIBRARY*/
+	background-position:-100px -75px;
+}
+
+.vjs-default-skin .vjs-chapters-button ul
+{
+	/*LIBRARY*/
+	left:-8.5em;
+	width:20em;
+}
+
+.vjs-default-skin .vjs-message
+{
+	/*LIBRARY*/
+	height:100%;
+	position:absolute;
+	width:100%;
+}
+
+.vjs-default-skin .vjs-message div
+{
+	/*LIBRARY*/
+	position:absolute;
+	z-index:5;
+}
+
+.vjs-default-skin .vjs-message span.vjs-message-text
+{
+	/*LIBRARY*/
+	color:#fff;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	display:block;
+}
+
+.vjs-default-skin .vjs-message div.vjs-message-pa
+{
+	/*LIBRARY*/
+	background:#454545;
+	background:-moz-linear-gradient(top,#454545 0,#232323 50%,#161616 50%,#3f3f3f 100%);
+	background:-webkit-gradient(linear,0% 0,0% 100%,color-stop(0%,#454545),color-stop(50%,#232323),color-stop(50%,#161616),color-stop(100%,#3f3f3f));
+	background:-webkit-linear-gradient(top,#454545 0,#232323 50%,#161616 50%,#3f3f3f 100%);
+	background:-o-linear-gradient(top,#454545 0,#232323 50%,#161616 50%,#3f3f3f 100%);
+	background:-ms-linear-gradient(top,#454545 0,#232323 50%,#161616 50%,#3f3f3f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#454545',endColorstr='#3f3f3f',GradientType=0);
+	background:linear-gradient(top,#454545 0,#232323 50%,#161616 50%,#3f3f3f 100%);
+	border-radius:25px;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	box-shadow:4px 4px 8px #000;
+	-webkit-box-shadow:4px 4px 8px #000;
+	-moz-box-shadow:4px 4px 8px #000;
+	height:90px;
+	margin:-45px 0 0 -125px;
+	left:50%;
+	text-align:center;
+	top:50%;
+	vertical-align:center;
+	width:250px;
+}
+
+.vjs-default-skin .vjs-message div.vjs-message-pa span.vjs-message-text
+{
+	/*LIBRARY*/
+	font-size:20px;
+	padding-top:32px;
+}
+
+.vjs-default-skin .vjs-message div.vjs-message-seatbelt
+{
+	/*LIBRARY*/
+	background:url('seatbelt.jpg') no-repeat;
+	display:block;
+	height:129px;
+	left:50%;
+	margin:-76px 0 0 -112px;
+	position:absolute;
+	top:50%;
+	width:225px;
+}
+
+.vjs-default-skin .vjs-message div.vjs-message-seatbelt span.vjs-message-text
+{
+	/*LIBRARY*/
+	font-size:10px;
+	margin:0 auto;
+	padding-top:96px;
+	text-align:center;
+	width:160px;
+}

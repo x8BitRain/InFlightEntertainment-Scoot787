@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO TAB
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO TAB LAYOUT $
+$ SCO TAB LAYOUT MEDIA QUERIES $
+$ SCO TAB NAVIGATION $
+	$ SCO TAB NAVIGATION LIST $
+	$ SCO TAB NAVIGATION LIST MEDIA QUERIES $
+$ SCO TAB NAVIGATION LINKS $
+$ SCO TAB NAVIGATION LINKS MEDIA QUERIES $
+$ SCO TAB NAVIGATION TOGGLE $
+$ SCO TAB STATE $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ SCO TAB LAYOUT $
+--------------------*/
+.sco-m-tab
+{
+	background:rgb(12,12,12);
+	position:relative;
+}
+
+.sco-m-tab .sco-m-tab__header
+{
+	margin-bottom:20px;
+	padding:10px 20px;
+}
+
+.sco-m-tab .sco-m-tab__header span
+{
+	display:block;
+}
+
+
+/*--------------------
+$ SCO TAB LAYOUT MEDIA QUERIES $
+--------------------*/
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-tab
+	{
+		background:rgb(48,48,48);
+		background:-moz-linear-gradient(left,  rgb(48,48,48) 0%, rgb(48,48,48) 25%, rgb(12,12,12) 25%, rgb(12,12,12) 100%);
+		background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgb(48,48,48)), color-stop(25%,rgb(48,48,48)), color-stop(25%,rgb(12,12,12)), color-stop(100%,rgb(12,12,12)));
+		background:-webkit-linear-gradient(left,  rgb(48,48,48) 0%,rgb(48,48,48) 25%,rgb(12,12,12) 25%,rgb(12,12,12) 100%);
+		background:-o-linear-gradient(left,  rgb(48,48,48) 0%,rgb(48,48,48) 25%,rgb(12,12,12) 25%,rgb(12,12,12) 100%);
+		background:-ms-linear-gradient(left,  rgb(48,48,48) 0%,rgb(48,48,48) 25%,rgb(12,12,12) 25%,rgb(12,12,12) 100%);
+		background:linear-gradient(to right,  rgb(48,48,48) 0%,rgb(48,48,48) 25%,rgb(12,12,12) 25%,rgb(12,12,12) 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#2a2a2a',GradientType=1 );
+	}
+
+	.sco-m-tab .sco-m-tab__navigation
+	{
+		float:left;
+		margin-top:44px;
+		width:25%;
+	}
+
+	.sco-m-tab .sco-m-tab__panels
+	{
+		float:left;
+		margin-top:44px;
+		padding-top:20px;
+		width:75%;
+	}
+
+	.sco-m-tab .sco-m-tab__header
+	{
+		left:0;
+		margin-bottom:0;
+		position:absolute;
+		top:0;
+		width:100%;
+	}
+}
+
+
+/*--------------------
+$ SCO TAB NAVIGATION $
+--------------------*/
+
+
+/*--------------------
+$ SCO TAB NAVIGATION LIST $
+--------------------*/
+.sco-m-tab .sco-m-tab__navigation
+{
+	background-color:rgb(48,48,48);
+	max-height:0;
+	overflow:hidden;
+
+	-webkit-transition:all .3s;
+	   -moz-transition:all .3s;
+	    -ms-transition:all .3s;
+	     -o-transition:all .3s;
+	        transition:all .3s;
+}
+
+.sco-m-tab .sco-m-tab__navigation,
+.sco-m-tab .sco-m-tab__navigation li
+{
+	margin-bottom:0;
+}
+
+.sco-m-tab .sco-m-tab__navigation li
+{
+	float:left;
+	width:50%;
+}
+
+
+/*--------------------
+$ SCO TAB NAVIGATION LIST MEDIA QUERIES $
+--------------------*/
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-tab .sco-m-tab__navigation
+	{
+		background-color:transparent;
+	}
+
+	.sco-m-tab .sco-m-tab__navigation li
+	{
+		float:none;
+		width:auto;
+	}
+}
+
+
+/*--------------------
+$ SCO TAB NAVIGATION LINKS $
+--------------------*/
+.sco-m-tab .sco-m-tab__navigation a
+{
+	border-bottom:1px solid rgb(58,58,58);
+	border-right:1px solid rgb(58,58,58);
+	display:block;
+	padding:5px 20px;
+	text-decoration:none;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.sco-m-tab .sco-m-tab__navigation li:nth-child(even) a
+{
+	border-right:none;
+	border-right-width:0;
+}
+
+.sco-m-tab .sco-m-tab__navigation a.current,
+.sco-m-tab .sco-m-tab__navigation a:focus,
+.sco-m-tab .sco-m-tab__navigation a:hover
+{
+	box-shadow:inset 0 0 2px 2px rgba(0,0,0,.2);
+}
+
+
+/*--------------------
+$ SCO TAB NAVIGATION LINKS MEDIA QUERIES $
+--------------------*/
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-tab .sco-m-tab__navigation a
+	{
+		border-width:0 0 1px 0;
+		border-style:solid;
+		border-color:rgb(150,150,150);
+
+		text-align:center;
+
+		-webkit-border-image:-webkit-linear-gradient(top, rgb(48,48,48) 0%,rgb(165,165,165) 45%,rgb(165,165,165) 55%,rgb(48,48,48) 100%) 1 100%;
+		   -moz-border-image:-moz-linear-gradient(top, rgb(48,48,48) 0%, rgb(165,165,165) 45%, rgb(165,165,165) 55%, rgb(48,48,48) 100%) 1 100%;
+		     -o-border-image:-o-linear-gradient(top, rgb(48,48,48) 0%,rgb(165,165,165) 45%,rgb(165,165,165) 55%,rgb(48,48,48) 100%) 1 100%;
+		        border-image:linear-gradient(to right,  rgb(48,48,48) 0%,rgb(165,165,165) 45%,rgb(165,165,165) 55%,rgb(48,48,48) 100%) 1 0%;
+	}
+}
+
+
+/*--------------------
+$ $ SCO TAB NAVIGATION TOGGLE $
+--------------------*/
+.sco-m-tab .sco-m-tab__navigation-toggle
+{
+	background-color:rgb(48,48,48);
+	display:block;
+	padding:5px 20px;
+	text-decoration:none;
+}
+
+.sco-m-tab .sco-m-tab__navigation-toggle:focus,
+.sco-m-tab .sco-m-tab__navigation-toggle:hover
+{
+	box-shadow:inset 0 0 2px 2px rgba(0,0,0,.2);
+	color:rgb(0,0,0);
+	text-decoration:none;
+}
+
+.sco-m-tab .sco-m-tab__navigation-toggle i
+{
+	display:block;
+	float:right;
+	width:17px;
+
+	-webkit-transition:all .3s;
+	   -moz-transition:all .3s;
+	    -ms-transition:all .3s;
+	     -o-transition:all .3s;
+	        transition:all .3s;
+}
+
+
+/*--------------------
+$ SCO TAB STATE $
+--------------------*/
+.sco-m-tab.sco-m-tab__navigation--hide .sco-m-tab__navigation
+{
+	display:none;
+}
+
+.sco-m-tab.sco-m-tab__navigation--show .sco-m-tab__navigation
+{
+	max-height:400px;
+}
+
+.sco-m-tab.sco-m-tab__navigation--show .sco-m-tab__navigation-toggle i
+{
+	-webkit-transform:rotate(180deg);
+	   -moz-transform:rotate(180deg);
+	    -ms-transform:rotate(180deg);
+	     -o-transform:rotate(180deg);
+	        transform:rotate(180deg);
+}
+
+.sco-m-tab__panels__panel__item--a
+{
+	min-height:300px;
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-tab .sco-m-tab__navigation-toggle
+	{
+		display:none !important;
+	}
+	.sco-m-tab .sco-m-tab__navigation
+	{
+		display:block !important;
+		max-height:1200px;
+	}
+}

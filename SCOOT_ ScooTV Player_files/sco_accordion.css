@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+PANA ACCORDION
+v1
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ PANA ACCORDION $
+$ JSENGINE RESETS $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ PANA ACCORDION $
+--------------------*/
+.sco-m-accordion .sco-m-accordion-item
+{
+	display:block;
+	margin-bottom:1px;
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading
+{
+	background:rgb(254,229,0);/*Variable: accordion-heading-background*/
+	cursor:pointer;
+	padding:10px;
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading *
+{
+	border:none;
+	color:rgb(0,0,0);/*Variable: accordion-heading-color*/
+	font-size:1em;
+	font-weight:700;
+	margin-bottom:0;
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading:hover
+{
+	background:rgb(51,51,51);/*Variable: accordion-heading-active-background*/
+	cursor:pointer;
+	padding:10px;
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-heading:hover *
+{
+	color:rgb(255,255,255);/*Variable: accordion-heading-active-color*/
+}
+
+.sco-m-accordion .sco-m-accordion-item .sco-m-accordion-body
+{
+	padding:10px;
+}
+
+.sco-m-accordion-item.active
+{
+	border:none;
+}
+
+.sco-m-accordion-item > h3
+{
+	margin:10px 0;
+}
+
+
+/*--------------------
+$ JSENGINE RESETS $
+--------------------*/
+body .uberAccordion > li > div,
+body .uberAccordion .uberAccordion > li > div
+{
+	background-color:transparent;
+	color:inherit;
+	padding:0;
+}

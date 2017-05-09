@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+FF FLASH WMODE DIRECT
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ ANIMATIONS $
+$ FF FLASH WMODE DIRECT $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ ANIMATIONS $
+--------------------*/
+@-moz-keyframes fadeInDownFF
+{
+	0%
+	{
+		margin-top:-20px;
+	}
+	100%
+	{
+		margin-top:0;
+	}
+}
+
+@keyframes fadeInDownFF
+{
+	0%
+	{
+		margin-top:-20px;
+	}
+	100%
+	{
+		margin-top:0;
+	}
+}
+
+@-moz-keyframes fadeInUpFF
+{
+	0%
+	{
+		margin-top:20px;
+	}
+	100%
+	{
+		margin-top:0;
+	}
+}
+
+@keyframes fadeInUpFF
+{
+	0%
+	{
+		margin-top:20px;
+	}
+	100%
+	{
+		margin-top:0;
+	}
+}
+
+@-moz-keyframes fadeInUpFFMain
+{
+	0%
+	{
+		margin-top:110px;
+	}
+	100%
+	{
+		margin-top:93px;
+	}
+}
+
+@keyframes fadeInUpFFMain
+{
+	0%
+	{
+		margin-top:110px;
+	}
+	100%
+	{
+		margin-top:93px;
+	}
+}
+
+
+/*--------------------
+$ FF FLASH WMODE DIRECT $
+--------------------*/
+@media screen and (-moz-os-version:windows-xp),
+(-moz-os-version:windows-vista),
+(-moz-os-version:windows-win7),
+(-moz-os-version:windows-win8)
+{
+	@-moz-document url-prefix()
+	{
+		.sco-h-grad3
+		{
+			background:-moz-linear-gradient(top,rgb(39,39,39) 0%,rgb(29,29,29) 46%,rgb(13,13,13) 100%);
+			background:linear-gradient(to bottom,rgb(39,39,39) 0%,rgb(29,29,29) 46%,rgb(13,13,13) 100%);
+		}
+	}
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:992px) and (-moz-os-version:windows-xp),
+(min-width:992px) and (-moz-os-version:windows-vista),
+(min-width:992px) and (-moz-os-version:windows-win7),
+(min-width:992px) and (-moz-os-version:windows-win8)
+{
+	@-moz-document url-prefix()
+	{
+		.sco-m-header .sco-m-header__logo
+		{
+			background:url(../img/sco_header/logo_FF.png) center center no-repeat;
+			height:67px;
+			margin:3px 0;
+			width:68px;
+		}
+
+		.sco-m-header,
+		main,
+		.sco-m-footer
+		{
+			opacity:1;
+		}
+
+		.sco-m-header
+		{
+			-moz-animation-name:fadeInDownFF;
+			     animation-name:fadeInDownFF;
+		}
+
+		main
+		{
+			-moz-animation-name:fadeInUpFFMain;
+			     animation-name:fadeInUpFFMain;
+
+			-moz-animation-delay:2750ms;
+			     animation-delay:2750ms;
+		}
+
+		.sco-m-footer
+		{
+			-moz-animation-name:fadeInUpFF;
+			     animation-name:fadeInUpFF;
+		}
+	}
+}

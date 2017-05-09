@@ -1,0 +1,358 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+NAV MOBILE
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ NAV MOBILE $
+$ NAV LIST $
+$ NAV LIST ITEMS $
+$ NAV MENU BUTTON $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ NAV MOBILE $
+--------------------*/
+.sco-m-nav-mobile
+{
+	position:relative;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__overlay
+{
+	background-color:rgb(21,21,21);
+	background-color:rgba(0,0,0,.9);
+	/*height put in as 200% to fix issue on iPhone 3gs/4 when opeining menu on landscape and going to portrait*/
+	height:200%;
+	opacity:0;
+	pointer-events:none;
+
+	-webkit-transition:opacity .3s .6s;
+	   -moz-transition:opacity .3s .6s;
+	    -ms-transition:opacity .3s .6s;
+	     -o-transition:opacity .3s .6s;
+}
+
+.no-pointerevents .sco-m-nav-mobile .sco-m-nav-mobile__overlay,
+.ie8 .sco-m-nav-mobile .sco-m-nav-mobile__overlay
+{
+	display:none
+}
+
+.no-pointerevents .sco-m-nav-mobile.sco-s-nav-mobile-toggle .sco-m-nav-mobile__overlay,
+.ie8 .sco-m-nav-mobile.sco-s-nav-mobile-toggle .sco-m-nav-mobile__overlay
+{
+	display:block;
+}
+
+.sco-m-nav-mobile.sco-s-nav-mobile-toggle .sco-m-nav-mobile__overlay
+{
+	opacity:1;
+
+	-webkit-transition:opacity .5s;
+	   -moz-transition:opacity .5s;
+	    -ms-transition:opacity .5s;
+	     -o-transition:opacity .5s;
+	        transition:opacity .5s;
+}
+
+
+/*--------------------
+$ NAV LIST $
+--------------------*/
+.sco-m-nav-mobile .sco-m-nav-mobile__list
+{
+	bottom:0;
+	display:block;
+	margin-left:-100%;
+	position:fixed;
+	top:82px;
+	width:100%;
+
+	-webkit-transition:margin-left .5s;
+	   -moz-transition:margin-left .5s;
+	    -ms-transition:margin-left .5s;
+	     -o-transition:margin-left .5s;
+	        transition:margin-left .5s;
+}
+
+.sco-m-nav-mobile.sco-s-nav-mobile-toggle .sco-m-nav-mobile__list
+{
+	margin-left:0;
+
+	-webkit-transition:margin-left .5s .9s;
+	   -moz-transition:margin-left .5s .9s;
+	    -ms-transition:margin-left .5s .9s;
+	     -o-transition:margin-left .5s .9s;
+	        transition:margin-left .5s .9s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li
+{
+	display:block;
+	margin-bottom:0;
+	margin-right:100%;
+	overflow:hidden;
+	white-space:nowrap;
+
+	-webkit-transition:margin-right .9s;
+	   -moz-transition:margin-right .9s;
+	    -ms-transition:margin-right .9s;
+	     -o-transition:margin-right .9s;
+	        transition:margin-right .9s;
+}
+
+.sco-m-nav-mobile.sco-s-nav-mobile-toggle .sco-m-nav-mobile__list li
+{
+	margin-right:0;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li:nth-child(2)
+{
+	-webkit-transition-delay:.2s;
+	   -moz-transition-delay:.2s;
+	    -ms-transition-delay:.2s;
+	     -o-transition-delay:.2s;
+	        transition-delay:.2s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li:nth-child(3)
+{
+	-webkit-transition-delay:.4s;
+	   -moz-transition-delay:.4s;
+	    -ms-transition-delay:.4s;
+	     -o-transition-delay:.4s;
+	        transition-delay:.4s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li:nth-child(4)
+{
+	-webkit-transition-delay:.6s;
+	   -moz-transition-delay:.6s;
+	    -ms-transition-delay:.6s;
+	     -o-transition-delay:.6s;
+	        transition-delay:.6s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li:nth-child(5)
+{
+	-webkit-transition-delay:.8s;
+	   -moz-transition-delay:.8s;
+	    -ms-transition-delay:.8s;
+	     -o-transition-delay:.8s;
+	        transition-delay:.8s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li:nth-child(6)
+{
+	-webkit-transition-delay:1s;
+	   -moz-transition-delay:1s;
+	    -ms-transition-delay:1s;
+	     -o-transition-delay:1s;
+	        transition-delay:1s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li:nth-child(7)
+{
+	-webkit-transition-delay:1.1s;
+	   -moz-transition-delay:1.1s;
+	    -ms-transition-delay:1.1s;
+	     -o-transition-delay:1.1s;
+	        transition-delay:1.1s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li:nth-child(8)
+{
+	-webkit-transition-delay:1.2s;
+	   -moz-transition-delay:1.2s;
+	    -ms-transition-delay:1.2s;
+	     -o-transition-delay:1.2s;
+	        transition-delay:1.2s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li a
+{
+	background:rgb(21,21,21);
+	border-bottom:1px solid rgb(48,48,48);
+	display:block;
+	padding:10px 10px 9px 10px;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li a:hover,
+.sco-m-nav-mobile .sco-m-nav-mobile__list li a:focus,
+.sco-m-nav-mobile .sco-m-nav-mobile__list li a:active
+{
+	background:rgb(48,48,48);
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list li a.current
+{
+	color:rgb(21,21,21);
+}
+
+
+/*--------------------
+$ NAV LIST ITEMS $
+--------------------*/
+.sco-m-nav-mobile .sco-m-nav-mobile__list__ul
+{
+	display:block;
+	height:100%;
+
+	/*put in as fallback fix for kindle*/
+	overflow:hidden;
+
+	-ms-overflow-x:hidden;
+	    overflow-x:hidden;
+
+	-ms-overflow-y:auto;
+	    overflow-y:auto;
+}
+
+
+/*--------------------
+$ NAV MENU BUTTON $
+--------------------*/
+.sco-m-nav-mobile .sco-m-nav-mobile__list__menu
+{
+	background-color:rgb(48,48,48);
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	cursor:pointer;
+	display:block;
+	float:right;
+	height:38px;
+	margin-right:-40px;
+	width:40px;
+
+	-webkit-transition:margin .3s .8s;
+	   -moz-transition:margin .3s .8s;
+	    -ms-transition:margin .3s .8s;
+	     -o-transition:margin .3s .8s;
+	        transition:margin .3s .8s;
+}
+
+.sco-m-nav-mobile.sco-s-nav-mobile-toggle .sco-m-nav-mobile__list__menu
+{
+	margin-right:0;
+
+	-webkit-transition:margin .3s;
+	   -moz-transition:margin .3s;
+	    -ms-transition:margin .3s;
+	     -o-transition:margin .3s;
+	        transition:margin .3s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list__menu__btn
+{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list__menu__btn .sco-m-nav-mobile__list__menu__btn__arrow div
+{
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+	height:5px;
+	position:absolute;
+	width:18px;
+
+	-webkit-transition:-webkit-transform .5s 1s;
+	   -moz-transition:   -moz-transform .5s 1s;
+	    -ms-transition:    -ms-transform .5s 1s;
+	     -o-transition:     -o-transform .5s 1s;
+	        transition:        transform .5s 1s;
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list__menu__btn .sco-m-nav-mobile__list__menu__btn__arrow div:first-child
+{
+	margin:12px 0 0 12px;
+
+	-webkit-transform:rotate(45deg);
+	   -moz-transform:rotate(45deg);
+	    -ms-transform:rotate(45deg);
+	     -o-transform:rotate(45deg);
+	        transform:rotate(45deg);
+}
+
+.sco-m-nav-mobile .sco-m-nav-mobile__list__menu__btn .sco-m-nav-mobile__list__menu__btn__arrow div:last-child
+{
+	margin:22px 0 0 12px;
+
+	-webkit-transform:rotate(-45deg);
+	   -moz-transform:rotate(-45deg);
+	    -ms-transform:rotate(-45deg);
+	     -o-transform:rotate(-45deg);
+	        transform:rotate(-45deg);
+}
+
+.ie8 .sco-m-nav-mobile .sco-m-nav-mobile__list__menu__btn .sco-m-nav-mobile__list__menu__btn__arrow div
+{
+	margin:10px 0 0 12px;
+	position:static;
+}
+
+.sco-m-nav-mobile.sco-s-nav-mobile-toggle .sco-m-nav-mobile__list__menu__btn .sco-m-nav-mobile__list__menu__btn__arrow div:first-child
+{
+	-webkit-transform:rotate(135deg);
+	   -moz-transform:rotate(135deg);
+	    -ms-transform:rotate(135deg);
+	     -o-transform:rotate(135deg);
+	        transform:rotate(135deg);
+
+	-webkit-transition-delay:1.5s;
+	   -moz-transition-delay:1.5s;
+	    -ms-transition-delay:1.5s;
+	     -o-transition-delay:1.5s;
+	        transition-delay:1.5s;
+}
+
+.sco-m-nav-mobile.sco-s-nav-mobile-toggle .sco-m-nav-mobile__list__menu__btn .sco-m-nav-mobile__list__menu__btn__arrow div:last-child
+{
+	-webkit-transform:rotate(-135deg);
+	   -moz-transform:rotate(-135deg);
+	    -ms-transform:rotate(-135deg);
+	     -o-transform:rotate(-135deg);
+	        transform:rotate(-135deg);
+
+	-webkit-transition-delay:1.5s;
+	   -moz-transition-delay:1.5s;
+	    -ms-transition-delay:1.5s;
+	     -o-transition-delay:1.5s;
+	        transition-delay:1.5s;
+}

@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+BASE
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ HIGHLIGHTS $
+$ GENERIC PAGE $
+$ LINKS $
+$ SCOOTV LOGO - ALL TV PAGES $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../img/'
+--------------------*/
+
+
+/*--------------------
+$ HIGHLIGHTS $
+--------------------*/
+::-moz-selection
+{
+	background:rgb(254,229,0);
+	color:rgb(0,0,0);
+}
+
+::-ms-selection
+{
+	background:rgb(254,229,0);
+	color:rgb(0,0,0)
+}
+
+::-o-selection
+{
+	background:rgb(254,229,0);
+	color:rgb(0,0,0)
+}
+
+::-webkit-selection
+{
+	background:rgb(254,229,0);
+	color:rgb(0,0,0)
+}
+
+::selection
+{
+	background:rgb(254,229,0);
+	color:rgb(0,0,0)
+}
+
+
+/*--------------------
+$ GENERIC PAGE $
+--------------------*/
+html
+{
+	background-color:rgb(0,0,0);
+	overflow-y:scroll;
+}
+
+main
+{
+	background-color:rgb(238,238,238);
+	color:rgb(0,0,0);
+	margin-top:119px;
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	html
+	{
+		background:rgb(238,238,238) url(../img/main/ajax-loader.gif) no-repeat center 180px;
+		min-height:100%;
+	}
+
+	main
+	{
+		background-color:transparent;
+		padding-bottom:42px;
+	}
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	main
+	{
+		margin-top:93px
+	}
+}
+
+
+/*--------------------
+$ LINKS $
+--------------------*/
+a
+{
+	color:rgb(0,0,0);
+	text-decoration:underline;
+	word-wrap:normal;
+}
+
+a:focus,
+a:hover
+{
+	color:rgb(100,100,100);
+	text-decoration:underline;
+}
+
+.touch *
+{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+
+/*--------------------
+$ SCOOTV LOGO - ALL TV PAGES $
+--------------------*/
+.sco-m-scootv
+{
+	background:url('../img/content/entertainment/scootv.png');
+	height:98px;
+	margin-top:6px;
+	width:303px;
+}

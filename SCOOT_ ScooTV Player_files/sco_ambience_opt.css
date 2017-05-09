@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+AMBIENCE OPT
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ AMBIENCE OPT $
+$ BUTTON TAB $
+$ DROPDOWN $
+	$ DROPDOWN BTN $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ AMBIENCE OPT $
+--------------------*/
+.sco-m-ambience-opt
+{
+	/*container fixed in position bottom right hand corner and hidden with margin pull to right*/
+	bottom:0;
+	height:50px;
+	margin-right:-400px;
+	/*Hides the element as was coming into view on the android tablet on scroll*/
+	opacity:0;
+	position:fixed;
+	right:0;
+	width:50px;
+
+	/*Default state when auto-dim turned off, so 1s delay to give chance for switch to move accross and user to change mind*/
+	-webkit-transition:margin .4s 1s cubic-bezier(.54,1.85,.5,1);
+	   -moz-transition:margin .4s 1s cubic-bezier(.54,1.85,.5,1);
+	    -ms-transition:margin .4s 1s cubic-bezier(.54,1.85,.5,1);
+	     -o-transition:margin .4s 1s cubic-bezier(.54,1.85,.5,1);
+	        transition:margin .4s 1s cubic-bezier(.54,1.85,.5,1);
+}
+
+.auto-dim.dim .sco-m-ambience-opt
+{
+	/* Brings module into view in low light */
+	margin-right:0;
+	/*Shows the element*/
+	opacity:1;
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-ambience-opt
+	{
+		/*default state for when the auto-dim switch is called. position fixed to bottom bar and centerally aligned*/
+		height:0;
+		left:50%;
+		margin-left:-50px;
+		margin-top:100px;
+
+		right:auto;
+		width:100px;
+
+		/*Default state when auto-dim turned off, so 1s delay to give chance for switch to
+		move accross and user to change mind*/
+		-webkit-transition:height 1s .9s;
+		   -moz-transition:height 1s .9s;
+		    -ms-transition:height 1s .9s;
+		     -o-transition:height 1s .9s;
+		        transition:height 1s .9s;
+	}
+
+	.auto-dim .sco-m-ambience-opt
+	{
+		/*When Auto dim switch active keep correct height*/
+		height:60px;
+	}
+}
+
+
+/*--------------------
+$ BUTTON TAB $
+--------------------*/
+.sco-m-ambience-opt .sco-m-ambience-opt__tab
+{
+	/*Corner tab graphic*/
+	background-color:rgb(0,0,0);
+	border-top-left-radius:100%;
+	bottom:0;
+	height:100%;
+	padding:15px 0 15px 0;
+	position:absolute;
+	right:0;
+}
+
+.sco-m-ambience-opt .sco-m-ambience-opt__tab__btn
+{
+	font-size:35px;
+	font-size:2.7rem;
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-ambience-opt .sco-m-ambience-opt__tab
+	{
+		/*Corner tab graphic changes into bottom semi-circle
+		by default pushed down out of view with margin-top*/
+		border-top-left-radius:60px;
+		border-top-right-radius:60px;
+		margin-top:50px;
+		padding:17px 12px;
+		position:relative;
+
+		-webkit-transition:margin .8s .5s cubic-bezier(.54,1.85,.5,1);
+		   -moz-transition:margin .8s .5s cubic-bezier(.54,1.85,.5,1);
+		    -ms-transition:margin .8s .5s cubic-bezier(.54,1.85,.5,1);
+		     -o-transition:margin .8s .5s cubic-bezier(.54,1.85,.5,1);
+		        transition:margin .8s .5s cubic-bezier(.54,1.85,.5,1);
+	}
+
+	.dim .sco-m-ambience-opt .sco-m-ambience-opt__tab
+	{
+		/*When Low light activated pop into view*/
+		margin-top:0;
+	}
+
+	.sco-m-ambience-opt .sco-m-ambience-opt__tab .sco-m-ambience-opt__tab__btn
+	{
+		display:block;
+		font-size:35px;
+		font-size:3.5rem;
+		height:30px;
+		opacity:0;
+
+		-webkit-transform:rotate(360deg);
+		   -moz-transform:rotate(360deg);
+		        transform:rotate(360deg);
+
+		-webkit-transition:-webkit-transform .8s .2s,opacity .8s;
+		   -moz-transition:   -moz-transform .8s .2s,opacity .8s;
+		        transition:        transform .8s .2s,opacity .8s;
+	}
+
+	.dim .sco-m-ambience-opt .sco-m-ambience-opt__tab .sco-m-ambience-opt__tab__btn
+	{
+		opacity:1;
+
+		-webkit-transform:rotate(-360deg);
+		   -moz-transform:rotate(-360deg);
+		        transform:rotate(-360deg);
+	}
+}
+
+
+/*--------------------
+$ DROPDOWN $
+--------------------*/
+.sco-m-ambience-opt .sco-m-ambience-opt__dropdown
+{
+	/*Default state of panel dropdown, by default hidden from view until
+	button toggle switched or auto-dim tunred off with margin pulling to the right*/
+	background-color:rgb(0,0,0);
+	border-top-left-radius:50px;
+	bottom:0;
+	box-shadow:0 5px 10px rgba(0,0,0,.2);
+	height:50px;
+	margin:-110px -250px 0 0 ;
+	padding:15px 0 0 30px;
+	position:absolute;
+	right:0;
+	width:300px;
+
+	/*Default state when auto-dim turned off, so 1s delay to give chance for switch to
+	move accross and user to change mind*/
+	-webkit-transition:margin .4s .9s;
+	   -moz-transition:margin .4s .9s;
+	    -ms-transition:margin .4s .9s;
+	     -o-transition:margin .4s .9s;
+	        transition:margin .4s .9s;
+}
+
+.auto-dim .sco-m-ambience-opt .sco-m-ambience-opt__dropdown
+{
+	/*Whilst Auto-dim not switched, provides the slide in/out animation*/
+	-webkit-transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+	   -moz-transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+	    -ms-transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+	     -o-transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+	        transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+}
+
+.dim.auto-dim .sco-m-ambience-opt.sco-s-active .sco-m-ambience-opt__dropdown
+{
+	/*Slides out panel when button toggle pressed*/
+	margin-right:-40px;
+}
+
+.sco-m-ambience-opt .sco-m-ambience-opt__dropdown span:first-child
+{
+	float:left;
+	padding-top:5px;
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-ambience-opt .sco-m-ambience-opt__dropdown
+	{
+		/*Dropdown default state, when the Auto-dim has been switched off, hidden below bar
+		this is to fix bug where once the auto-dim is toggled it aprears on other pages whilst
+		dim still active and overides the mobile view*/
+		border-top-left-radius:0;
+		height:auto;
+		left:50%;
+		margin:0 0 -120px -90px;
+		padding:10px;
+		width:180px;
+	}
+
+	.auto-dim .sco-m-ambience-opt.sco-s-active .sco-m-ambience-opt__dropdown
+	{
+		/*Default state when auto-dim turned off, so 1s delay to give chance for switch to
+		move accross and user to change mind*/
+		-webkit-transition:margin .4s .9s;
+		   -moz-transition:margin .4s .9s;
+		    -ms-transition:margin .4s .9s;
+		     -o-transition:margin .4s .9s;
+		        transition:margin .4s .9s;
+	}
+
+	.dim.auto-dim .sco-m-ambience-opt.sco-s-active .sco-m-ambience-opt__dropdown
+	{
+		/*On switch activate, bring panel into view from bottom with top margin*/
+		margin:0 0 70px -90px;
+
+		-webkit-transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+		   -moz-transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+		    -ms-transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+		     -o-transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+		        transition:margin .4s cubic-bezier(.54,1.85,.5,1);
+	}
+
+	.sco-m-ambience-opt .sco-m-ambience-opt__dropdown:after
+	{
+		border-left:solid 10px transparent;
+		border-right:solid 10px transparent;
+		border-top:solid 10px rgb(0,0,0);
+		content:'';
+		height:0;
+		left:50%;
+		margin-left:-10px;
+		position:absolute;
+		top:100%;
+		width:0;
+	}
+
+	.sco-m-ambience-opt .sco-m-ambience-opt__dropdown span:first-child
+	{
+		margin-right:5px;
+	}
+}
+
+
+/*--------------------
+$ DROPDOWN BTN $
+--------------------*/
+.sco-m-ambience-opt__dropdown__panel_btn
+{
+	display:inline-block;
+	float:left;
+}
+
+.sco-m-ambience-opt__dropdown__panel_btn > div
+{
+	background-color:rgb(225,225,225);
+	border-radius:999px;
+	border:1px solid rgba(0,0,0,.4);
+	box-shadow:inset 0 0 0 0px rgba(0,0,0,0.4);
+	height:18px;
+	margin:5px;
+	vertical-align:middle;
+	width:34px;
+
+	-webkit-transition:background-color .4s, box-shadow .4s;
+	   -moz-transition:background-color .4s, box-shadow .4s;
+	    -ms-transition:background-color .4s, box-shadow .4s;
+	     -o-transition:background-color .4s, box-shadow .4s;
+	        transition:background-color .4s, box-shadow .4s;
+}
+
+.auto-dim .sco-m-ambience-opt__dropdown__panel_btn > div
+{
+	background-color:rgb(0,227,89);
+	background-position:0 0;
+	border:1px solid rgba(0,162,63,1);
+	box-shadow:inset 0 0 0 10px rgba(0,227,89,1);
+}
+
+.sco-m-ambience-opt__dropdown__panel_btn > div > div
+{
+	background:rgb(255,255,255);
+	border-radius:inherit;
+	box-shadow:0px 2px 5px rgba(0,0,0,0.3), 0 0 0 1px rgba(0,162,63,1);
+	float:left;
+	height:16px;
+	margin-left:1px;
+	margin-top:1px;
+	pointer-events:none;
+	width:16px;
+
+	-webkit-transition:transform .4s cubic-bezier(.54,1.85,.5,1), background-color .4s cubic-bezier(.54,1.85,.5,1), box-shadow .4s cubic-bezier(.54,1.85,.5,1);
+	   -moz-transition:transform .4s cubic-bezier(.54,1.85,.5,1), background-color .4s cubic-bezier(.54,1.85,.5,1), box-shadow .4s cubic-bezier(.54,1.85,.5,1);
+	    -ms-transition:transform .4s cubic-bezier(.54,1.85,.5,1), background-color .4s cubic-bezier(.54,1.85,.5,1), box-shadow .4s cubic-bezier(.54,1.85,.5,1);
+	     -o-transition:transform .4s cubic-bezier(.54,1.85,.5,1), background-color .4s cubic-bezier(.54,1.85,.5,1), box-shadow .4s cubic-bezier(.54,1.85,.5,1);
+	        transition:transform .4s cubic-bezier(.54,1.85,.5,1), background-color .4s cubic-bezier(.54,1.85,.5,1), box-shadow .4s cubic-bezier(.54,1.85,.5,1);
+}
+
+.auto-dim .sco-m-ambience-opt__dropdown__panel_btn > div > div
+{
+	background-color:rgb(255,255,255);
+	box-shadow:0px 2px 5px rgba(0,0,0,0.3),0px 0px 0 1px rgba(8,80,172,1);
+
+	-webkit-transform:translate3d(16px, 0, 0);
+	   -moz-transform:translate3d(16px, 0, 0);
+}

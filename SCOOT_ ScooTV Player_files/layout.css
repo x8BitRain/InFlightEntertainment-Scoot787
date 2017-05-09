@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+LAYOUT
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ STRUCTURE $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ STRUCTURE $
+--------------------*/
+.sco-l-structure
+{
+	width:100%;
+}
+
+.sco-l-structure-inner
+{
+	margin-right:auto;
+	margin-left:auto;
+	max-width:960px;
+}
+
+main .sco-l-structure-inner
+{
+	padding-bottom:10px;
+}

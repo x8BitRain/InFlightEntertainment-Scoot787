@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+ANIMATED INTRODUCTION
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ ANIMATED INTRODUCTION $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ ANIMATED INTRODUCTION $
+--------------------*/
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-header,
+	main,
+	.sco-m-footer
+	{
+		-webkit-animation-duration:1s;
+		        animation-duration:1s;
+
+		-webkit-animation-fill-mode:both;
+		        animation-fill-mode:both;
+
+		-webkit-animation-delay:2450ms;
+		   -moz-animation-delay:2450ms;
+		    -ms-animation-delay:2450ms;
+		     -o-animation-delay:2450ms;
+		        animation-delay:2450ms;
+	}
+
+	.sco-m-header
+	{
+		-webkit-animation-name:fadeInDown;
+		        animation-name:fadeInDown;
+	}
+
+	main
+	{
+		-webkit-animation-name:fadeInUp;
+		        animation-name:fadeInUp;
+
+		-webkit-animation-delay:2750ms;
+		   -moz-animation-delay:2750ms;
+		    -ms-animation-delay:2750ms;
+		     -o-animation-delay:2750ms;
+		        animation-delay:2750ms;
+	}
+
+	.sco-m-footer
+	{
+		-webkit-animation-name:fadeInUp;
+		        animation-name:fadeInUp;
+	}
+}
+
+.sco-m-animations-off .sco-m-header,
+.sco-m-animations-off main,
+.sco-m-animations-off .sco-m-footer
+{
+	-webkit-animation:none;
+	   -moz-animation:none;
+	     -o-animation:none;
+	        animation:none;
+
+}
+
+.sco-m-animations-off .sco-m-footer
+{
+	/* force redraw to fix werid chrome issue where dim switch was appearing in wrong place*/
+	border-top:1px solid transparent;
+}

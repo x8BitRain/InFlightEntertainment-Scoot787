@@ -1,0 +1,499 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+PA
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ PA OVERLAY $
+$ PA ANIMATION $
+$ PA MESSAGE $
+$ PA ANIMATIONS $
+	$ PA ANIMATIONS - MOVE LEFT HALF $
+	$ PA ANIMATIONS - MOVE RIGHT HALF $
+	$ PA ANIMATIONS - TEXT GLOW YELLOW $
+	$ PA ANIMATIONS - TEXT GLOW DARK $
+	$ PA ANIMATIONS ASSIGNMENT $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ PA OVERLAY $
+--------------------*/
+.sco-m-pa__overlay
+{
+	bottom:100%;
+	left:0;
+	opacity:0;
+	pointer-events:none;
+	position:fixed;
+	right:0;
+	top:0;
+
+	-webkit-transition:opacity .3s .3s;
+	   -moz-transition:opacity .3s .3s;
+	    -ms-transition:opacity .3s .3s;
+	     -o-transition:opacity .3s .3s;
+	        transition:opacity .3s .3s;
+}
+
+.ae-pa-audio .sco-m-pa__overlay,
+.ae-pa-video .sco-m-pa__overlay,
+.ae-pa-video-a .sco-m-pa__overlay,
+.ae-pa-other .sco-m-pa__overlay
+{
+	bottom:0;
+	opacity:1;
+
+	-webkit-transition:opacity .3s .1s;
+	   -moz-transition:opacity .3s .1s;
+	    -ms-transition:opacity .3s .1s;
+	     -o-transition:opacity .3s .1s;
+	        transition:opacity .3s .1s;
+}
+
+.no-pointerevents .sco-m-pa__overlay,
+.ie8 .sco-m-pa__overlay,
+.ie9 .sco-m-pa__overlay
+{
+	display:none
+}
+
+.no-pointerevents .ae-pa-audio .sco-m-pa__overlay,
+.no-pointerevents .ae-pa-video .sco-m-pa__overlay,
+.no-pointerevents .ae-pa-video-a .sco-m-pa__overlay,
+.no-pointerevents .ae-pa-other .sco-m-pa__overlay,
+.ae-pa-audio .ie8 .sco-m-pa__overlay,
+.ae-pa-video .ie8 .sco-m-pa__overlay,
+.ae-pa-video-a .ie8 .sco-m-pa__overlay,
+.ae-pa-other .ie8 .sco-m-pa__overlay,
+.ae-pa-audio .ie9 .sco-m-pa__overlay,
+.ae-pa-video .ie9 .sco-m-pa__overlay,
+.ae-pa-video-a .ie9 .sco-m-pa__overlay,
+.ae-pa-other .ie9 .sco-m-pa__overlay
+{
+	bottom:0;
+	display:block;
+}
+
+
+/*--------------------
+$ PA ANIMATION $
+--------------------*/
+.sco-m-pa__outer
+{
+	bottom:0;
+	left:0;
+	position:fixed;
+	right:0;
+	text-align:center;
+	top:0;
+}
+
+.ae-pa-audio .sco-m-pa__outer,
+.ae-pa-video .sco-m-pa__outer,
+.ae-pa-video-a .sco-m-pa__outer,
+.ae-pa-other .sco-m-pa__outer
+{
+	opacity:1;
+	top:0;
+}
+
+.sco-m-pa .sco-m-pa__outer__inner-container__bar
+{
+	height:100px;
+	position:absolute;
+	width:100%;
+	display:none;
+}
+
+.sco-m-pa .sco-m-pa__outer__inner-container__bar--left
+{
+	top:0;
+	transform:translateX(0);
+}
+
+.sco-m-pa .sco-m-pa__outer__inner-container__bar--right
+{
+	top:200px;
+	transform:translateX(100%);
+}
+
+
+/*--------------------
+$ PA MESSAGE $
+--------------------*/
+.sco-m-pa .sco-m-pa__outer__inner-container
+{
+	height:200px;
+	position:relative;
+}
+
+.sco-m-pa .sco-m-pa__outer__inner-container__message
+{
+	border:1px solid rgb(0,0,0);
+
+	height:200px;
+	margin:0 auto;
+	position:relative;
+	width:250px;
+
+	-webkit-transition:opacity .3s 2s;
+	   -moz-transition:opacity .3s 2s;
+	    -ms-transition:opacity .3s 2s;
+	     -o-transition:opacity .3s 2s;
+	        transition:opacity .3s 2s;
+}
+
+.sco-m-pa__outer__inner-container__message__icon
+{
+	height:130px;
+	margin:0 auto;
+	width:120px;
+}
+
+.sco-m-pa__outer__inner-container__message__icon .icon-mic
+{
+	font-size:80px;
+	font-size:8rem;
+	line-height:1.5;
+	text-shadow:0 0 10px rgba(0,0,0,.4);
+}
+
+
+/*--------------------
+$ PA ANIMATIONS $
+--------------------*/
+
+
+/*--------------------
+$ PA ANIMATIONS - MOVE LEFT HALF $
+--------------------*/
+@-moz-keyframes sco-animation-moveLeftHalf
+{
+	0%
+	{
+		-moz-transform:translateX(-100%);
+	}
+	100%
+	{
+		-moz-transform:translateX(0);
+	}
+}
+
+@-ms-keyframes sco-animation-moveLeftHalf
+{
+	0%
+	{
+		-ms-transform:translateX(-100%);
+	}
+	100%
+	{
+		-ms-transform:translateX(0);
+	}
+}
+
+@-o-keyframes sco-animation-moveLeftHalf
+{
+	0%
+	{
+		-o-transform:translateX(-100%);
+	}
+	100%
+	{
+		-o-transform:translateX(0);
+	}
+}
+
+@-webkit-keyframes sco-animation-moveLeftHalf
+{
+	0%
+	{
+		-webkit-transform:translateX(-100%);
+	}
+	100%
+	{
+		-webkit-transform:translateX(0);
+	}
+}
+
+@keyframes sco-animation-moveLeftHalf
+{
+	0%
+	{
+		transform:translateX(-100%);
+	}
+	100%
+	{
+		transform:translateX(0);
+	}
+}
+
+
+/*--------------------
+$ PA ANIMATIONS - MOVE RIGHT HALF $
+--------------------*/
+@-moz-keyframes sco-animation-moveRightHalf
+{
+	0%
+	{
+		-moz-transform:translateX(200%);
+	}
+	100%
+	{
+		-moz-transform:translateX(100%);
+	}
+}
+
+@-ms-keyframes sco-animation-moveRightHalf
+{
+	0%
+	{
+		-ms-transform:translateX(200%);
+	}
+	100%
+	{
+		-ms-transform:translateX(100%);
+	}
+}
+
+@-o-keyframes sco-animation-moveRightHalf
+{
+	0%
+	{
+		-o-transform:translateX(200%);
+	}
+	100%
+	{
+		-o-transform:translateX(100%);
+	}
+}
+
+@-webkit-keyframes sco-animation-moveRightHalf
+{
+	0%
+	{
+		-webkit-transform:translateX(200%);
+	}
+	100%
+	{
+		-webkit-transform:translateX(100%);
+	}
+}
+
+@keyframes sco-animation-moveRightHalf
+{
+	0%
+	{
+		transform:translateX(200%);
+	}
+	100%
+	{
+		transform:translateX(100%);
+	}
+}
+
+
+/*--------------------
+$ PA ANIMATIONS - TEXT GLOW YELLOW $
+--------------------*/
+@-moz-keyframes sco-animation-textGlowYellow
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.8);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.4);
+	}
+}
+
+@-ms-keyframes sco-animation-textGlowYellow
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.8);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.4);
+	}
+}
+
+@-o-keyframes sco-animation-textGlowYellow
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.8);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.4);
+	}
+}
+
+@-webkit-keyframes sco-animation-textGlowYellow
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.8);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.4);
+	}
+}
+
+@keyframes sco-animation-textGlowYellow
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.8);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(254,229,0,.4);
+	}
+}
+
+
+/*--------------------
+$ PA ANIMATIONS - TEXT GLOW DARK $
+--------------------*/
+@-moz-keyframes sco-animation-textGlowDark
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.5);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.4);
+	}
+}
+
+@-ms-keyframes sco-animation-textGlowDark
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.5);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.4);
+	}
+}
+
+@-o-keyframes sco-animation-textGlowDark
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.5);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.4);
+	}
+}
+
+@-webkit-keyframes sco-animation-textGlowDark
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.5);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.4);
+	}
+}
+
+@keyframes sco-animation-textGlowDark
+{
+	0%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.5);
+	}
+	100%
+	{
+		text-shadow:0 0 10px rgba(0,0,0,.4);
+	}
+}
+
+
+/*--------------------
+$ PA ANIMATIONS ASSIGNMENT $
+--------------------*/
+@media screen and (min-width:768px)
+{
+	.cssanimations .sco-m-pa__outer__inner-container__bar
+	{
+		-webkit-animation:none;
+		   -moz-animation:none;
+		    -ms-animation:none;
+		     -o-animation:none;
+		        animation:none;
+	}
+
+	.cssanimations .sco-m-pa .sco-m-pa__outer__inner-container__bar--left
+	{
+		-webkit-animation:sco-animation-moveLeftHalf .75s both;
+		   -moz-animation:sco-animation-moveLeftHalf .75s both;
+		    -ms-animation:sco-animation-moveLeftHalf .75s both;
+		     -o-animation:sco-animation-moveLeftHalf .75s both;
+		        animation:sco-animation-moveLeftHalf .75s both;
+	}
+
+	.cssanimations .sco-m-pa .sco-m-pa__outer__inner-container__bar--right
+	{
+		-webkit-animation:sco-animation-moveRightHalf .75s both;
+		   -moz-animation:sco-animation-moveRightHalf .75s both;
+		    -ms-animation:sco-animation-moveRightHalf .75s both;
+		     -o-animation:sco-animation-moveRightHalf .75s both;
+		        animation:sco-animation-moveRightHalf .75s both;
+	}
+
+	.cssanimations .sco-m-pa__outer__inner-container__message__icon .icon-mic
+	{
+		-webkit-animation:sco-animation-textGlowDark 1s infinite alternate forwards;
+		   -moz-animation:sco-animation-textGlowDark 1s infinite alternate forwards;
+		    -ms-animation:sco-animation-textGlowDark 1s infinite alternate forwards;
+		     -o-animation:sco-animation-textGlowDark 1s infinite alternate forwards;
+		        animation:sco-animation-textGlowDark 1s infinite alternate forwards;
+	}
+}

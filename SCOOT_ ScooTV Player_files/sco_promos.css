@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO PROMOS
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO PROMOS $
+$ SCO PROMOS LIST $
+	$ SCO PROMOS LIST MEDIA QUERIES $
+$ SCO PROMO $
+	$ SCO PROMO LINKS $
+	$ SCO BESPOKE PROMOS $
+	$ SCO PROMO MEDIA QUERIES $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ SCO PROMOS $
+--------------------*/
+.sco-m-promos
+{
+	position:relative;
+}
+
+
+/*--------------------
+$ SCO PROMOS LIST $
+--------------------*/
+.sco-m-promos ul.sco-m-promos__list
+{
+	margin-bottom:0;
+}
+
+.sco-m-promos ul.sco-m-promos__list > li
+{
+	background:rgb(248,248,248);
+	background:-moz-linear-gradient(top,  rgb(248,248,248) 0%, rgb(227,227,227) 54%, rgb(204,204,204) 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(248,248,248)), color-stop(54%,rgb(227,227,227)), color-stop(100%,rgb(204,204,204)));
+	background:-webkit-linear-gradient(top,  rgb(248,248,248) 0%,rgb(227,227,227) 54%,rgb(204,204,204) 100%);
+	background:-o-linear-gradient(top,  rgb(248,248,248) 0%,rgb(227,227,227) 54%,rgb(204,204,204) 100%);
+	background:-ms-linear-gradient(top,  rgb(248,248,248) 0%,rgb(227,227,227) 54%,rgb(204,204,204) 100%);
+	background:linear-gradient(to bottom,  rgb(248,248,248) 0%,rgb(227,227,227) 54%,rgb(204,204,204) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#cccccc',GradientType=0 );
+	border:1px solid rgb(215,215,215);
+	margin-bottom:5px;
+}
+
+
+/*--------------------
+$ SCO PROMOS LIST MEDIA QUERIES $
+--------------------*/
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-promos
+	{
+		background:rgb(248,248,248);
+		background:-moz-linear-gradient(top,  rgb(248,248,248) 0%, rgb(227,227,227) 54%, rgb(204,204,204) 100%);
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(248,248,248)), color-stop(54%,rgb(227,227,227)), color-stop(100%,rgb(204,204,204)));
+		background:-webkit-linear-gradient(top,  rgb(248,248,248) 0%,rgb(227,227,227) 54%,rgb(204,204,204) 100%);
+		background:-o-linear-gradient(top,  rgb(248,248,248) 0%,rgb(227,227,227) 54%,rgb(204,204,204) 100%);
+		background:-ms-linear-gradient(top,  rgb(248,248,248) 0%,rgb(227,227,227) 54%,rgb(204,204,204) 100%);
+		background:linear-gradient(to bottom,  rgb(248,248,248) 0%,rgb(227,227,227) 54%,rgb(204,204,204) 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#cccccc',GradientType=0 );
+		border:1px solid rgb(215,215,215);
+		border-radius:10px;
+		overflow:hidden;
+	}
+
+	body.ie9 .sco-m-promos
+	{
+		filter:none;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li
+	{
+		background:none;
+		filter:none;
+		border:none;
+		margin-bottom:0;
+		border-bottom:1px solid rgb(215,215,215);
+		border-right:1px solid rgb(215,215,215);
+		float:left;
+		width:50%;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(2),
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(4)
+	{
+		border-right:none;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(3),
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(4)
+	{
+		border-bottom:none;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(1) .sco-m-promo
+	{
+		border-top-left-radius:10px;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(2) .sco-m-promo
+	{
+		border-top-right-radius:10px;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(3) .sco-m-promo
+	{
+		border-bottom-left-radius:10px;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(4) .sco-m-promo
+	{
+		border-bottom-right-radius:10px;
+	}
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-promos ul.sco-m-promos__list > li
+	{
+		border-bottom:none;
+		width:25%;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(2)
+	{
+		border-right:1px solid rgb(215,215,215);
+	}
+}
+
+
+/*--------------------
+$ SCO PROMO $
+--------------------*/
+.sco-m-promos .sco-m-promo
+{
+	display:block;
+	overflow:hidden;
+	position:relative;
+	text-decoration:none;
+}
+
+.sco-m-promos .sco-m-promo > span
+{
+	display:block;
+	min-height:54px;
+	padding:12px 5px 5px 100px;
+}
+
+.sco-m-promos .sco-m-promo .sco-m-promos__clipart
+{
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	display:block;
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+.sco-m-promos .sco-m-promo em
+{
+	display:block;
+	font-style:normal;
+	position:relative;
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-promos a.sco-m-promo > span.sco-m-promos-extra-pad-l
+	{
+		padding-left:80px;
+	}
+}
+
+
+/*--------------------
+$ SCO PROMO LINKS $
+--------------------*/
+.sco-m-promos a.sco-m-promo:after
+{
+	background:url('../../img/sco_promos/promo_link_btn.png') no-repeat center right;
+	content:"";
+	height:23px;
+	margin-top:-12px;
+	position:absolute;
+	right:13px;
+	top:50%;
+	width:23px;
+}
+
+.sco-m-promos a.sco-m-promo:focus,
+.sco-m-promos a.sco-m-promo:hover
+{
+	background:rgba(0,0,0,.1);
+}
+
+.sco-m-promos a.sco-m-promo > span
+{
+	padding-right:40px;
+}
+
+
+/*--------------------
+$ SCO BESPOKE PROMOS $
+--------------------*/
+.sco-m-promos .sco-m-promo--power .sco-m-promos__clipart
+{
+	background-image:url('../../img/sco_promos/power.png');
+	background-position:15px center;
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-promos .sco-m-promo--power > span
+	{
+		padding-left:50px;
+	}
+}
+
+.sco-m-promos .sco-m-promo--shopping .sco-m-promos__clipart
+{
+	background-image:url('../../img/sco_promos/shopping.png');
+	background-size:auto 100%;
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-promos .sco-m-promo--shopping > span
+	{
+		padding-left:60px;
+	}
+}
+
+.sco-m-promos .sco-m-promo--signup .sco-m-promos__clipart
+{
+	background-image:url('../../img/sco_promos/signup.png');
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-promos .sco-m-promo--signup > span
+	{
+		padding-left:70px;
+	}
+}
+
+.sco-m-promos .sco-m-promo--upgrade .sco-m-promos__clipart
+{
+	background-image:url('../../img/sco_promos/upgrade.png');
+	background-position:15px center;
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-promos .sco-m-promo--upgrade > span
+	{
+		padding-left:85px;
+	}
+}
+
+
+/*--------------------
+$ SCO PROMO MEDIA QUERIES $
+--------------------*/
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(1) .sco-m-promo
+	{
+		border-top-left-radius:10px;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(2) .sco-m-promo
+	{
+		border-top-right-radius:10px;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(3) .sco-m-promo
+	{
+
+		border-bottom-left-radius:10px;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(4) .sco-m-promo
+	{
+		border-bottom-right-radius:10px;
+	}
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(1) .sco-m-promo
+	{
+		border-bottom-left-radius:10px;
+		border-top-left-radius:10px;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(2) .sco-m-promo
+	{
+		border-radius:0;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(3) .sco-m-promo
+	{
+		border-radius:0;
+	}
+
+	.sco-m-promos ul.sco-m-promos__list > li:nth-child(4) .sco-m-promo
+	{
+		border-bottom-right-radius:10px;
+		border-top-right-radius:10px;
+	}
+}

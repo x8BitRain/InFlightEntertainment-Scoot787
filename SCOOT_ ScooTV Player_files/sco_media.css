@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO MEDIA
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO MEDIA $
+$ SCO MOBILE PLAYER PAGE $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ SCO MEDIA $
+--------------------*/
+.sco-m-mobile-play-btn
+{
+    background-image: url('../../../vendor_media/media_player_skinning/img/big-play-button.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/*--------------------
+$ SCO MOBILE PLAYER PAGE $
+--------------------*/
+body.ae-page-active-scootv_player_mobile header.sco-m-header 
+{
+	position: static;
+}
+
+body.ae-page-active-scootv_player_mobile main.sco-l-structure
+{
+	margin-top: 0;
+}
+
+body.ae-page-active-scootv_player_mobile nav.sco-m-nav-mobile__list
+{
+    margin-left: -110%;
+}

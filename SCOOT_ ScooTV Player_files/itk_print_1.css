@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+PRINT v1
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ RESETS $
+$ FONTS $
+$ TEXT $
+$ IMAGES $
+--------------------*/
+
+
+/*--------------------
+$ RESETS $
+--------------------*/
+*
+{
+	background:none !important;
+	float:none !important;
+}
+
+*[style]
+{
+	height:auto !important;
+	width:auto !important;
+}
+
+audio,
+canvas,
+form,
+object,
+video,
+#itk-wrapper .itk-p-hide
+{
+	display:none !important;
+}
+
+img,
+tr
+{
+	page-break-inside:avoid;
+}
+
+
+/*--------------------
+$ FONTS $
+--------------------*/
+body
+{
+	font-family:Tahoma,Arial,Helvetica,sans-serif;
+}
+
+
+/*--------------------
+$ TEXT $
+--------------------*/
+body
+{
+	font-size:12px;
+}
+
+a:after
+{
+	content:" (" attr(href) ") ";
+}
+
+abbr:after
+{
+	content:" (" attr(title) ")";
+}
+
+img:after
+{
+	content:" (" attr(alt) ")";
+}
+
+p,
+li
+{
+	text-align:justify;
+}
+
+
+/*--------------------
+$ IMAGES $
+--------------------*/
+img
+{
+	max-width:100% !important;
+}

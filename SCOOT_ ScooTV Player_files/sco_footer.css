@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO FOOTER
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO FOOTER $
+$ SCO FOOTER LIST $
+$ SCO FOOTER TEXT $
+$ SCO FOOTER MEDIA QUERIES $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ SCO FOOTER $
+--------------------*/
+.sco-m-footer
+{
+	padding-top:1em;
+}
+
+
+/*--------------------
+$ SCO FOOTER LIST $
+--------------------*/
+.sco-m-footer .itk-m-list-hor > li
+{
+	border-right:1px solid rgb(255,255,255);
+	margin-right:10px;
+	padding-right:10px;
+}
+
+.sco-m-footer .itk-m-list-hor > li:last-child
+{
+	border-right:none;
+}
+
+.sco-m-footer a
+{
+	text-decoration:none;
+}
+
+
+/*--------------------
+$ SCO FOOTER TEXT $
+--------------------*/
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.sco-m-footer p
+	{
+		text-align:right;
+	}
+}
+
+
+/*--------------------
+$ SCO FOOTER MEDIA QUERIES $
+--------------------*/
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	.sco-m-footer
+	{
+		background-color:rgb(0,0,0);
+		bottom:0;
+		left:0;
+		position:fixed;
+		width:100%;
+	}
+}

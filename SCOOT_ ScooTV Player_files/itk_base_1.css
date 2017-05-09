@@ -1,0 +1,338 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+BASE v1
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ RESETS $
+$ FONTS $
+$ TEXT $
+$ BLOCKQUOTE $
+$ HEADERS $
+$ LINKS $
+$ IMAGES $
+$ LISTS $
+	$ DEFINITION LIST $
+	$ ORDERED LIST $
+	$ UNORDERED LIST $
+$ OBJECTS $
+$ TABLES $
+$ CONTROL CLUSTERS $
+	$ CURSOR CONTROL $
+	$ MARGIN CONTROL $
+--------------------*/
+
+
+/*--------------------
+$ RESETS $
+--------------------*/
+*
+{
+	margin:0;
+	padding:0;
+}
+
+br
+{
+	display:none;
+}
+
+hr
+{
+	clear:both;
+	display:block;
+	margin:21px 0;
+}
+
+pre
+{
+	overflow:auto;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary
+{
+	display:block;
+}
+
+audio,
+canvas,
+progress,
+video
+{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+:active,
+:focus,
+:hover
+{
+	outline:none;
+}
+
+
+/*--------------------
+$ FONTS $
+--------------------*/
+body
+{
+	font-family:sans-serif;
+}
+
+
+/*--------------------
+$ TEXT $
+--------------------*/
+html
+{
+	font-family:sans-serif;
+	font-size:62.5%;
+	-webkit-font-smoothing:antialiased;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+
+body
+{
+	line-height:1.4;
+	text-align:left;
+}
+
+code,
+kbd,
+pre,
+samp
+{
+	font-size:1em;
+}
+
+abbr[title]
+{
+	border-bottom:1px dotted;
+}
+
+
+/*--------------------
+$ BLOCKQUOTE $
+--------------------*/
+blockquote
+{
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:1em;
+}
+
+blockquote p::before
+{
+	content:open-quote;
+}
+
+blockquote p::after
+{
+	content:close-quote;
+}
+
+
+/*--------------------
+$ HEADERS $
+--------------------*/
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6
+{
+	font-size:1em;
+}
+
+
+/*--------------------
+$ LINKS $
+--------------------*/
+a
+{
+	word-wrap:break-word;
+}
+
+h1 a:focus,
+h1 a:hover,
+h2 a:focus,
+h2 a:hover,
+h3 a:focus,
+h3 a:hover,
+h4 a:focus,
+h4 a:hover,
+h5 a:focus,
+h5 a:hover,
+h6 a:focus,
+h6 a:hover
+{
+	text-decoration:none;
+}
+
+
+/*--------------------
+$ IMAGES $
+--------------------*/
+img
+{
+	display:block;
+	max-width:100%;
+}
+
+a > img
+{
+	border:0;
+	display:inline;
+}
+
+
+/*--------------------
+$ LISTS $
+--------------------*/
+
+
+/*--------------------
+$ DEFINITION LIST $
+--------------------*/
+dt
+{
+	font-weight:700;
+}
+
+
+/*--------------------
+$ ORDERED LIST $
+--------------------*/
+ol
+{
+	list-style-type:decimal;
+	padding-left:30px;
+}
+
+
+/*--------------------
+$ UNORDERED LIST $
+--------------------*/
+ul
+{
+	list-style-type:disc;
+	padding-left:30px;
+}
+
+
+/*--------------------
+$ OBJECTS $
+--------------------*/
+embed,
+object
+{
+	display:block;
+}
+
+audio:not([controls])
+{
+	display:none;
+	height:0;
+}
+
+svg:not(:root)
+{
+	overflow:hidden;
+}
+
+
+/*--------------------
+$ TABLES $
+--------------------*/
+table
+{
+	border-collapse:collapse;
+	width:100%;
+}
+
+th,
+td
+{
+	border:1px solid rgb(0,0,0);
+	padding:3px;
+	text-align:left;
+	vertical-align:top;
+}
+
+caption
+{
+	text-align:left;
+}
+
+
+/*--------------------
+----------------------
+$ CONTROL CLUSTERS $
+----------------------
+--------------------*/
+
+
+/*--------------------
+$ CURSOR CONTROL $
+--------------------*/
+abbr,
+acronym,
+dfn
+{
+	cursor:help;
+}
+
+a,
+label
+{
+	cursor:pointer;
+}
+
+textarea
+{
+	cursor:text;
+}
+
+
+/*--------------------
+$ MARGIN CONTROL $
+--------------------*/
+blockquote,
+details,
+dl,
+form,
+img,
+object,
+ol,
+p,
+table,
+ul
+{
+	margin-bottom:1em;
+}
+
+dd,
+ol > li,
+ul > li
+{
+	margin-bottom:0.25em;
+}

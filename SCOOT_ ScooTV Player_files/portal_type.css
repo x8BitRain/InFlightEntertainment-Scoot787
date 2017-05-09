@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+TYPE
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ TYPE BOILERPLATE $
+$ HEADERS $
+	$ ICON HEADER $
+$ TEXT SIZES $
+$ COLOURS $
+$ DECORATION $
+$ TEXT SHADOW $
+$ TEXT FAMILY $
+$ FORM $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../img/'
+--------------------*/
+
+
+/*--------------------
+$ TYPE BOILERPLATE $
+----------------------
+                          Mobile                     Tablet
+----------------------------------------------------------------------
+Base size                 12px Conv_AvenirLTStd-Roman               12 Conv_AvenirLTStd-Roman
+H1                        20px Conv_AvenirLTStd-Roman               39 Conv_AvenirLTStd-Roman
+H2                        15px Conv_AvenirLTStd-Black               30 Conv_AvenirLTStd-Black
+H3                        14px Conv_AvenirLTStd-Roman               14 Conv_AvenirLTStd-Roman
+sco-t-10                  10px Conv_AvenirLTStd-Roman               10 Conv_AvenirLTStd-Roman
+sco-t-11                  11px Conv_AvenirLTStd-Roman               11 Conv_AvenirLTStd-Roman
+sco-t-12                  12px Conv_AvenirLTStd-Roman               12 Conv_AvenirLTStd-Roman
+sco-t-15                  15px Conv_AvenirLTStd-Roman               15 Conv_AvenirLTStd-Roman
+sco-t-20                  20px Conv_AvenirLTStd-Roman               20 Conv_AvenirLTStd-Roman
+--------------------*/
+@font-face
+{
+	font-family:'Conv_AvenirLTStd-Book';
+	font-weight:normal;
+	font-style:normal;
+	src:url('../../vendor_media/font/AvenirLTStd-Book.eot');
+	src:url('../../vendor_media/font/AvenirLTStd-Book.woff') format('woff'),
+		url('../../vendor_media/font/AvenirLTStd-Book.ttf') format('truetype'),
+		url('../../vendor_media/font/AvenirLTStd-Book.svg') format('svg');
+}
+
+@font-face
+{
+	font-family:'Conv_AvenirLTStd-Heavy';
+	font-style:normal;
+    font-weight:normal;
+	src:url('../../vendor_media/font/AvenirLTStd-Heavy.eot');
+	src:url('../../vendor_media/font/AvenirLTStd-Heavy.woff') format('woff'),
+		url('../../vendor_media/font/AvenirLTStd-Heavy.ttf') format('truetype'),
+		url('../../vendor_media/font/AvenirLTStd-Heavy.svg') format('svg');
+}
+
+@font-face
+{
+	font-family:'Conv_AvenirLTStd-Roman';
+	font-style:normal;
+    font-weight:normal;
+	src:url('../../vendor_media/font/AvenirLTStd-Roman.eot');
+	src:url('../../vendor_media/font/AvenirLTStd-Roman.woff') format('woff'),
+		url('../../vendor_media/font/AvenirLTStd-Roman.ttf') format('truetype'),
+		url('../../vendor_media/font/AvenirLTStd-Roman.svg') format('svg');
+}
+
+@font-face
+{
+	font-family:'Conv_AvenirLTStd-Black';
+	font-style:normal;
+    font-weight:normal;
+	src:url('../../vendor_media/font/AvenirLTStd-Black.eot');
+	src:url('../../vendor_media/font/AvenirLTStd-Black.woff') format('woff'),
+		url('../../vendor_media/font/AvenirLTStd-Black.ttf') format('truetype'),
+		url('../../vendor_media/font/AvenirLTStd-Black.svg') format('svg');
+}
+
+body
+{
+	font-family:'Conv_AvenirLTStd-Roman',Helvetica,Arial, sans-serif;
+	font-size:13px;
+	font-size:1.3rem;
+	line-height:1.6;
+}
+
+p
+{
+	text-align:justify;
+}
+
+
+/*--------------------
+$ HEADERS $
+----------------------*/
+h1,
+.sco-t-h1
+{
+	font-size:20px;
+	font-size:2rem;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	text-transform:uppercase;
+	text-shadow:0 0 5px rgba(0,0,0,.1);
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	h1,
+	.sco-t-h1
+	{
+		font-size:39px;
+		font-size:3.9rem;
+	}
+}
+
+h2,
+.sco-t-h2
+{
+	font-size:15px;
+	font-size:1.5rem;
+	font-family:'Conv_AvenirLTStd-Black';
+	font-style:normal;
+	font-weight:normal;
+	line-height:1.2;
+	text-shadow:0 0 5px rgba(0,0,0,.1);
+	text-transform:uppercase;
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	h2,
+	.sco-t-h2
+	{
+		font-size:20px;
+		font-size:2rem;
+	}
+}
+
+h3,
+.sco-t-h3
+{
+	font-size:14px;
+	font-size:1.4rem;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1.2;
+	text-shadow:0 0 5px rgba(0,0,0,.1);
+	text-transform:uppercase;
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{
+	h3,
+	.sco-t-h3
+	{
+		font-size:14px;
+		font-size:1.4rem;
+	}
+}
+
+h4,
+.sco-t-h4,
+h5,
+.sco-t-h5,
+h6,
+.sco-t-h6
+{
+	font-size:15px;
+	font-size:1.5rem;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1.2;
+	text-shadow:0 0 5px rgba(0,0,0,.1);
+}
+
+
+/*--------------------
+$ ICON HEADER $
+--------------------*/
+.sco-t-logo-wifi
+{
+	background-image:url('../img/content/icons/icon_wifi_1.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+	padding-top:60px;
+	text-align:center;
+}
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{
+	.sco-t-logo-wifi
+	{
+		background-position:left center;
+		min-height:24px;
+		padding:18px 0 18px 100px;
+		text-align:left;
+	}
+}
+
+
+/*--------------------
+$ TEXT SIZES $
+--------------------*/
+body .sco-t-9
+{
+	font-size:9px;
+	font-size:0.9rem;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+}
+
+body .sco-t-10
+{
+	font-size:10px;
+	font-size:1rem;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+}
+
+body .sco-t-11
+{
+	font-size:11px;
+	font-size:1.1rem;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1.2;
+}
+
+body .sco-t-12
+{
+	font-size:12px;
+	font-size:1.2rem;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1.2;
+}
+
+body .sco-t-15
+{
+	font-size:15px;
+	font-size:1.5rem;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1.2;
+}
+
+body .sco-t-20
+{
+	font-size:20px;
+	font-size:2rem;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1.2;
+}
+
+
+/*--------------------
+$ COLOURS $
+--------------------*/
+.sco-t-white,
+a.sco-t-white,
+
+a:focus .sco-t-white-active,
+a:hover .sco-t-white-active,
+a.sco-t-white-active:focus,
+a.sco-t-white-active:hover,
+
+.sco-m-tab .sco-m-tab__navigation a
+{
+	color:rgb(255,255,255);
+}
+
+.sco-t-red,
+a.sco-t-red
+{
+	color:rgb(255,0,0);
+}
+
+.sco-t-brand1,
+a.sco-t-brand1,
+#itk-wrapper a.sco-t-brand1-active.current,
+a.sco-t-brand1-active:focus,
+a.sco-t-brand1-active:hover
+{
+	color:rgb(254,229,0);
+}
+
+.sco-t-brand2,
+a.sco-t-brand2,
+
+a:focus .sco-t-brand2-active,
+a:hover .sco-t-brand2-active,
+a.sco-t-brand2:focus,
+a.sco-t-brand2:hover,
+
+.sco-m-tab .sco-m-tab__navigation-toggle:focus,
+.sco-m-tab .sco-m-tab__navigation-toggle:hover,
+.sco-m-tab .sco-m-tab__navigation a.current,
+.sco-m-tab .sco-m-tab__navigation a:focus,
+.sco-m-tab .sco-m-tab__navigation a:hover
+{
+	color:rgb(0,0,0);
+}
+
+.sco-t-brand3,
+a.sco-t-brand3,
+
+
+a.sco-t-brand3:focus,
+a.sco-t-brand3:hover
+{
+	color:rgb(0,150,185);
+}
+
+/*--------------------
+$ DECORATION $
+--------------------*/
+.sco-t-no-und,
+.sco-t-no-und a,
+.sco-t-no-und a:hover,
+.sco-t-no-und a:focus,
+.sco-t-no-und a:active
+{
+	text-decoration:none !important;
+}
+
+.sco-t-uppercase
+{
+	text-transform:uppercase;
+}
+
+.sco-t-normal-case
+{
+	text-transform:none;
+}
+
+.sco-t-line-height-1-8
+{
+	line-height:1.8;
+}
+
+
+/*--------------------
+$ TEXT SHADOW $
+--------------------*/
+.sco-t-text-shadow-1
+{
+	text-shadow:0 0 5px rgba(0,0,0,.1);
+}
+
+.sco-t-text-shadow-2
+{
+	text-shadow:0 -1px 0 rgba(255,255,255,.6);
+}
+
+.sco-m-figure figcaption *
+{
+	font-size:18px;
+	font-size:1.8rem;
+}
+
+.active
+{
+	border:2px solid red;
+}
+
+
+/*--------------------
+$ TEXT FAMILY $
+--------------------*/
+body .sco-t-avenir-heavy
+{
+	font-family:'Conv_AvenirLTStd-Heavy';
+}
+
+body .sco-t-avenir-book
+{
+	font-family:'Conv_AvenirLTStd-Book';
+}
+
+body .sco-t-avenir-black
+{
+	font-family:'Conv_AvenirLTStd-Black';
+}
+
+
+/*--------------------
+$ FORM $
+--------------------*/
+.sco-t-error
+{
+	color:rgb(195,0,0);
+}
+
+.sco-t-sup
+{
+	font-size:10px;
+	font-size:1rem;
+}

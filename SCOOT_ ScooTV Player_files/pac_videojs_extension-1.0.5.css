@@ -1,0 +1,175 @@
+/*--------------------
+ELEMENT DISPLAY
+--------------------*/
+body .pana-m-video-player .vjs-inactive,
+body .pana-m-video-player .vjs-time-controls,
+body .pana-m-video-player .vjs-mute-control,
+body .pana-m-video-player .vjs-volume-control,
+body .pana-m-video-player .vjs-default-skin .vjs-mute-control div,
+body .pana-m-video-player .vjs-default-skin .vjs-mute-control.vjs-vol-0 div,
+body .pana-m-video-player .vjs-default-skin .vjs-mute-control.vjs-vol-1 div,
+body .pana-m-video-player .vjs-default-skin .vjs-mute-control.vjs-vol-2 div,
+body .pana-m-video-player .vjs-default-skin .vjs-mute-control.vjs-vol-3 div
+{
+	display:none;
+}
+
+body .pana-m-video-player .vjs-next-control,
+body .pana-m-video-player .vjs-next-control div,
+body .pana-m-video-player .vjs-previous-control,
+body .pana-m-video-player .vjs-previous-control div,
+body .pana-m-video-player .vjs-time-controls
+{
+	display:none; visibility:hidden;
+}
+
+body .pana-m-video-player .video-js
+{
+	height:100% !important;
+}
+
+body .pana-m-video-player .vjs-controls
+{
+	background:#5d5d5d;
+	background:-moz-linear-gradient(top,  #5d5d5d 0%, #1e1e1e 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d5d5d), color-stop(100%,#1e1e1e));
+	background:-webkit-linear-gradient(top,  #5d5d5d 0%,#1e1e1e 100%);
+	background:-o-linear-gradient(top,  #5d5d5d 0%,#1e1e1e 100%);
+	background:-ms-linear-gradient(top,  #5d5d5d 0%,#1e1e1e 100%);
+	background:linear-gradient(to bottom,  #5d5d5d 0%,#1e1e1e 100%);
+	color:#fff;
+	height:40px;
+}
+
+body .pana-m-video-player .vjs-poster
+{
+	max-height:none;
+}
+
+body .pana-m-video-player .vjs-default-skin .vjs-big-play-button
+{
+	-webkit-box-shadow:none;
+	   -moz-box-shadow:none;
+	        box-shadow:none;
+}
+
+
+/*--------------------
+PLAY CONTROL
+--------------------*/
+body .pana-m-video-player .vjs-default-skin .vjs-play-control
+{
+	height:17px;
+	padding-left:0;
+	right:auto;
+	top:10px;
+	left:10px;
+	width:17px;
+}
+
+body .pana-m-video-player .vjs-paused .vjs-play-control div,
+body .pana-m-video-player .vjs-playing .vjs-play-control div
+{
+	height:17px;
+	margin:0;
+	width:16px;
+}
+
+body .pana-m-video-player .vjs-paused .vjs-play-control div
+{
+	background:url('../img/play-video.png') 0 0;
+}
+
+body .pana-m-video-player .vjs-playing .vjs-play-control div
+{
+	background:url('../img/pause.png') -25px 0;
+}
+
+
+/*--------------------
+PROGRESS CONTROL
+--------------------*/
+body .pana-m-video-player div.vjs-progress-control
+{
+	background:#5d5d5d; /* Old browsers */
+	background:-moz-linear-gradient(top,  #5d5d5d 0%, #1e1e1e 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d5d5d), color-stop(100%,#1e1e1e));
+	background:-webkit-linear-gradient(top,  #5d5d5d 0%,#1e1e1e 100%);
+	background:-o-linear-gradient(top,  #5d5d5d 0%,#1e1e1e 100%);
+	background:-ms-linear-gradient(top,  #5d5d5d 0%,#1e1e1e 100%);
+	background:linear-gradient(to bottom,  #5d5d5d 0%,#1e1e1e 100%);
+	-webkit-border-radius:0.6em;
+	   -moz-border-radius:0.6em;
+	        border-radius:0.6em;
+	left:42px;
+	right:40px;
+	height:10px;
+	top:13px;
+}
+
+body .ae-no-html5-partial-video .pana-m-video-player div.vjs-progress-control
+{
+	width:auto;
+}
+
+body .pana-m-video-player .vjs-progress-holder
+{
+	-webkit-border-radius:0.6em;
+	   -moz-border-radius:0.6em;
+	        border-radius:0.6em;
+	background:#5d5d5d;
+}
+
+body .pana-m-video-player .vjs-load-progress
+{
+	background:#666;
+	background:-moz-linear-gradient(top, #333, #666);
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#666));
+	background:-webkit-linear-gradient(top, #333, #666);
+	background:-o-linear-gradient(top, #333, #666);
+	background:-ms-linear-gradient(top, #333, #666);
+	background:linear-gradient(top, #333, #666);
+	-webkit-border-radius:0.6em;
+	   -moz-border-radius:0.6em;
+	        border-radius:0.6em;
+}
+
+body .pana-m-video-player .vjs-play-progress
+{
+	background:rgb(27,117,187);
+	-webkit-border-radius:0.6em;
+	   -moz-border-radius:0.6em;
+	        border-radius:0.6em;
+}
+
+body .pana-m-video-player div.vjs-seek-handle
+{
+	background:url('../img/seek-handle.png') 0 0 no-repeat;
+	-webkit-box-shadow:none;
+	   -moz-box-shadow:none;
+	        box-shadow:none;
+	margin-top:-0.3em;
+	margin-left:-0.8em;
+	height:18px;
+	width:18px;
+}
+
+
+/*--------------------
+FULLSCREEN CONTROL
+--------------------*/
+body .pana-m-video-player .vjs-fullscreen-control
+{
+	cursor:pointer !important;
+	right:10px;
+	top:10px;
+	width:20px;
+}
+
+body .pana-m-video-player .vjs-fullscreen-control div
+{
+	background:url('../img/fullscreen-video.png') no-repeat 0 0;
+	height:21px;
+	margin:0;
+	width:20px;
+}

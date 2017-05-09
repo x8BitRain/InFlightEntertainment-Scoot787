@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+SCO MEDIA AD
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ SCO MEDIA AD $
+$ SCO ANDROID DOWNLOAD BANNER $
+$ SCO QUICK FACTS $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ SCO MEDIA AD $
+--------------------*/
+.sco-m-media-ad
+{
+	display:block;
+	max-width:300px;
+}
+
+.sco-m-media-ad:focus,
+.sco-m-media-ad:hover
+{
+	box-shadow:inset 0 0 2px 2px rgba(0,0,0,.2);
+}
+
+.sco-m-media-ad .sco-m-media-ad__inner
+{
+	border:1px dashed rgb(255,255,255);
+	padding:20px;
+	position:relative;
+}
+
+.sco-m-media-ad .sco-m-media-ad__bracket
+{
+	display:block;
+	height:15px;
+	position:absolute;
+	width:15px;
+}
+
+.sco-m-media-ad .sco-m-media-ad__bracket--bl
+{
+	border-bottom:4px solid rgb(255,255,255);
+	border-left:4px solid rgb(255,255,255);
+	bottom:-2px;
+	left:-2px;
+}
+
+.sco-m-media-ad .sco-m-media-ad__bracket--br
+{
+	border-bottom:4px solid rgb(255,255,255);
+	border-right:4px solid rgb(255,255,255);
+	bottom:-2px;
+	right:-2px;
+}
+
+.sco-m-media-ad .sco-m-media-ad__bracket--tl
+{
+	border-left:4px solid rgb(255,255,255);
+	border-top:4px solid rgb(255,255,255);
+	left:-2px;
+	top:-2px;
+}
+
+.sco-m-media-ad .sco-m-media-ad__bracket--tr
+{
+	border-right:4px solid rgb(255,255,255);
+	border-top:4px solid rgb(255,255,255);
+	right:-2px;
+	top:-2px;
+}
+
+h2.sco-m-media-ad 
+{
+	font-size:15px;
+	font-size:1.5rem;
+}
+
+
+/*-------------------------------
+$ SCO ANDROID DOWNLOAD BANNER $
+--------------------------------*/
+.sco-scootv-banner{
+	height: 150px;
+	width: 300px;
+	display:inline-block;
+}
+.sco-scootv-banner.sco-m-scootv-buynow-cn
+{
+	background:url('../../img/content/entertainment/scootv_buynow_CN.jpg');
+}
+
+.sco-scootv-banner.sco-m-scootv-buynow-en
+{
+	background:url('../../img/content/entertainment/scootv_buynow_EN.jpg');
+}
+
+.sco-scootv-banner.sco-m-scootv-buynow-jp
+{
+	background:url('../../img/content/entertainment/scootv_buynow_JP.jpg');
+}
+
+.sco-m-scootv-android
+{
+	display:inline-block;
+	height:76px;
+	margin-top:20px;
+	width:280px;
+}
+.sco-m-scootv-android.sco-m-scootv-download-cn
+{
+	background:url('../../img/content/entertainment/android_banner_cn.png');
+
+}
+
+.sco-m-scootv-android.sco-m-scootv-download-en
+{
+	background:url('../../img/content/entertainment/android_banner_en.png');
+}
+
+.sco-m-scootv-android.sco-m-scootv-download-jp
+{
+	background:url('../../img/content/entertainment/android_banner_jp.png');
+	
+}
+
+/*-------------------------------
+$ SCO QUICK FACTS $
+--------------------------------*/
+.sco-m-media-qf{
+	max-width: 400px;
+}

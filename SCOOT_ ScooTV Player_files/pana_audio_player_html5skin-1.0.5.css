@@ -1,0 +1,400 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+PANA AUDIO PLAYER SKIN
+v1
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ PANA AUDIO PLAYER SKIN $
+$ SPRITE MANAGEMENT $
+$ CONTROLS $
+	$ PREVIOUS / PLAY / NEXT / MUTE $
+	$ PROGRESS / VOLUME $
+		$ PROGRESS $
+		$ VOLUME $
+	$ TIME CONTROLS $
+$ CONTROL POSITIONING $
+	$ VOLUME API DISABLED CONTROL POSITIONING $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ PANA AUDIO PLAYER SKIN $
+--------------------*/
+body .pana-m-audio-player .video-js
+{
+	background-color:transparent;
+	height:70px !important;
+	font-size:inherit;
+}
+
+
+/*--------------------
+$ SPRITE MANAGEMENT $
+--------------------*/
+body .pana-m-audio-player .vjs-default-skin .vjs-play-control div,
+body .pana-m-audio-player .vjs-default-skin.vjs-paused .vjs-play-control div,
+body .pana-m-audio-player .vjs-default-skin.vjs-playing .vjs-play-control div,
+body .pana-m-audio-player .vjs-default-skin .vjs-next-control div,
+body .pana-m-audio-player .vjs-default-skin .vjs-previous-control div,
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control div,
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control.vjs-vol-0 div,
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control.vjs-vol-1 div,
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control.vjs-vol-2 div,
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control.vjs-vol-3 div
+{
+	background-image:url(../../img/pana_modules/pana_audio_player_skin/audio_player_skin.png);/*Variable: media-player-controls-sprite*/
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-previous-control div
+{
+	background-position:0 0;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-play-control div,
+body .pana-m-audio-player .vjs-default-skin.vjs-paused .vjs-play-control div
+{
+	background-position:-100px 0;
+}
+
+body .pana-m-audio-player .vjs-default-skin.vjs-playing .vjs-play-control div
+{
+	background-position:-50px 0;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-next-control div
+{
+	background-position:-150px 0;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control div
+{
+	background-position:-350px 0;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control.vjs-vol-0 div
+{
+	background-position:-200px 0;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control.vjs-vol-1 div
+{
+	background-position:-250px 0;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control.vjs-vol-2 div
+{
+	background-position:-300px 0;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control.vjs-vol-3 div
+{
+	background-position:-350px 0;
+}
+
+
+/*--------------------
+$ CONTROLS $
+--------------------*/
+body .pana-m-audio-player .vjs-default-skin .vjs-controls
+{
+	background:transparent;
+	height:100%;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-control
+{
+	float:none;
+	height:28px;
+	margin:0;
+	padding:0;
+	position:absolute;
+	text-align:center;
+	width:28px;
+}
+
+
+/*--------------------
+$ PREVIOUS / PLAY / NEXT / MUTE $
+--------------------*/
+body .pana-m-audio-player .vjs-default-skin .vjs-previous-control div,
+body .pana-m-audio-player .vjs-default-skin .vjs-play-control div,
+body .pana-m-audio-player .vjs-default-skin.vjs-paused .vjs-play-control div,
+body .pana-m-audio-player .vjs-default-skin.vjs-playing .vjs-play-control div,
+body .pana-m-audio-player .vjs-default-skin .vjs-next-control div,
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control div
+{
+	height:100%;
+	margin-bottom:0;
+	margin-top:0;
+	width:28px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-play-control div,
+body .pana-m-audio-player .vjs-default-skin.vjs-paused .vjs-play-control div,
+body .pana-m-audio-player .vjs-default-skin.vjs-playing .vjs-play-control div
+{
+	width:17px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-previous-control,
+body .pana-m-audio-player .vjs-default-skin .vjs-play-control,
+body .pana-m-audio-player .vjs-default-skin .vjs-next-control,
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control
+{
+	margin-top:-14px;
+	top:50%;
+}
+
+
+/*--------------------
+$ PROGRESS / VOLUME $
+--------------------*/
+body .pana-m-audio-player .vjs-default-skin div.vjs-progress-control
+{
+	width:auto;
+}
+
+body .pana-m-audio-player .vjs-default-skin div.vjs-progress-control,
+body .pana-m-audio-player .vjs-default-skin .vjs-volume-control
+{
+	background:rgb(255,255,255);/*Variable: player-scrubber-bar-background*/
+	border:1px solid rgb(170,170,170);/*Variable: player-scrubber-bar-border*/
+	top:50%;
+	height:6px;
+	margin-top:-3px;
+	border-radius:3px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-progress-holder,
+body .pana-m-audio-player .vjs-default-skin .vjs-progress-holder .vjs-play-progress,
+body .pana-m-audio-player .vjs-default-skin .vjs-progress-holder .vjs-load-progress,
+body .pana-m-audio-player .vjs-default-skin .vjs-volume-level,
+body .pana-m-audio-player .vjs-default-skin .vjs-volume-bar
+{
+	height:100%;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-play-progress,
+body .pana-m-audio-player .vjs-default-skin .vjs-volume-level
+{
+
+	background:rgb(170,170,170);/*Variable: player-scrubber-bar-progress-background*/
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-volume-handle,
+body .pana-m-audio-player .vjs-default-skin div.vjs-seek-handle
+{
+	background:rgb(170,170,170);/*Variable: player-scrubber-bar-handle-background*/
+	border:1px solid rgb(0,0,0);/*Variable: player-scrubber-bar-handle-border*/
+	border-radius:3px;
+	box-shadow:none;
+	height:10px;
+	left:0;
+	margin-left:-3px;
+	margin-top:-3px;
+	position:absolute;
+	top:0;
+	width:6px;
+}
+
+
+/*--------------------
+$ PROGRESS $
+--------------------*/
+body .pana-m-audio-player .vjs-default-skin .vjs-progress-holder
+{
+	background:transparent;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-load-progress
+{
+	opacity:1;
+	background:rgb(229,229,229);/*Variable: player-scrubber-bar-load-background*/
+}
+
+
+/*--------------------
+$ VOLUME $
+--------------------*/
+body .pana-m-audio-player .vjs-default-skin .vjs-volume-control
+{
+	width:50px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-volume-bar
+{
+	background:transparent;
+	margin:0;
+	width:100%;
+}
+
+
+/*--------------------
+$ TIME CONTROLS $
+--------------------*/
+body .pana-m-audio-player .vjs-default-skin .vjs-time-controls
+{
+	display:inline-block;
+	font-family:inherit;
+	font-size:1em;
+	font-weight:normal;
+	height:auto;
+	line-height:inherit;
+	margin-top:10px;
+	position:absolute;
+	right:initial;
+	top:50%;
+	width:auto;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-current-time
+{
+	display:none;
+	left:10px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-duration
+{
+	display:none;
+	right:207px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-remaining-time
+{
+	display:none;
+}
+
+
+/*--------------------
+$ CONTROL POSITIONING $
+--------------------*/
+body .pana-m-audio-player .vjs-default-skin div.vjs-progress-control
+{
+	left:10px;
+	right:198px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-previous-control
+{
+	right:161px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-play-control
+{
+	right:129px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-next-control
+{
+	right:98px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-mute-control
+{
+	right:60px;
+}
+
+body .pana-m-audio-player .vjs-default-skin .vjs-volume-control
+{
+	right:10px;
+}
+
+@media screen and (min-width:768px)
+{
+	body .pana-m-audio-player .vjs-default-skin div.vjs-progress-control
+	{
+		left:20px;
+		right:314px;
+	}
+
+	body .pana-m-audio-player .vjs-default-skin .vjs-previous-control
+	{
+		right:263px;
+	}
+
+	body .pana-m-audio-player .vjs-default-skin .vjs-play-control
+	{
+		right:200px;
+	}
+
+	body .pana-m-audio-player .vjs-default-skin .vjs-next-control
+	{
+		right:138px;
+	}
+
+	body .pana-m-audio-player .vjs-default-skin .vjs-mute-control
+	{
+		right:70px;
+	}
+
+	body .pana-m-audio-player .vjs-default-skin .vjs-volume-control
+	{
+		right:20px;
+	}
+}
+
+
+/*--------------------
+$ VOLUME API DISABLED CONTROL POSITIONING $
+--------------------*/
+.ae-html5-audio body .pana-m-audio-player .vjs-default-skin .vjs-mute-control,
+.ae-html5-audio body .pana-m-audio-player .vjs-default-skin .vjs-volume-control
+{
+	display:none;
+}
+
+.ae-html5-audio body .pana-m-audio-player .vjs-default-skin .vjs-next-control
+{
+	right:20px;
+}
+
+.ae-html5-audio body .pana-m-audio-player .vjs-default-skin .vjs-play-control
+{
+	right:60px;
+}
+
+.ae-html5-audio body .pana-m-audio-player .vjs-default-skin .vjs-previous-control
+{
+	right:102px;
+}
+
+.ae-html5-audio body .pana-m-audio-player .vjs-default-skin div.vjs-progress-control
+{
+	right:165px;
+}

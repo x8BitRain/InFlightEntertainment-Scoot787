@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+MANAGEMENT
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ Z-INDEX $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+@media screen and (min-width:480px)
+{}
+
+@media screen and (min-width:600px)
+{}
+
+@media screen and (min-width:768px)
+{}
+
+@media screen and (min-width:992px)
+{}
+
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../img/'
+--------------------*/
+
+
+/*--------------------
+$ Z-INDEX $
+--------------------*/
+.sco-m-callout__lead-toggle,
+.sco-m-promos,
+.sco-m-swiper,
+.sco-m-swiper__items,
+.sco-m-swiper__items__slide,
+.sco-m-swiper__btn,
+.vjs-default-skin .vjs-big-play-button,
+.sco-m-animations-off .sco-m-preloader
+{
+	z-index:1;
+}
+
+.sco-m-swiper__indicators
+{
+	z-index:2;
+}
+
+.sco-m-header,
+.sco-m-footer,
+.sco-m-header .sco-m-header__logo
+{
+	z-index:2;
+}
+
+.sco-m-nav-mobile,
+.sco-m-nav-mobile .sco-m-nav-mobile__list,
+.sco-m-nav-mobile .sco-m-nav-mobile__list__menu,
+.sco-m-nav-mobile .sco-m-nav-mobile__list li,
+.sco-m-nav-mobile .sco-m-nav-mobile__list li a
+{
+	z-index:3;
+}
+
+.sco-m-pa__overlay,
+.sco-m-pa
+{
+	z-index:4;
+}
+
+@media screen and (min-width:480px)
+{
+	.sco-m-animations-off .sco-m-preloader
+	{
+		z-index:4;
+	}
+}
+
+.sco-m-pa__outer,
+.sco-m-pa__outer__inner-container
+{
+	z-index:5;
+}
+
+.sco-m-ambience-opt,
+.sco-m-ambience-opt .sco-m-ambience-opt__dropdown
+{
+	z-index:6;
+}
+
+.sco-m-ambience-opt .sco-m-ambience-opt__tab
+{
+	z-index:7;
+}
+
+.sco-m-preloader
+{
+	z-index:8;
+}
+
+
+/*--------------------
+$ Z-INDEX $
+--------------------*/
+.pana-m-swiper .pana-m-swiper-slide > p.pana-m-swiper-caption,
+.pana-m-swiper .pana-m-swiper-btn-nav,
+.pana-m-drm-media-link .pana-m-drm-media-link-inner
+{
+	z-index:1;
+}
+
+.pana-m-language-switch
+{
+	z-index:2;
+}
+
+.pana-m-pa
+{
+	z-index:2147483645;
+}
+
+.pana-m-preloader
+{
+	z-index:2147483646;
+}
+
+.pana-m-dev-button,
+.pana-m-dev-stylesheet-button
+{
+	z-index:2147483647;
+}

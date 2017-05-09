@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*--------------------
+----------------------
+LAYOUT
+----------------------
+--------------------*/
+
+
+/*--------------------
+TABLE OF CONTENTS
+----------------------
+$ RESPONSIVE PADDING $
+--------------------*/
+
+
+/*--------------------
+QUICK GRAB MEDIA QUERIES
+--------------------*/
+/*Baseline*/
+/*320px*/
+
+/*Mobile Landscape*/
+@media screen and (min-width:480px)
+{}
+
+/*Tablet Portrait*/
+@media screen and (min-width:768px)
+{}
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{}
+
+/*Desktop*/
+@media screen and (min-width:1382px)
+{}
+
+
+/*--------------------
+QUICK GRAB PORTAL_MEDIA IMG PATH
+----------------------
+'../../img/'
+--------------------*/
+
+
+/*--------------------
+$ RESPONSIVE PADDING $
+--------------------*/
+.col-pad-l-5
+{
+	padding-left:5px;
+}
+
+.col-pad-r-5
+{
+	padding-right:5px;
+}
+
+.col-pad-0{
+	padding: 0;
+}
+
+
+/*Tablet Landscape*/
+@media screen and (min-width:992px)
+{
+	.col-pad-l-0
+	{
+		padding-left:0;
+	}
+
+	.col-pad-r-0
+	{
+		padding-right:0;
+	}
+
+	.row.row-lr-0
+	{
+		margin-left:-10px;
+		margin-right:-10px;
+	}
+}
