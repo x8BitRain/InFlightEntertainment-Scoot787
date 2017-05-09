@@ -1,0 +1,3339 @@
+<!DOCTYPE html>
+<!-- saved from url=(0184)http://www.scootwifi.com/en_GB/#scootv-player/{"media":"538","cat":"","p":"http%3A%2F%2Fservices.inflightpanasonic.aero%2Finflight%2Fservices%2Fmetadata%2Fv1%2Fimages%2F538-1_1_1.jpg"} -->
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions generatedcontent video audio localstorage sessionstorage webworkers applicationcache no-battery no-lowbattery display-table boxsizing no-overflowscrolling bgsizecover pointerevents csspositionsticky cssvhunit no-cssvminunit cssvwunit cssvmaxunit performance scrollbar ae-respond-js-initialised auto-dim ae-no-video ae-no-audio ae-no-tv safari ae-ifapi-services-svcPedAVOD-enabled ae-ifapi-services-svcSeatPEDPlugs-enabled ae-media-player-loading ae-media-player-error-1004 window-loaded sco-m-animations-off"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+   
+  <title>SCOOT: ScooTV Player</title> 
+  <!--META: GENERIC START--> 
+  <meta name="description" content=""> 
+  <meta name="keywords" content=""> 
+  <meta name="author" content=""> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="qa-fix-version" content="77"> 
+  <meta name="media-player-skinning-version" content="1.0.5"> 
+  <!--META: GENERIC END--> 
+  <!--META: IE START--> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta http-equiv="ClearType" content="true"> 
+  <!--META: IE END--> 
+  <!--META: VIEWPORT START (davidbcalhoun.com/2010/viewport-metatag)--> 
+  <meta name="HandheldFriendly" content="true"> 
+  <meta name="MobileOptimized" content="320"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <!--META: VIEWPORT END--> 
+  <!-- BRANDING START --> 
+  <link href="http://www.scootwifi.com/project_media/portal_media/branding/favicon.ico" rel="shortcut icon" type="image/icon"> 
+  <link href="http://www.scootwifi.com/project_media/portal_media/branding/favicon.ico" rel="icon" type="image/icon"> 
+  <link href="http://www.scootwifi.com/project_media/portal_media/branding/apple-touch-icon.png" rel="apple-touch-icon"> 
+  <!-- BRANDING END --> 
+  <!--CSS: AE START--> 
+  <link href="./SCOOT_ ScooTV Player_files/engine_min.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--CSS: AE END--> 
+  <!--CSS: ITK START--> 
+  <!--CSS COLLECTION START: itk--> 
+  <link href="./SCOOT_ ScooTV Player_files/itk_base_1.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/itk_helpers_1.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/itk_layout_1.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/itk_modules_1.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--CSS COLLECTION END: itk--> 
+  <link href="./SCOOT_ ScooTV Player_files/itk_print_1.css" media="print" rel="stylesheet" type="text/css"> 
+  <!--CSS: ITK END--> 
+  <!--CSS: PORTAL START--> 
+  <!--CSS: VENDOR START--> 
+  <link href="./SCOOT_ ScooTV Player_files/animate.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/bootstrap.grid-3.1.1.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/bootstrap-responsive-utilities.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/icons.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--VIDEO SKINNING START--> 
+  <link href="./SCOOT_ ScooTV Player_files/pac_videojs-1.0.5.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/pac_videojs_extension-1.0.5.css" media="screen" rel="stylesheet" type="text/css"> 
+  <script src="./SCOOT_ ScooTV Player_files/pac_flashskin_androidskin_iosskin-1.0.5.json" type="text/template" id="ae-media-skin-player-controls">{
+  "default": {
+    "assets": {
+      "transparent-bg": {
+        "type": "color",
+        "color": "#FFFFFF",
+        "alpha": "0"
+      },
+      "dark-line": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "light-line": {
+        "type": "color",
+        "color": "#c0c0c0"
+      },
+      "volume-progress-bar": {
+        "type": "color",
+        "color": "#1b75bb",
+        "borderRadius": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "volume-track-bar": {
+        "type": "gradient",
+        "direction": "linear",
+        "degrees": "90",
+        "colors": [
+          "#5d5d5d",
+          "#1e1e1e"
+        ],
+        "borderRadius": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "seek-progress-bar": {
+        "type": "color",
+        "color": "#1b75bb",
+        "borderRadius": [
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "seek-track-bar": {
+        "type": "gradient",
+        "direction": "linear",
+        "degrees": "90",
+        "colors": [
+          "#5d5d5d",
+          "#1e1e1e"
+        ],
+        "borderRadius": [
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "scrubber-handle": {
+        "type": "gradient",
+        "direction": "linear",
+        "degrees": "90",
+        "colors": [
+          "#d1d1d1",
+          "#b4b4b4"
+        ],
+        "ratios": [
+          0,
+          1
+        ],
+        "borderRadius": [
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      "control-bg": {
+        "type": "gradient",
+        "direction": "linear",
+        "degrees": "90",
+        "colors": [
+          "#5d5d5d",
+          "#1e1e1e"
+        ],
+        "alpha": "0",
+        "ratios": [
+          0,
+          1
+        ]
+      },
+      "seek-handle": {
+        "type": "gradient",
+        "direction": "linear",
+        "degrees": "90",
+        "colors": [
+          "#a0a0a0",
+          "#dfdfdf"
+        ],
+        "ratios": [
+          0,
+          1
+        ],
+        "borderRadius": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "seek-asset": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/seek-handle.png",
+        "clip": [
+          0,
+          0,
+          20,
+          20
+        ]
+      },
+      "fullscreen-enter-btn": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/fullscreen-video.png",
+        "clip": [
+          0,
+          0,
+          20,
+          21
+        ]
+      },
+      "fullscreen-exit-btn": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/fullscreen-video.png",
+        "clip": [
+          0,
+          0,
+          20,
+          21
+        ]
+      },
+      "play-btn": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/play-video.png"
+      },
+      "pause-btn": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/pause.png"
+      },
+      "previous-btn": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/arrow-left.png"
+      },
+      "previous-btn-disabled": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/arrow-left.png",
+        "alpha": "0.5"
+      },
+      "next-btn": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/arrow-right.png"
+      },
+      "next-btn-disabled": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/arrow-right.png",
+        "alpha": "0.5"
+      },
+      "audio-btn-0": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+        "clip": [
+          0,
+          0,
+          11,
+          14
+        ]
+      },
+      "audio-btn-1": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+        "clip": [
+          0,
+          0,
+          11,
+          14
+        ]
+      },
+      "audio-btn-2": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+        "clip": [
+          0,
+          0,
+          11,
+          14
+        ]
+      },
+      "big-play-button": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/video-js.png",
+        "clip": [
+          118,
+          0,
+          85,
+          85
+        ]
+      },
+      "loading-spinner": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/loader.gif"
+      },
+      "defaultFont": {
+        "type": "fontFormat",
+        "font": "Myriad Pro, Arial, sans-serif, _serif",
+        "fontSize": "12",
+        "color": "#969696"
+      },
+      "divider": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/divider-dropshadow.png",
+        "clip": [
+          0,
+          0,
+          6,
+          31
+        ]
+      },
+      "vjs-big-play-button": {
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/big-play-button.png"
+      },
+      "soundtrack-btn":{
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/soundtrack.png"
+      },
+      "caption-btn":{
+        "type": "bitmapFile",
+        "url": "../project_media/vendor_media/media_player_skinning/img/caption.png"
+      }
+    },
+    "widgets": [
+      {
+        "type": "autoHideWidget",
+        "id": "root",
+        "backgroundAsset": "control-bg",
+        "fadeSteps": "10",
+        "height": "36",
+        "bottom": "0",
+        "percentWidth": "100",
+        "widgets": [
+          {
+            "id": "control-container",
+            "top": "0",
+            "height": "36",
+            "percentWidth": "100",
+            "widgets": [
+              {
+                "id": "playButton",
+                "type": "playButton",
+                "backgroundAsset": "transparent-bg",
+                "left": "0",
+                "paddingTop": "10",
+                "paddingBottom": "10",
+                "paddingLeft": "17",
+                "paddingRight": "20",
+                "bottom": "0",
+                "states": {
+                  "upAsset": "play-btn",
+                  "downAsset": "play-btn",
+                  "disabledAsset": "play-btn"
+                }
+              },
+              {
+                "id": "soundtrackButton",
+                "type": "soundtrackButton",
+                "backgroundAsset": "transparent-bg",
+                "left": "55",
+                "paddingTop": "4",
+                "paddingBottom": "10",
+                "paddingLeft": "8",
+                "paddingRight": "10",
+                "bottom": "0",
+                "states": {
+                  "upAsset": "soundtrack-btn",
+                  "downAsset": "soundtrack-btn",
+                  "disabledAsset": "soundtrack-btn"
+                }
+              },
+              {
+                "id": "pauseButton",
+                "type": "pauseButton",
+                "backgroundAsset": "transparent-bg",
+                "left": "7",
+                "paddingTop": "10",
+                "paddingBottom": "10",
+                "paddingLeft": "10",
+                "paddingRight": "10",
+                "bottom": "0",
+                "states": {
+                  "upAsset": "pause-btn",
+                  "downAsset": "pause-btn",
+                  "disabledAsset": "pause-btn"
+                }
+              },
+              {
+                "id": "border",
+                "type": "widget",
+                "backgroundAsset": "divider",
+                "left": "50",
+                "width": "6",
+                "percentHeight": "100"
+              },
+              {
+                "id": "seekBar",
+                "type": "scrubBar",
+                "backgroundAsset": "transparent-bg",
+                "trackHeight": "8",
+                "trackAsset": "seek-track-bar",
+                "progressAsset": "seek-progress-bar",
+                "top": "0",
+                "left": "100",
+                "right": "260",
+                "verticalAlign": "middle",
+                "paddingLeft": "10",
+                "paddingRight": "10",
+                "scrubber": {
+                  "height": "20",
+                  "width": "20",
+                  "upAsset": "seek-asset",
+                  "downAsset": "seek-asset",
+                  "disabledAsset": "seek-asset"
+                }
+              },
+              {
+                "id": "border",
+                "type": "widget",
+                "backgroundAsset": "divider",
+                "right": "240",
+                "width": "6",
+                "percentHeight": "100"
+              },
+              {
+                "id": "soundIndicator",
+                "type": "soundIndicator",
+                "backgroundAsset": "transparent-bg",
+                "top": "6",
+                "paddingLeft": "5",
+                "paddingRight": "5",
+                "right": "220",
+                "verticalAlign": "middle",
+                "levels": [
+                  "audio-btn-0",
+                  "audio-btn-1",
+                  "audio-btn-2"
+                ]
+              },
+              {
+                "id": "volumeBar",
+                "type": "volumeBar",
+                "backgroundAsset": "transparent-bg",
+                "right": "80",
+                "width": "123",
+                "top": "9",
+                "trackHeight": "6",
+                "trackAsset": "volume-track-bar",
+                "progressAsset": "volume-progress-bar",
+                "paddingLeft": "10",
+                "paddingRight": "10",
+                "scrubber": {
+                  "height": "20",
+                  "width": "20",
+                  "upAsset": "seek-asset",
+                  "downAsset": "seek-asset",
+                  "disabledAsset": "seek-asset"
+                }
+              },
+              {
+                "id": "border",
+                "type": "widget",
+                "backgroundAsset": "divider",
+                "right": "50",
+                "width": "6",
+                "percentHeight": "100"
+              },
+              {
+                "id": "fullScreenEnterButton",
+                "type": "fullScreenEnterButton",
+                "backgroundAsset": "transparent-bg",
+                "right": "10",
+                "paddingTop": "6",
+                "paddingBottom": "4",
+                "paddingLeft": "5",
+                "paddingRight": "5",
+                "verticalAlign": "middle",
+                "states": {
+                  "upAsset": "fullscreen-enter-btn",
+                  "downAsset": "fullscreen-enter-btn",
+                  "disabledAsset": "fullscreen-enter-btn"
+                }
+              },
+              {
+                "id": "fullScreenExitButton",
+                "type": "fullScreenExitButton",
+                "backgroundAsset": "transparent-bg",
+                "right": "10",
+                "paddingTop": "6",
+                "paddingBottom": "4",
+                "paddingLeft": "5",
+                "paddingRight": "5",
+                "verticalAlign": "middle",
+                "states": {
+                  "upAsset": "fullscreen-exit-btn",
+                  "downAsset": "fullscreen-exit-btn",
+                  "disabledAsset": "fullscreen-exit-btn"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bufferOverlay",
+        "type": "bufferingOverlay",
+        "backgroundAsset": "vjs-loading-spinner-bg",
+        "horizontalAlign": "center",
+        "verticalAlign": "middle",
+        "width": "80",
+        "height": "50",
+        "fadeSteps": "6",
+        "index": "4",
+        "widgets": [
+          {
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "backgroundAsset": "vjs-loading-spinner",
+            "width": "32",
+            "height": "32"
+          }
+        ]
+      },
+      {
+        "id": "playOverlay",
+        "type": "playButtonOverlay",
+        "states": {
+          "upAsset": "vjs-big-play-button",
+          "downAsset": "vjs-big-play-button",
+          "disabledAsset": "vjs-big-play-button"
+        },
+        "fadeSteps": "6",
+        "horizontalAlign": "center",
+        "verticalAlign": "middle",
+        "index": "3"
+      }
+    ]
+  },
+  "responsiveWidths": {
+    "320": {
+      "assets": {
+        "transparent-bg": {
+          "type": "color",
+          "color": "#FFFFFF",
+          "alpha": "0"
+        },
+        "dark-line": {
+          "type": "color",
+          "color": "#969696"
+        },
+        "light-line": {
+          "type": "color",
+          "color": "#5d5d5d"
+        },
+        "volume-progress-bar": {
+          "type": "color",
+          "color": "#1b75bb",
+          "borderRadius": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "volume-track-bar": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#5d5d5d",
+            "#1e1e1e"
+          ],
+          "borderRadius": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "seek-progress-bar": {
+          "type": "color",
+          "color": "#1b75bb",
+          "borderRadius": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "seek-track-bar": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#5d5d5d",
+            "#1e1e1e"
+          ],
+          "borderRadius": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "scrubber-handle": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#d1d1d1",
+            "#b4b4b4"
+          ],
+          "ratios": [
+            0,
+            1
+          ],
+          "borderRadius": [
+            7,
+            7,
+            7,
+            7
+          ]
+        },
+        "control-bg": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#5d5d5d",
+            "#1e1e1e"
+          ],
+          "ratios": [
+            0,
+            1
+          ]
+        },
+        "seek-handle": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#a0a0a0",
+            "#dfdfdf"
+          ],
+          "ratios": [
+            0,
+            1
+          ],
+          "borderRadius": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "fullscreen-enter-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/fullscreen-video.png",
+          "clip": [
+            0,
+            0,
+            20,
+            21
+          ]
+        },
+        "fullscreen-exit-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/fullscreen-video.png",
+          "clip": [
+            0,
+            0,
+            20,
+            21
+          ]
+        },
+        "play-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/play-video.png"
+        },
+        "pause-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/pause.png"
+        },
+        "previous-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-left.png"
+        },
+        "previous-btn-disabled": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-left.png",
+          "alpha": "0.5"
+        },
+        "next-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-right.png"
+        },
+        "next-btn-disabled": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-right.png",
+          "alpha": "0.5"
+        },
+        "big-play-button": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/video-js.png",
+          "clip": [
+            118,
+            0,
+            85,
+            85
+          ]
+        },
+        "divider": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/divider-dropshadow.png",
+          "clip": [
+            0,
+            0,
+            6,
+            31
+          ]
+        },
+        "loading-spinner": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/loader.gif"
+        },
+        "audio-btn-0": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+          "clip": [
+            0,
+            0,
+            11,
+            14
+          ]
+        },
+        "audio-btn-1": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+          "clip": [
+            0,
+            0,
+            11,
+            14
+          ]
+        },
+        "audio-btn-2": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+          "clip": [
+            0,
+            0,
+            11,
+            14
+          ]
+        },
+        "seek-asset": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/seek-handle.png",
+          "clip": [
+            0,
+            0,
+            20,
+            20
+          ]
+        },
+        "defaultFont": {
+          "type": "fontFormat",
+          "font": "Myriad Pro, Arial, sans-serif, _serif",
+          "fontSize": "12",
+          "color": "#969696"
+        },
+        "vjs-big-play-button": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/big-play-button.png"
+        }
+      },
+      "widgets": [
+        {
+          "type": "autoHideWidget",
+          "id": "root",
+          "backgroundAsset": "control-bg",
+          "fadeSteps": "10",
+          "height": "36",
+          "bottom": "0",
+          "percentWidth": "100",
+          "widgets": [
+            {
+              "id": "control-container",
+              "top": "0",
+              "height": "36",
+              "percentWidth": "100",
+              "widgets": [
+                {
+                  "id": "playButton",
+                  "type": "playButton",
+                  "backgroundAsset": "transparent-bg",
+                  "left": "0",
+                  "top": "0",
+                  "paddingTop": "10",
+                  "paddingBottom": "20",
+                  "paddingLeft": "8",
+                  "paddingRight": "20",
+                  "states": {
+                    "upAsset": "play-btn",
+                    "downAsset": "play-btn",
+                    "disabledAsset": "play-btn"
+                  }
+                },
+                {
+                  "id": "pauseButton",
+                  "type": "pauseButton",
+                  "backgroundAsset": "transparent-bg",
+                  "left": "0",
+                  "top": "0",
+                  "paddingTop": "10",
+                  "paddingBottom": "20",
+                  "paddingLeft": "8",
+                  "paddingRight": "20",
+                  "states": {
+                    "upAsset": "pause-btn",
+                    "downAsset": "pause-btn",
+                    "disabledAsset": "pause-btn"
+                  }
+                },
+                {
+                  "id": "border",
+                  "type": "widget",
+                  "backgroundAsset": "divider",
+                  "left": "32",
+                  "width": "6",
+                  "percentHeight": "100"
+                },
+                {
+                  "id": "seekBar",
+                  "type": "scrubBar",
+                  "backgroundAsset": "transparent-bg",
+                  "trackHeight": "8",
+                  "trackAsset": "seek-track-bar",
+                  "progressAsset": "seek-progress-bar",
+                  "top": "8",
+                  "left": "45",
+                  "right": "160",
+                  "verticalAlign": "middle",
+                  "paddingLeft": "10",
+                  "paddingRight": "10",
+                  "scrubber": {
+                    "height": "20",
+                    "width": "20",
+                    "upAsset": "seek-asset",
+                    "downAsset": "seek-asset",
+                    "disabledAsset": "seek-asset"
+                  }
+                },
+                {
+                  "id": "border",
+                  "type": "widget",
+                  "backgroundAsset": "divider",
+                  "right": "140",
+                  "width": "6",
+                  "percentHeight": "100"
+                },
+                {
+                  "id": "soundIndicator",
+                  "type": "soundIndicator",
+                  "backgroundAsset": "transparent-bg",
+                  "top": "10",
+                  "paddingLeft": "5",
+                  "paddingRight": "5",
+                  "right": "115",
+                  "verticalAlign": "middle",
+                  "levels": [
+                    "audio-btn-0",
+                    "audio-btn-1",
+                    "audio-btn-2"
+                  ]
+                },
+                {
+                  "id": "volumeBar",
+                  "type": "volumeBar",
+                  "backgroundAsset": "transparent-bg",
+                  "right": "50",
+                  "width": "55",
+                  "top": "10",
+                  "trackHeight": "6",
+                  "trackAsset": "volume-track-bar",
+                  "progressAsset": "volume-progress-bar",
+                  "scrubber": {
+                    "height": "20",
+                    "width": "20",
+                    "upAsset": "seek-asset",
+                    "downAsset": "seek-asset",
+                    "disabledAsset": "seek-asset"
+                  }
+                },
+                {
+                  "id": "border",
+                  "type": "widget",
+                  "backgroundAsset": "divider",
+                  "right": "28",
+                  "width": "6",
+                  "percentHeight": "100"
+                },
+                {
+                  "id": "fullScreenEnterButton",
+                  "type": "fullScreenEnterButton",
+                  "backgroundAsset": "transparent-bg",
+                  "right": "5",
+                  "paddingTop": "10",
+                  "paddingBottom": "10",
+                  "paddingLeft": "10",
+                  "verticalAlign": "middle",
+                  "states": {
+                    "upAsset": "fullscreen-enter-btn",
+                    "downAsset": "fullscreen-enter-btn",
+                    "disabledAsset": "fullscreen-enter-btn"
+                  }
+                },
+                {
+                  "id": "fullScreenExitButton",
+                  "type": "fullScreenExitButton",
+                  "backgroundAsset": "transparent-bg",
+                  "right": "0",
+                  "paddingTop": "10",
+                  "paddingBottom": "10",
+                  "paddingLeft": "10",
+                  "paddingRight": "5",
+                  "verticalAlign": "middle",
+                  "states": {
+                    "upAsset": "fullscreen-exit-btn",
+                    "downAsset": "fullscreen-exit-btn",
+                    "disabledAsset": "fullscreen-exit-btn"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bufferOverlay",
+          "type": "bufferingOverlay",
+          "backgroundAsset": "vjs-loading-spinner-bg",
+          "horizontalAlign": "center",
+          "verticalAlign": "middle",
+          "width": "80",
+          "height": "50",
+          "fadeSteps": "6",
+          "index": "4",
+          "widgets": [
+            {
+              "horizontalAlign": "center",
+              "verticalAlign": "middle",
+              "backgroundAsset": "vjs-loading-spinner",
+              "width": "32",
+              "height": "32"
+            }
+          ]
+        },
+        {
+          "id": "playOverlay",
+          "type": "playButtonOverlay",
+          "states": {
+            "upAsset": "vjs-big-play-button",
+            "downAsset": "vjs-big-play-button",
+            "disabledAsset": "vjs-big-play-button"
+          },
+          "fadeSteps": "6",
+          "horizontalAlign": "center",
+          "verticalAlign": "middle",
+          "index": "3"
+        }
+      ]
+    },
+    "480": {
+      "assets": {
+        "transparent-bg": {
+          "type": "color",
+          "color": "#FFFFFF",
+          "alpha": "0"
+        },
+        "dark-line": {
+          "type": "color",
+          "color": "#969696"
+        },
+        "light-line": {
+          "type": "color",
+          "color": "#5d5d5d"
+        },
+        "volume-progress-bar": {
+          "type": "color",
+          "color": "#1b75bb",
+          "borderRadius": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "volume-track-bar": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#5d5d5d",
+            "#1e1e1e"
+          ],
+          "borderRadius": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "seek-progress-bar": {
+          "type": "color",
+          "color": "#1b75bb",
+          "borderRadius": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "seek-track-bar": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#5d5d5d",
+            "#1e1e1e"
+          ],
+          "borderRadius": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "scrubber-handle": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#d1d1d1",
+            "#b4b4b4"
+          ],
+          "ratios": [
+            0,
+            1
+          ],
+          "borderRadius": [
+            7,
+            7,
+            7,
+            7
+          ]
+        },
+        "control-bg": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#5d5d5d",
+            "#1e1e1e"
+          ],
+          "ratios": [
+            0,
+            1
+          ]
+        },
+        "seek-handle": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#a0a0a0",
+            "#dfdfdf"
+          ],
+          "ratios": [
+            0,
+            1
+          ],
+          "borderRadius": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "fullscreen-enter-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/fullscreen-video.png",
+          "clip": [
+            0,
+            0,
+            20,
+            21
+          ]
+        },
+        "fullscreen-exit-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/fullscreen-video.png",
+          "clip": [
+            0,
+            0,
+            20,
+            21
+          ]
+        },
+        "play-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/play-video.png"
+        },
+        "pause-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/pause.png"
+        },
+        "previous-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-left.png"
+        },
+        "previous-btn-disabled": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-left.png",
+          "alpha": "0.5"
+        },
+        "next-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-right.png"
+        },
+        "next-btn-disabled": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-right.png",
+          "alpha": "0.5"
+        },
+        "big-play-button": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/video-js.png",
+          "clip": [
+            118,
+            0,
+            85,
+            85
+          ]
+        },
+        "divider": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/divider-dropshadow.png",
+          "clip": [
+            0,
+            0,
+            6,
+            31
+          ]
+        },
+        "loading-spinner": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/loader.gif"
+        },
+        "audio-btn-0": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+          "clip": [
+            0,
+            0,
+            11,
+            14
+          ]
+        },
+        "audio-btn-1": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+          "clip": [
+            0,
+            0,
+            11,
+            14
+          ]
+        },
+        "audio-btn-2": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+          "clip": [
+            0,
+            0,
+            11,
+            14
+          ]
+        },
+        "seek-asset": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/seek-handle.png",
+          "clip": [
+            0,
+            0,
+            20,
+            20
+          ]
+        },
+        "defaultFont": {
+          "type": "fontFormat",
+          "font": "Myriad Pro, Arial, sans-serif, _serif",
+          "fontSize": "12",
+          "color": "#969696"
+        },
+        "vjs-big-play-button": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/big-play-button.png"
+        }
+      },
+      "widgets": [
+        {
+          "type": "autoHideWidget",
+          "id": "root",
+          "backgroundAsset": "control-bg",
+          "fadeSteps": "10",
+          "height": "36",
+          "bottom": "0",
+          "percentWidth": "100",
+          "widgets": [
+            {
+              "id": "control-container",
+              "top": "0",
+              "height": "36",
+              "percentWidth": "100",
+              "widgets": [
+                {
+                  "id": "playButton",
+                  "type": "playButton",
+                  "backgroundAsset": "transparent-bg",
+                  "left": "0",
+                  "top": "0",
+                  "paddingTop": "10",
+                  "paddingBottom": "20",
+                  "paddingLeft": "8",
+                  "paddingRight": "20",
+                  "states": {
+                    "upAsset": "play-btn",
+                    "downAsset": "play-btn",
+                    "disabledAsset": "play-btn"
+                  }
+                },
+                {
+                  "id": "pauseButton",
+                  "type": "pauseButton",
+                  "backgroundAsset": "transparent-bg",
+                  "left": "0",
+                  "top": "0",
+                  "paddingTop": "10",
+                  "paddingBottom": "20",
+                  "paddingLeft": "8",
+                  "paddingRight": "20",
+                  "states": {
+                    "upAsset": "pause-btn",
+                    "downAsset": "pause-btn",
+                    "disabledAsset": "pause-btn"
+                  }
+                },
+                {
+                  "id": "border",
+                  "type": "widget",
+                  "backgroundAsset": "divider",
+                  "left": "32",
+                  "width": "6",
+                  "percentHeight": "100"
+                },
+                {
+                  "id": "seekBar",
+                  "type": "scrubBar",
+                  "backgroundAsset": "transparent-bg",
+                  "trackHeight": "8",
+                  "trackAsset": "seek-track-bar",
+                  "progressAsset": "seek-progress-bar",
+                  "top": "8",
+                  "left": "55",
+                  "right": "140",
+                  "verticalAlign": "middle",
+                  "paddingLeft": "10",
+                  "paddingRight": "10",
+                  "scrubber": {
+                    "height": "20",
+                    "width": "20",
+                    "upAsset": "seek-asset",
+                    "downAsset": "seek-asset",
+                    "disabledAsset": "seek-asset"
+                  }
+                },
+                {
+                  "id": "border",
+                  "type": "widget",
+                  "backgroundAsset": "divider",
+                  "right": "120",
+                  "width": "6",
+                  "percentHeight": "100"
+                },
+                {
+                  "id": "soundIndicator",
+                  "type": "soundIndicator",
+                  "backgroundAsset": "transparent-bg",
+                  "top": "10",
+                  "paddingLeft": "55",
+                  "paddingRight": "5",
+                  "right": "100",
+                  "verticalAlign": "middle",
+                  "levels": [
+                    "audio-btn-0",
+                    "audio-btn-1",
+                    "audio-btn-2"
+                  ]
+                },
+                {
+                  "id": "volumeBar",
+                  "type": "volumeBar",
+                  "backgroundAsset": "transparent-bg",
+                  "right": "50",
+                  "width": "42",
+                  "top": "10",
+                  "trackHeight": "6",
+                  "trackAsset": "volume-track-bar",
+                  "progressAsset": "volume-progress-bar",
+                  "paddingLeft": "10",
+                  "paddingRight": "10",
+                  "scrubber": {
+                    "height": "20",
+                    "width": "20",
+                    "upAsset": "seek-asset",
+                    "downAsset": "seek-asset",
+                    "disabledAsset": "seek-asset"
+                  }
+                },
+                {
+                  "id": "border",
+                  "type": "widget",
+                  "backgroundAsset": "divider",
+                  "right": "28",
+                  "width": "6",
+                  "percentHeight": "100"
+                },
+                {
+                  "id": "fullScreenEnterButton",
+                  "type": "fullScreenEnterButton",
+                  "backgroundAsset": "transparent-bg",
+                  "right": "5",
+                  "paddingTop": "10",
+                  "paddingBottom": "10",
+                  "paddingLeft": "10",
+                  "verticalAlign": "middle",
+                  "states": {
+                    "upAsset": "fullscreen-enter-btn",
+                    "downAsset": "fullscreen-enter-btn",
+                    "disabledAsset": "fullscreen-enter-btn"
+                  }
+                },
+                {
+                  "id": "fullScreenExitButton",
+                  "type": "fullScreenExitButton",
+                  "backgroundAsset": "transparent-bg",
+                  "top": "0",
+                  "right": "0",
+                  "paddingTop": "10",
+                  "paddingBottom": "10",
+                  "paddingLeft": "10",
+                  "paddingRight": "5",
+                  "verticalAlign": "middle",
+                  "states": {
+                    "upAsset": "fullscreen-exit-btn",
+                    "downAsset": "fullscreen-exit-btn",
+                    "disabledAsset": "fullscreen-exit-btn"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bufferOverlay",
+          "type": "bufferingOverlay",
+          "backgroundAsset": "vjs-loading-spinner-bg",
+          "horizontalAlign": "center",
+          "verticalAlign": "middle",
+          "width": "80",
+          "height": "50",
+          "fadeSteps": "6",
+          "index": "4",
+          "widgets": [
+            {
+              "horizontalAlign": "center",
+              "verticalAlign": "middle",
+              "backgroundAsset": "vjs-loading-spinner",
+              "width": "32",
+              "height": "32"
+            }
+          ]
+        },
+        {
+          "id": "playOverlay",
+          "type": "playButtonOverlay",
+          "states": {
+            "upAsset": "vjs-big-play-button",
+            "downAsset": "vjs-big-play-button",
+            "disabledAsset": "vjs-big-play-button"
+          },
+          "fadeSteps": "6",
+          "horizontalAlign": "center",
+          "verticalAlign": "middle",
+          "index": "3"
+        }
+      ]
+    },
+    "568": {
+      "assets": {
+        "transparent-bg": {
+          "type": "color",
+          "color": "#FFFFFF",
+          "alpha": "0"
+        },
+        "dark-line": {
+          "type": "color",
+          "color": "#969696"
+        },
+        "light-line": {
+          "type": "color",
+          "color": "#5d5d5d"
+        },
+        "volume-progress-bar": {
+          "type": "color",
+          "color": "#1b75bb",
+          "borderRadius": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "volume-track-bar": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#5d5d5d",
+            "#1e1e1e"
+          ],
+          "borderRadius": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "seek-progress-bar": {
+          "type": "color",
+          "color": "#1b75bb",
+          "borderRadius": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "seek-track-bar": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#5d5d5d",
+            "#1e1e1e"
+          ],
+          "borderRadius": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "scrubber-handle": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#d1d1d1",
+            "#b4b4b4"
+          ],
+          "ratios": [
+            0,
+            1
+          ],
+          "borderRadius": [
+            7,
+            7,
+            7,
+            7
+          ]
+        },
+        "control-bg": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#5d5d5d",
+            "#1e1e1e"
+          ],
+          "ratios": [
+            0,
+            1
+          ]
+        },
+        "seek-handle": {
+          "type": "gradient",
+          "direction": "linear",
+          "degrees": "90",
+          "colors": [
+            "#a0a0a0",
+            "#dfdfdf"
+          ],
+          "ratios": [
+            0,
+            1
+          ],
+          "borderRadius": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "fullscreen-enter-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/fullscreen-video.png",
+          "clip": [
+            0,
+            0,
+            20,
+            21
+          ]
+        },
+        "fullscreen-exit-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/fullscreen-video.png",
+          "clip": [
+            0,
+            0,
+            20,
+            21
+          ]
+        },
+        "play-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/play-video.png"
+        },
+        "pause-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/pause.png"
+        },
+        "previous-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-left.png"
+        },
+        "previous-btn-disabled": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-left.png",
+          "alpha": "0.5"
+        },
+        "next-btn": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-right.png"
+        },
+        "next-btn-disabled": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/arrow-right.png",
+          "alpha": "0.5"
+        },
+        "big-play-button": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/video-js.png",
+          "clip": [
+            118,
+            0,
+            85,
+            85
+          ]
+        },
+        "divider": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/divider-dropshadow.png",
+          "clip": [
+            0,
+            0,
+            6,
+            31
+          ]
+        },
+        "loading-spinner": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/loader.gif"
+        },
+        "audio-btn-0": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+          "clip": [
+            0,
+            0,
+            11,
+            14
+          ]
+        },
+        "audio-btn-1": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+          "clip": [
+            0,
+            0,
+            11,
+            14
+          ]
+        },
+        "audio-btn-2": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/volume-video.png",
+          "clip": [
+            0,
+            0,
+            11,
+            14
+          ]
+        },
+        "seek-asset": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/seek-handle.png",
+          "clip": [
+            0,
+            0,
+            20,
+            20
+          ]
+        },
+        "defaultFont": {
+          "type": "fontFormat",
+          "font": "Myriad Pro, Arial, sans-serif, _serif",
+          "fontSize": "12",
+          "color": "#969696"
+        },
+        "vjs-big-play-button": {
+          "type": "bitmapFile",
+          "url": "../project_media/vendor_media/media_player_skinning/img/big-play-button.png"
+        }
+      },
+      "widgets": [
+        {
+          "type": "autoHideWidget",
+          "id": "root",
+          "backgroundAsset": "control-bg",
+          "fadeSteps": "10",
+          "height": "36",
+          "bottom": "0",
+          "percentWidth": "100",
+          "widgets": [
+            {
+              "id": "control-container",
+              "top": "0",
+              "height": "36",
+              "percentWidth": "100",
+              "widgets": [
+                {
+                  "id": "playButton",
+                  "type": "playButton",
+                  "backgroundAsset": "transparent-bg",
+                  "left": "0",
+                  "top": "0",
+                  "paddingTop": "10",
+                  "paddingBottom": "10",
+                  "paddingLeft": "5",
+                  "paddingRight": "10",
+                  "states": {
+                    "upAsset": "play-btn",
+                    "downAsset": "play-btn",
+                    "disabledAsset": "play-btn"
+                  }
+                },
+                {
+                  "id": "pauseButton",
+                  "type": "pauseButton",
+                  "backgroundAsset": "transparent-bg",
+                  "left": "0",
+                  "paddingTop": "10",
+                  "paddingBottom": "10",
+                  "paddingLeft": "5",
+                  "paddingRight": "10",
+                  "states": {
+                    "upAsset": "pause-btn",
+                    "downAsset": "pause-btn",
+                    "disabledAsset": "pause-btn"
+                  }
+                },
+                {
+                  "id": "border",
+                  "type": "widget",
+                  "backgroundAsset": "divider",
+                  "left": "32",
+                  "width": "6",
+                  "percentHeight": "100"
+                },
+                {
+                  "id": "seekBar",
+                  "type": "scrubBar",
+                  "backgroundAsset": "transparent-bg",
+                  "trackHeight": "8",
+                  "trackAsset": "seek-track-bar",
+                  "progressAsset": "seek-progress-bar",
+                  "top": "8",
+                  "left": "55",
+                  "right": "160",
+                  "verticalAlign": "middle",
+                  "scrubber": {
+                    "height": "20",
+                    "width": "20",
+                    "upAsset": "seek-asset",
+                    "downAsset": "seek-asset",
+                    "disabledAsset": "seek-asset"
+                  }
+                },
+                {
+                  "id": "border",
+                  "type": "widget",
+                  "backgroundAsset": "divider",
+                  "right": "140",
+                  "width": "6",
+                  "percentHeight": "100"
+                },
+                {
+                  "id": "soundIndicator",
+                  "type": "soundIndicator",
+                  "backgroundAsset": "transparent-bg",
+                  "top": "6",
+                  "paddingLeft": "5",
+                  "paddingRight": "5",
+                  "right": "115",
+                  "verticalAlign": "middle",
+                  "levels": [
+                    "audio-btn-0",
+                    "audio-btn-1",
+                    "audio-btn-2"
+                  ]
+                },
+                {
+                  "id": "volumeBar",
+                  "type": "volumeBar",
+                  "backgroundAsset": "transparent-bg",
+                  "right": "50",
+                  "width": "55",
+                  "top": "10",
+                  "trackHeight": "6",
+                  "trackAsset": "volume-track-bar",
+                  "progressAsset": "volume-progress-bar",
+                  "paddingLeft": "10",
+                  "paddingRight": "10",
+                  "scrubber": {
+                    "height": "20",
+                    "width": "20",
+                    "upAsset": "seek-asset",
+                    "downAsset": "seek-asset",
+                    "disabledAsset": "seek-asset"
+                  }
+                },
+                {
+                  "id": "border",
+                  "type": "widget",
+                  "backgroundAsset": "divider",
+                  "right": "28",
+                  "width": "6",
+                  "percentHeight": "100"
+                },
+                {
+                  "id": "fullScreenEnterButton",
+                  "type": "fullScreenEnterButton",
+                  "backgroundAsset": "transparent-bg",
+                  "right": "5",
+                  "paddingTop": "6",
+                  "paddingBottom": "4",
+                  "paddingLeft": "5",
+                  "verticalAlign": "middle",
+                  "states": {
+                    "upAsset": "fullscreen-enter-btn",
+                    "downAsset": "fullscreen-enter-btn",
+                    "disabledAsset": "fullscreen-enter-btn"
+                  }
+                },
+                {
+                  "id": "fullScreenExitButton",
+                  "type": "fullScreenExitButton",
+                  "backgroundAsset": "transparent-bg",
+                  "right": "5",
+                  "paddingTop": "6",
+                  "paddingBottom": "4",
+                  "paddingLeft": "5",
+                  "verticalAlign": "middle",
+                  "states": {
+                    "upAsset": "fullscreen-exit-btn",
+                    "downAsset": "fullscreen-exit-btn",
+                    "disabledAsset": "fullscreen-exit-btn"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bufferOverlay",
+          "type": "bufferingOverlay",
+          "backgroundAsset": "vjs-loading-spinner-bg",
+          "horizontalAlign": "center",
+          "verticalAlign": "middle",
+          "width": "80",
+          "height": "50",
+          "fadeSteps": "6",
+          "index": "4",
+          "widgets": [
+            {
+              "horizontalAlign": "center",
+              "verticalAlign": "middle",
+              "backgroundAsset": "vjs-loading-spinner",
+              "width": "32",
+              "height": "32"
+            }
+          ]
+        },
+        {
+          "id": "playOverlay",
+          "type": "playButtonOverlay",
+          "states": {
+            "upAsset": "vjs-big-play-button",
+            "downAsset": "vjs-big-play-button",
+            "disabledAsset": "vjs-big-play-button"
+          },
+          "fadeSteps": "6",
+          "horizontalAlign": "center",
+          "verticalAlign": "middle",
+          "index": "3"
+        }
+      ]
+    }
+  }
+}</script> 
+  <!--VIDEO SKINNING END--> 
+  <!--CSS: VENDOR END--> 
+  <!--CSS COLLECTION START: base--> 
+  <link href="./SCOOT_ ScooTV Player_files/portal_animated_intro.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/portal_base.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/portal_type.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/portal_helpers.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/portal_management.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--CSS COLLECTION END: base--> 
+  <!--CSS COLLECTION START: portal_layouts--> 
+  <link href="./SCOOT_ ScooTV Player_files/layout.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/bootstrap_extended_grid.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--CSS COLLECTION END: portal_layouts--> 
+  <!--CSS COLLECTION START: pana_modules--> 
+  <link href="./SCOOT_ ScooTV Player_files/pana_audio_player-1.0.5.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/pana_audio_player_html5skin-1.0.5.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/pana_video_player-1.0.5.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/pana_media_link.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--CSS COLLECTION END: pana_modules--> 
+  <!--CSS COLLECTION START: portal_modules--> 
+  <!--[if lte IE 9]>
+    <link href="../project_media/portal_media/css/portal_modules/ie_concat.css?v=1"
+          media="screen"
+          rel="stylesheet"
+          type="text/css">            <![endif]--> 
+  <!--[if !IE]> --> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_ambience_opt.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_bg_holder.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_button.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_button_header.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_callout.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_figure.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_footer.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_promos.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_nav_mobile.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_tab.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_header.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_media.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_media_ad.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_nav.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_nav_mobile.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_one_media.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_swiper.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_preloader.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_pa.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_accordion.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_wifi.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_eat.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!-- <![endif]--> 
+  <!--CSS COLLECTION END: portal_modules--> 
+  <!--CSS PORTAL THEMES START--> 
+  <link href="./SCOOT_ ScooTV Player_files/sco_ambience.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--CSS PORTAL THEMES END--> 
+  <!--CSS PORTAL DEVICE OVERRIDES START--> 
+  <link href="./SCOOT_ ScooTV Player_files/portal_FF_flash_wmode_direct.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--CSS PORTAL DEVICE OVERRIDES END--> 
+  <!-- SITEBUILDER MIGRATION RELATED CSS --> 
+  <link href="./SCOOT_ ScooTV Player_files/sb_migration.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!--CSS: PORTAL END--> 
+  <!--IFAPI START--> 
+  <script src="./SCOOT_ ScooTV Player_files/inflight.js" type="text/javascript" data-emulator-protocol="http:"></script><style>@media print {#ghostery-purple-box {display:none !important}}</style> 
+  <script type="text/javascript">InFlight.setHost('api.airpana.com');</script> 
+  <!--IFAPI END--> 
+  <!--JS ENGINE START--> 
+  <script src="./SCOOT_ ScooTV Player_files/engine_min.js" type="text/javascript" id="includeHandler"></script> 
+  <!--JS ENGINE END--> 
+  <!--MEDIA PLAYER CONTROL SWF START--> 
+  <meta content="../engine/ControlOverlayPlugin-1.0.5.swf" name="MediaPlayerControlPluginUri"> 
+  <!--MEDIA PLAYER CONTROL SWF END--> 
+  <script>
+        var root = document.documentElement;
+
+        jQuery(document).ready(function ($) {
+            $("html").addClass("auto-dim");
+        });
+
+        function debounce(fn, delay) {
+            var timer = null;
+            return function () {
+                var context = this, args = arguments;
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    fn.apply(context, args);
+                }, delay);
+            };
+        }
+
+        window.addEventListener("devicelight", debounce(function (event) {
+            var luminosity = event.value;
+
+            if (root.classList.contains("auto-dim")) {
+                if (luminosity < 50) {
+                    root.classList.add("dim");
+                } else {
+                    root.classList.remove("dim");
+                }
+            }
+        }, 1000));
+    </script> 
+  <script>
+        window.theCityLookup = function (IATA) {
+
+            var theCity = {destination: '', airport: ''};
+
+            switch (IATA) {
+                case 'DXB':
+                    theCity.destination = 'Dubai';
+                    theCity.airport = 'Dubai International Airport';
+                    break;
+                case 'JNB':
+                    theCity.destination = 'Johannesburg';
+                    theCity.airport = 'Johannesburg Airport';
+                    break;
+                case 'LOS':
+                    theCity.destination = 'Lagos';
+                    theCity.airport = 'Murtala Muhammed International Airport';
+                    break;
+                case 'DEL':
+                    theCity.destination = 'Delhi';
+                    theCity.airport = 'Indira Gandhi International Airport';
+                    break;
+                case 'HKG':
+                    theCity.destination = 'Hong Kong';
+                    theCity.airport = 'Hong Kong International Airport';
+                    break;
+                case 'BOM':
+                    theCity.destination = 'Mumbai';
+                    theCity.airport = 'Chattarpati Shivaji International Airport';
+                    break;
+                case 'SHA':
+                    theCity.destination = 'Shanghai';
+                    theCity.airport = 'Shanghai Pu Dong International Airport';
+                    break;
+                case 'NRT':
+                    theCity.destination = 'Tokyo';
+                    theCity.airport = 'Narita International Airport';
+                    break;
+                case 'ANU':
+                    theCity.destination = 'Antigua';
+                    theCity.airport = 'VC Bird International Airport';
+                    break;
+                case 'BGI':
+                    theCity.destination = 'Barbados';
+                    theCity.airport = 'Grantley Adams International Airport';
+                    break;
+                case 'CUN':
+                    theCity.destination = 'Cancun';
+                    theCity.airport = 'Cancun International Airport';
+                    break;
+                case 'GND':
+                    theCity.destination = 'Grenada';
+                    theCity.airport = 'Maurice Bishop International Airport';
+                    break;
+                case 'KIN':
+                    theCity.destination = 'Jamaica';
+                    theCity.airport = 'Jamaica Airport';
+                    break;
+                case 'MBJ':
+                    theCity.destination = 'Jamaica';
+                    theCity.airport = 'Sangster International Airport';
+                    break;
+                case 'UVF':
+                    theCity.destination = 'St Lucia';
+                    theCity.airport = 'Hewanorra International Airport';
+                    break;
+                case 'TAB':
+                    theCity.destination = 'Tobago';
+                    theCity.airport = 'A.N.R. Robinson International Airport';
+                    break;
+                case 'HAV':
+                    theCity.destination = 'Havana';
+                    theCity.airport = 'Jose Marti International Airport';
+                    break;
+                case 'CPT':
+                    theCity.destination = 'Cape Town';
+                    theCity.airport = 'Cape Town International Airport';
+                    break;
+                case 'JNB':
+                    theCity.destination = 'Johannesburg';
+                    theCity.airport = 'O.R. Tambo International Airport';
+                    break;
+                case 'ABZ':
+                    theCity.destination = 'Aberdeen';
+                    theCity.airport = 'Aberdeen Airport';
+                    break;
+                case 'EDI':
+                    theCity.destination = 'Edinburgh';
+                    theCity.airport = 'Edinburgh Airport';
+                    break;
+                case 'GLA':
+                    theCity.destination = 'Glasgow';
+                    theCity.airport = 'Glasgow Airport';
+                    break;
+                case 'LHR':
+                    theCity.destination = 'London';
+                    theCity.airport = 'London Heathrow Airport';
+                    break;
+                case 'LGW':
+                    theCity.destination = 'London';
+                    theCity.airport = 'London Gatwick Airport';
+                    break;
+                case 'MAN':
+                    theCity.destination = 'Manchester';
+                    theCity.airport = 'Manchester Airport';
+                    break;
+                case 'BOS':
+                    theCity.destination = 'Boston';
+                    theCity.airport = 'Boston Logan International Airport';
+                    break;
+                case 'ORD':
+                    theCity.destination = 'Chicago';
+                    theCity.airport = 'Chicago O\'Hare International Airport';
+                    break;
+                case 'LAS':
+                    theCity.destination = 'Las Vegas';
+                    theCity.airport = 'Las Vegas McCarran Airport';
+                    break;
+                case 'MIA':
+                    theCity.destination = 'Miami';
+                    theCity.airport = 'Miami International Airport';
+                    break;
+                case 'JFK':
+                    theCity.destination = 'New York';
+                    theCity.airport = 'John F. Kennedy International Airport';
+                    break;
+                case 'EWR':
+                    theCity.destination = 'New York';
+                    theCity.airport = 'Newark Liberty International Airport';
+                    break;
+                case 'MCO':
+                    theCity.destination = 'Orlando';
+                    theCity.airport = 'Orlando International Airport';
+                    break;
+                case 'SFO':
+                    theCity.destination = 'San Francisco';
+                    theCity.airport = 'San Francisco International Airport';
+                    break;
+                case 'YVR':
+                    theCity.destination = 'Vancouver';
+                    theCity.airport = 'Vancouver International Airport';
+                    break;
+                case 'IAD':
+                    theCity.destination = 'Washington';
+                    theCity.airport = 'Washington Dulles International Airport';
+                    break;
+                case 'YSSY':
+                    theCity.destination = 'Sydney';
+                    theCity.airport = 'Sydney';
+                    break;
+                case 'SIN':
+                    theCity.destination = 'Singapore';
+                    theCity.airport = 'Singapore';
+                    break;
+                case 'DMK':
+                    theCity.destination = 'Bangkok';
+                    theCity.airport = 'Bangkok-Don Mueang';
+                    break;
+                case 'TPE':
+                    theCity.destination = 'Taipei';
+                    theCity.airport = 'Taiwan Taoyuan';
+                    break;
+                case 'OOL':
+                    theCity.destination = 'Gold Coast';
+                    theCity.airport = 'Gold Coast';
+                    break;
+                case 'PER':
+                    theCity.destination = 'Perth';
+                    theCity.airport = 'Perth International';
+                    break;
+                case 'NRT':
+                    theCity.destination = 'Tokyo';
+                    theCity.airport = 'Tokyo Narita';
+                    break;
+                case 'GMP':
+                    theCity.destination = 'Seoul';
+                    theCity.airport = 'Gimpo International';
+                    break;
+                case 'TSN':
+                    theCity.destination = 'Tianjin';
+                    theCity.airport = 'Tianjin';
+                    break;
+                case 'NKG':
+                    theCity.destination = 'Nanjing';
+                    theCity.airport = 'Nanjing';
+                    break;
+                case 'TAO':
+                    theCity.destination = 'Qingdao';
+                    theCity.airport = 'Qingdao';
+                    break;
+                case 'SHE':
+                    theCity.destination = 'Shenyang';
+                    theCity.airport = 'Shenyang';
+                    break;
+                case 'BBB':
+                    theCity.destination = 'Minnesota';
+                    theCity.airport = 'Benson Municipal Airport';
+                    break;
+                case 'AAA':
+                    theCity.destination = 'Tukuhora';
+                    theCity.airport = 'Anaa Airport';
+                    break;
+                default:
+                    theCity.destination = 'NA';
+                    theCity.airport = 'NA';
+            }
+
+            return theCity
+        }
+    </script> 
+  <script>
+        window.genreArray = [];
+        window.genreIndex = 0;
+    </script> 
+  <meta name="version" content="v01.12.22">
+ <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="avod/v1" src="./SCOOT_ ScooTV Player_files/v1.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="avod/v1/software" src="./SCOOT_ ScooTV Player_files/software.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="avod/v1/flash_config" src="./SCOOT_ ScooTV Player_files/flash_config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="phkhmhjoaliekidocmibncjbepgflmdp/config" src="./SCOOT_ ScooTV Player_files/null.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="service_control/v1" src="./SCOOT_ ScooTV Player_files/v1(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="service_control/v1/service_status" src="./SCOOT_ ScooTV Player_files/service_status.js"></script></head> 
+ <!--[if IE 8 ]>
+<body class="ie8 hide-until-app-initialised"> <![endif]--> 
+ <!--[if IE 9 ]>
+<body class="ie9 hide-until-app-initialised"> <![endif]--> 
+ <!--[if (gt IE 9)|!(IE)]><!--> 
+ <body class="w3c ae-page-active-scootv_player" data-first-page="home"> 
+  <!--<![endif]--> 
+  <!--MASTER PAGE START--> 
+  <div class="ae-master-page ds-editing-container" style="background-color: rgba(0, 0, 0, 0);"> 
+   <i class="sco-m-dev-button" title="Developer tools" spellcheck="false"></i> 
+   <a class="itk-navigation itk-named-anchor ds-wapplet-box" id="itk-top-anchor"></a> 
+   <!--MODULE: PRELOADER
+START--> 
+   <div class="sco-m-preloader sco-h-bkcol-brand1 itk-h-fixed-overlay ds-wapplet-box"> 
+    <div class="sco-m-preloader__bar--bottom ds-wapplet-box"></div> 
+    <div class="sco-m-preloader__bar--top ds-wapplet-box"></div> 
+    <div class="itk-h-element-fill sco-m-preloader__element-wrapper ds-wapplet-box"> 
+     <div class="sco-m-preloader__logo ds-wapplet-box"></div> 
+     <div class="sco-m-preloader__loading-indicator ds-wapplet-box"></div> 
+    </div> 
+   </div> 
+   <!--MODULE: PRELOADER END--> 
+   <!--WRAPPER START--> 
+   <div id="itk-wrapper" class="ds-wapplet-box"> 
+    <!--MODULE: BG HOLDER START--> 
+    <div class="sco-m-bg-holder__img_preloader itk-h-viewport-offset ds-wapplet-box"></div> 
+    <div class="sco-m-bg-holder itk-h-fixed-overlay ds-wapplet-box"></div> 
+    <!--MODULE: BG HOLDER END--> 
+    <!--GLOBAL CONTAINER START --> 
+    <div class="global-container ds-wapplet-box"> 
+     <!--MODULE: SCO HEADER START --> 
+     <header class="sco-m-header itk-h-anim-delay-50 ds-wapplet-box"> 
+      <div class="sco-h-bkcol-brand2 ds-wapplet-box"> 
+       <!--LAYOUT: STRUCTURE INNER START--> 
+       <div class="sco-l-structure-inner ds-wapplet-box"> 
+        <!--LAYOUT: CONTAINER FLUID START--> 
+        <div class="container-fluid ds-wapplet-box"> 
+         <!--LAYOUT: ROW START--> 
+         <div class="row sco-h-pad-tb-54 sco-h-mh20 ds-wapplet-box"> 
+          <!--LAYOUT: COL START--> 
+          <div id="language-switch-links" class="col-xs-7  col-pad-r-5 visible-xs visible-sm ds-wapplet-box"> 
+           <div class="sco-m-header__lng sco-t-10 sco-t-brand1 ds-wapplet-box"> 
+            <a data-type="LanguageLink" class="ae-comp widget lang-en current sco-t-brand1 sco-t-no-und sco-t-uppercase ds-wapplet-box" data-deep-link="true" data-lang="en_GB"> <strong spellcheck="false">English</strong> </a> 
+            <span spellcheck="false">|</span> 
+            <a data-type="LanguageLink" class="ae-comp widget lang-zh sco-t-brand1 sco-t-no-und sco-t-uppercase ds-wapplet-box" data-deep-link="true" data-lang="zh_HANS"><span spellcheck="false">简体中文 </span></a> 
+            <span spellcheck="false">|</span> 
+            <a data-type="LanguageLink" class="ae-comp widget lang-jp sco-t-brand1 sco-t-no-und sco-t-uppercase ds-wapplet-box" data-deep-link="true" data-lang="ja_JP"><span spellcheck="false">日本語 </span></a> 
+           </div> 
+          </div> 
+          <!--LAYOUT: COL END--> 
+          <span class="ae-comp sco-t-white sco-t-10 sco-t-avenir-heavy hidden-xs hidden-sm hide-in-sitebuilder" data-always-fetch="true" data-collection-type="FlightDataCollection" data-include-wrapping-div="false" data-json-path-to-flight-data-function="timeToDestination dateTimeUTC destinationICAO originICAO distanceToDestination flightNumber" data-loading-template="generic-load" data-no-data-template="generic-no-data" data-page-listeners="activate" data-refresh-interval="30000" data-template="sco-template-header-status-bar" data-type="JSEngine.DynamicContainer">
+                                        <div class="col-md-3 sco-t-uppercase">
+                                            <i class="icon-clock sco-t-brand1"></i>
+                                            Time to Destination |
+                                            <span class="transform sco-t-brand1" data-format-type="unitsToDateFormat" data-input-format="mm" data-output-format="HH:mm">03:21</span>
+
+                        </div>
+                        <div class="col-md-3 sco-t-uppercase"> <i class="icon-airport sco-t-brand1"></i>
+FLIGHT
+                            SCO008    | <span class="sco-t-brand1">
+                                                Singapore - Perth
+                                            </span>
+
+                        </div>
+                        </span> 
+          <!-- SITEBUILDER MOCK START --> 
+          <div class="sb-placeholder ds-wapplet-box"> 
+           <span class="ae-comp sco-t-white sco-t-10 sco-t-avenir-heavy hidden-xs hidden-sm" spellcheck="false"> 
+            <div class="col-md-3 sco-t-uppercase"> 
+             <i class="icon-clock sco-t-brand1"></i> Time to Destination | 
+             <span class="transform sco-t-brand1"> 00:00</span> 
+            </div> 
+            <div class="col-md-3 sco-t-uppercase"> 
+             <i class="icon-airport sco-t-brand1"></i> FLIGHT 000 | 
+             <span class="sco-t-brand1"> CITY FROM - CITY TO</span> 
+            </div> </span> 
+           <span class="ae-comp sco-t-white sco-t-10 sco-t-avenir-heavy sco-t-uppercase" spellcheck="false"> 
+            <div class="col-md-4 hidden-xs hidden-sm"> 
+             <i class="icon-clock sco-t-brand1"></i> CONNECTIVITY TIME ON FLIGHT | 
+             <span class="visible-xs visible-sm sco-t-10"> OFFLINE</span> 
+             <span class="hidden-xs hidden-sm sco-t-11">OFFLINE</span> 
+            </div> </span> 
+           <span class="ae-comp sco-t-white sco-t-10 sco-t-avenir-heavy sco-t-uppercase" spellcheck="false"> 
+            <div class="col-pad-l-5 pull-right sco-h-pad-r-10"> 
+             <span class="sco-t-brand1 sco-t-10 sco-t-avenir-book pull-right"> <span class="visible-xs visible-sm sco-t-10"> <i class="icon-signal"></i> SERVICE OFFLINE </span> <span class="hidden-xs hidden-sm sco-t-11"> <i class="icon-signal"></i> SERVICE OFFLINE</span> </span> 
+            </div> </span> 
+          </div> 
+          <!-- SITEBUILDER MOCK END --> 
+          <span class="ae-comp sco-t-white sco-t-10 sco-t-avenir-heavy sco-t-uppercase hide-in-sitebuilder" data-type="global-status"> 
+           <div class="col-md-4 hidden-xs hidden-sm"> 
+            <i class="icon-clock sco-t-brand1"></i> CONNECTIVITY TIME ON FLIGHT | 
+            <script class="global-online" type="text/template">
+                                            <% window.totalCoverageRemaining = totalCoverageRemaining; %>
+                                            <span class="transform sco-t-brand1"
+                                                  data-format-type="unitsToDateFormat"
+                                                  data-input-format="ss"
+                                                  data-output-format="HH:mm">
+                                                <%= window.totalCoverageRemaining %>
+                                            </span>
+
+            </script> 
+            <span id="connectivity-status" class="container-body sco-t-brand1 sco-t-10">
+                                            
+                                            <span class="transform sco-t-brand1" data-format-type="unitsToDateFormat" data-input-format="ss" data-output-format="HH:mm">00:00</span>
+
+            </span> 
+            <script class="global-offline" type="text/template"> <span class="visible-xs visible-sm sco-t-10">
+                                                OFFLINE
+                                            </span>
+
+                <span
+                class="hidden-xs hidden-sm sco-t-11">OFFLINE</span>
+                    </script> 
+            <script class="global-error" type="text/template">
+                                            <span class="visible-xs visible-sm sco-t-10">
+                                                UNAVAILABLE
+                                            </span>
+                                            <span class="hidden-xs hidden-sm sco-t-11">
+                                                UNAVAILABLE
+                                            </span>
+                                        </script> 
+           </div> </span> 
+          <span class="ae-comp sco-t-white sco-t-10 sco-t-avenir-heavy sco-t-uppercase hide-in-sitebuilder" data-type="global-status"> 
+           <div class="col-pad-l-5 pull-right sco-h-pad-r-10"> 
+            <span class="sco-t-brand1 sco-t-10 sco-t-avenir-book pull-right"> <script class="global-online" type="text/template">
+                                                <span class="visible-xs visible-sm sco-t-10">
+                                                    <i class="icon-signal"></i>
+                                                    SERVICE AVAILABLE
+                                                </span>
+
+    <span
+    class="hidden-xs hidden-sm sco-t-11"> <i class="icon-signal"></i>
+SERVICE AVAILABLE</span>
+        </script> <script class="global-offline" type="text/template">
+                                                <span class="visible-xs visible-sm sco-t-10">
+                                                    <i class="icon-signal"></i>
+                                                    SERVICE OFFLINE
+                                                </span>
+                                                <span class="hidden-xs hidden-sm sco-t-11">
+                                                    <i class="icon-signal"></i>
+                                                    SERVICE OFFLINE
+                                                </span>
+                                            </script> <script class="global-error" type="text/template"> <span class="visible-xs visible-sm sco-t-10">
+                                                    <i class="icon-signal"></i>
+                                                    SERVICE UNAVAILABLE
+                                                </span>
+
+            <span
+            class="hidden-xs hidden-sm sco-t-11"> <i class="icon-signal"></i>
+SERVICE UNAVAILABLE</span>
+                </script> </span> 
+            <span id="signal-status" class="container-body sco-t-brand1 sco-t-10">
+                                                <span class="visible-xs visible-sm sco-t-10">
+                                                    <i class="icon-signal"></i>
+                                                    SERVICE AVAILABLE
+                                                </span>
+
+    <span class="hidden-xs hidden-sm sco-t-11"> <i class="icon-signal"></i>
+SERVICE AVAILABLE</span>
+        </span> 
+           </div> </span> 
+         </div> 
+         <!--LAYOUT: ROW END--> 
+        </div> 
+        <!--LAYOUT: CONTAINER FLUID END--> 
+       </div> 
+       <!--LAYOUT: STRUCTURE INNER END--> 
+      </div> 
+      <div class="sco-h-bkcol-brand1 ds-wapplet-box"> 
+       <!--LAYOUT: STRUCTURE INNER START--> 
+       <div class="sco-l-structure-inner ds-wapplet-box"> 
+        <!--LAYOUT: CONTAINER FLUID START--> 
+        <div class="container-fluid ds-wapplet-box"> 
+         <!--LAYOUT: ROW START--> 
+         <div class="row sco-m-header__mid-bar ds-wapplet-box"> 
+          <!--LAYOUT: COL START--> 
+          <div class="col-xs-2 ds-wapplet-box"> 
+           <div class="sco-m-header__logo sco-h-trans ds-wapplet-box"> 
+            <a class="itk-h-replaced ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#home"><span spellcheck="false">Home </span></a> 
+           </div> 
+          </div> 
+          <!--LAYOUT: COL END--> 
+          <!--LAYOUT: COL START--> 
+          <div class="col-xs-10 visible-xs visible-sm sco-h-pad-tb-5 ds-wapplet-box"> 
+           <div class="row ae-comp" data-type="global-status"> 
+            <span class="sco-t-brand2 sco-t-11"> 
+             <div class="col-sm-12 itk-h-text-right"> 
+              <i class="icon-clock"></i> 
+              <span class="sco-t-uppercase">CONNECTIVITY TIME ON FLIGHT</span> | 
+              <script class="global-online" type="text/template">
+                            <%w indow.totalCoverageRemaining= totalCoverageRemaining;
+                            %> <span class="transform sco-t-brand2" data-format-type="unitsToDateFormat"
+                            data-input-format="ss" data-output-format="HH:mm">
+                                                        <%= window.totalCoverageRemaining %>
+                                                    </span>
+
+                            </script> 
+              <span id="signal-status-2" class="container-body sco-t-brand2 sco-t-10">Waiting for Status... </span> 
+             </div> <script class="global-offline" type="text/template">
+                                                <span>OFFLINE</span>
+                                            </script> <script class="global-error" type="text/template"> <span>UNAVAILABLE</span>
+
+                        </script> </span> 
+           </div> 
+           <span class="ae-comp sco-t-brand2 sco-t-11 sco-t-avenir-book" data-always-fetch="true" data-collection-type="FlightDataCollection" data-include-wrapping-div="false" data-json-path-to-flight-data-function="timeToDestination dateTimeUTC destinationICAO originICAO distanceToDestination flightNumber" data-loading-template="generic-load" data-no-data-template="generic-no-data" data-page-listeners="activate" data-template="sco-template-header-status-bar-mobile" data-type="JSEngine.DynamicContainer">
+                                            <div class="row">
+                                                <div class="col-sm-12 itk-h-text-right">
+                                                    <i class="icon-clock"></i>
+                                                    <span class="sco-t-uppercase">Time to Destination</span>
+|
+                <span class="transform" data-format-type="unitsToDateFormat" data-input-format="mm" data-output-format="HH:mm">04:04</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 itk-h-text-right"> <i class="icon-airport"></i>
+ <span class="sco-t-uppercase">Flight SCO008    </span>
+|
+                <span class="sco-t-uppercase">
+                    Singapore-
+                    Perth
+                    </span>
+            </div>
+        </div>
+        </span> 
+          </div> 
+          <!--LAYOUT: COL END--> 
+          <!--LAYOUT: COL START--> 
+          <div class="col-md-3 pull-right hidden-xs hidden-sm ds-wapplet-box"> 
+           <div id="language-switch-links" class="sco-m-header__lng pull-right sco-t-11 sco-t-brand2 sco-h-pad-tb-10 ds-wapplet-box"> 
+            <a data-type="LanguageLink" class="ae-comp widget lang-en current sco-t-brand2 sco-t-no-und sco-t-uppercase ds-wapplet-box" data-deep-link="true" data-lang="en_GB"> <strong spellcheck="false">English</strong> </a> 
+            <span spellcheck="false">|</span> 
+            <a data-type="LanguageLink" class="ae-comp widget lang-zh sco-t-brand2 sco-t-no-und sco-t-uppercase ds-wapplet-box" data-deep-link="true" data-lang="zh_HANS"><span spellcheck="false">简体中文 </span></a> 
+            <span spellcheck="false">|</span> 
+            <a data-type="LanguageLink" class="ae-comp widget lang-jp sco-t-brand2 sco-t-no-und sco-t-uppercase ds-wapplet-box" data-deep-link="true" data-lang="ja_JP"><span spellcheck="false">日本語 </span></a> 
+           </div> 
+          </div> 
+          <!--LAYOUT: COL END--> 
+         </div> 
+         <!--LAYOUT: ROW END--> 
+        </div> 
+        <!--LAYOUT: CONTAINER FLUID END--> 
+       </div> 
+       <!--LAYOUT: STRUCTURE INNER END--> 
+      </div> 
+      <div class="sco-h-grad3 ds-wapplet-box"> 
+       <!--LAYOUT: STRUCTURE INNER START--> 
+       <div class="sco-l-structure-inner ds-wapplet-box"> 
+        <!--LAYOUT: CONTAINER FLUID START--> 
+        <div class="container-fluid ds-wapplet-box"> 
+         <!--LAYOUT: ROW START--> 
+         <div class="row row-lr-0 ds-wapplet-box"> 
+          <!--LAYOUT: COL START--> 
+          <div class="col-xs-7 visible-xs visible-sm  ds-wapplet-box"> 
+           <a class="ae-comp ae-ifapi-services-svcPedAVOD-state-dependent sco-t-15 sco-t-brand1 sco-t-no-und sco-t-text-shadow sco-h-trans sco-h-pad-tb-10 sco-t-avenir-black sco-m-header__scootv" href="http://www.scootwifi.com/en_GB/#scootv" data-type="JSEngine.ServiceBlockingURL" data-service-names="svcPedAVOD" aria-hidden="false">ScooTV <i class="icon-right-open"></i> </a> 
+          </div> 
+          <!--LAYOUT: COL END--> 
+          <!--LAYOUT: COL START--> 
+          <div class="col-xs-5 visible-xs visible-sm ds-wapplet-box"> 
+           <a class="pull-right sco-t-15 sco-t-brand1 sco-t-no-und sco-t-text-shadow sco-h-trans sco-h-pad-tb-10 sco-t-avenir-black ae-comp ds-wapplet-box" href="https://hotspot.t-mobile.net/wlan/redirect.do?lang=en_GB" target="_blank" data-captcha-page="captcha" data-error-page="#error" data-type="wispUrl" data-open-external="true"><span spellcheck="false"> GET Wi-Fi! </span></a> 
+          </div> 
+          <!--LAYOUT: COL END--> 
+          <!--LAYOUT: COL START--> 
+          <div class="col-md-12 col-pad-r-0 hidden-xs hidden-sm ds-wapplet-box"> 
+           <!--MODULE: SCO NAV START --> 
+           <nav class="sco-m-nav ds-wapplet-box"> 
+            <ul class="sco-m-nav__ul widget itk-m-list-unsigned pull-left ds-wapplet-box" data-match-on="href" data-match-type="uri-contains" data-onstate-add-class="current" data-target="a" data-type="NavigationIndicator" data-uri-split-before=""> 
+             <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-t-brand1-active sco-t-no-und sco-t-text-shadow sco-h-trans sco-h-border-grad1-right sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#home"><span spellcheck="false">Home </span></a> </li> 
+             <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-t-brand1-active sco-t-no-und sco-t-text-shadow sco-h-trans sco-h-border-grad1-right sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#destinations"><span spellcheck="false">Destinations </span></a> </li> 
+             <li class="ds-wapplet-box"></li> 
+             <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-t-brand1-active sco-t-no-und sco-t-text-shadow sco-h-trans sco-h-border-grad1-right sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#eat"><span spellcheck="false">Scoot Café</span></a> </li> 
+             <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-t-brand1-active sco-t-no-und sco-t-text-shadow sco-h-trans sco-h-border-grad1-right sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#shopping"><span spellcheck="false">Shopping</span></a> </li> 
+             <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-t-brand1-active sco-t-no-und sco-t-text-shadow sco-h-trans sco-h-border-grad1-right sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#about_scoot"><span spellcheck="false">About Scoot</span></a> </li> 
+             <li class="ds-wapplet-box"> <a class="ae-comp ae-ifapi-services-svcPedAVOD-state-dependent sco-t-15 sco-t-white sco-t-brand1-active sco-t-no-und sco-t-text-shadow sco-h-trans sco-h-border-grad1-right sco-t-avenir-book sco-t-brand1 current" href="http://www.scootwifi.com/en_GB/#scootv" data-type="JSEngine.ServiceBlockingURL" data-service-names="svcPedAVOD" aria-hidden="false"> <strong>ScooTV</strong> </a> </li> 
+             <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-brand1 sco-t-no-und sco-t-text-shadow sco-h-trans sco-t-nav-wifi sco-t-avenir-book ae-comp ds-wapplet-box" href="https://hotspot.t-mobile.net/wlan/redirect.do?lang=en_GB" target="_blank" data-captcha-page="captcha" data-error-page="#error" data-type="wispUrl" data-open-external="true"> <strong spellcheck="false">Get Wi-Fi!</strong> </a> </li> 
+            </ul> 
+           </nav> 
+           <!--MODULE: SCO NAV END --> 
+          </div> 
+          <!--LAYOUT: COL END--> 
+         </div> 
+         <!--LAYOUT: ROW END--> 
+        </div> 
+        <!--LAYOUT: CONTAINER FLUID END--> 
+       </div> 
+       <!--LAYOUT: STRUCTURE INNER END--> 
+      </div> 
+     </header> 
+     <!--MODULE: SCO HEADER END --> 
+     <!--MODULE: SCO NAV MOBILE START --> 
+     <div class="sco-m-nav-mobile visible-xs visible-sm ds-wapplet-box"> 
+      <div class="sco-m-nav-mobile__overlay itk-h-fixed-overlay ds-wapplet-box"></div> 
+      <nav class="sco-m-nav-mobile__list ds-wapplet-box"> 
+       <a class="sco-m-nav-mobile__list__menu widget ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#" title="Menu" data-element-selector=".sco-m-nav-mobile" data-toggle-class="sco-s-nav-mobile-toggle" data-toggle-hide-on-page-changed="true" data-toggle-type="toggle" data-type="ToggleButton"> 
+        <div class="sco-m-nav-mobile__list__menu__btn ds-wapplet-box"> 
+         <div class="sco-m-nav-mobile__list__menu__btn__arrow ds-wapplet-box"> 
+          <div class="sco-h-bkcol-brand1 ds-wapplet-box"></div> 
+          <div class="sco-h-bkcol-brand1 ds-wapplet-box"></div> 
+         </div> 
+        </div> <span class="itk-h-viewport-offset" spellcheck="false">Menu</span> </a> 
+       <ul class="sco-m-nav-mobile__list__ul widget itk-m-list-unsigned itk-h-clearfix ds-wapplet-box" data-match-on="href" data-match-type="uri-contains" data-onstate-add-class="current" data-target="a" data-type="NavigationIndicator" data-uri-split-before=""> 
+        <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-h-bkcol-brand1-active sco-t-no-und sco-t-text-shadow sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#home"><span spellcheck="false">Home </span></a> </li> 
+        <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-h-bkcol-brand1-active sco-t-no-und sco-t-text-shadow sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#destinations"><span spellcheck="false">Destinations </span></a> </li> 
+        <li class="ds-wapplet-box"></li> 
+        <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-h-bkcol-brand1-active sco-t-no-und sco-t-text-shadow sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#eat"><span spellcheck="false">Scoot Café</span></a> </li> 
+        <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-h-bkcol-brand1-active sco-t-no-und sco-t-text-shadow sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#shopping"><span spellcheck="false">Shopping</span></a> </li> 
+        <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-h-bkcol-brand1-active sco-t-no-und sco-t-text-shadow sco-t-avenir-book ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#about_scoot"><span spellcheck="false">About Scoot</span></a> </li> 
+        <li class="ds-wapplet-box"> <a class="ae-comp ae-ifapi-services-svcPedAVOD-state-dependent sco-t-15 sco-t-white sco-h-bkcol-brand1-active sco-t-no-und sco-t-text-shadow sco-t-avenir-book current" href="http://www.scootwifi.com/en_GB/#scootv" data-type="JSEngine.ServiceBlockingURL" data-service-names="svcPedAVOD" aria-hidden="false">ScooTV </a> </li> 
+        <li class="ds-wapplet-box"> <a class="sco-t-15 sco-t-white sco-h-bkcol-brand1-active sco-t-no-und sco-t-text-shadow sco-t-avenir-book ae-comp ds-wapplet-box" href="https://hotspot.t-mobile.net/wlan/redirect.do?lang=en_GB" target="_blank" data-captcha-page="captcha" data-error-page="#error" data-type="wispUrl" data-open-external="true"><span spellcheck="false"> GET Wi-Fi! </span></a> </li> 
+       </ul> 
+      </nav> 
+     </div> 
+     <!--MODULE: SCO NAV MOBILE END --> 
+    </div> 
+    <!--GLOBAL CONTAINER END --> 
+    <!--MAIN START--> 
+    <main class="sco-l-structure"> 
+     <!--PSEUDO PAGE WRAPPER START--> 
+     <div class="pseudo-page-wrapper ae-psuedo-page-placeholder ae-pseudo-page-placeholder ae-pseudo-page-placeholder ae-psuedo-page-placeholder"> 
+      <!--PSEUDO PAGE: HOME START--> 
+      <div id="home" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/home.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Home" data-reporting-string="Home-en"></div> 
+      <!--PSEUDO PAGE: HOME END--> 
+      <!--PSEUDO PAGE: DESTINATIONS START--> 
+      <div id="destinations" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/destinations.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Destinations" data-reporting-string="Destinations-en"></div> 
+      <!--PSEUDO PAGE: DESTINATIONS END--> 
+      <!--PSEUDO PAGE: CAR RENTALS START--> 
+      <div id="car-rentals" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/car_rentals.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Car Rentals" data-reporting-string="Car Rentals-en" data-parent="inactive-page"> 
+      </div> 
+      <!--PSEUDO PAGE: CAR RENTALS END--> 
+      <!--PSEUDO PAGE: One Media Test START--> 
+      <div id="one-media-test" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/one_media_test.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: One Media Test" data-reporting-string="OneMediaTest-en" data-parent="inactive-page"> 
+      </div> 
+      <!--PSEUDO PAGE: One Media Test END--> 
+      <!--PSEUDO PAGE: EAT START--> 
+      <div id="eat" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/eat.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Scoot Café" data-reporting-string="Eat-en"></div> 
+      <!--PSEUDO PAGE: EAT END--> 
+      <!--PSEUDO PAGE: SHOPPING START--> 
+      <div id="shopping" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/shopping.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Shopping" data-reporting-string="Shopping-en"></div> 
+      <!--PSEUDO PAGE: SHOPPING END--> 
+      <!--PSEUDO PAGE: ABOUT SCOOT --> 
+      <div id="about-scoot" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/about_scoot.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: About Scoot" data-reporting-string="About Scoot-en"></div> 
+      <!--PSEUDO PAGE: ABOUT SCOOT END--> 
+      <!--PSEUDO PAGE: SCOOTV START--> 
+      <div id="scootv" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/scootv.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: ScooTV" data-reporting-string="ScooTV-en" data-parent="home"> 
+      </div> 
+      <!--PSEUDO PAGE: SCOOTV END--> 
+      <!--PSEUDO PAGE: SCOOTV CAT START--> 
+      <div id="scootv-genre" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/avod/scootv_cat.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: ScooTV Genre" data-parent="scootv"> 
+      </div> 
+      <!--PSEUDO PAGE: SCOOTV CAT END--> 
+      <!--PSEUDO PAGE: SCOOTV DETAIL START--> 
+      <div id="scootv-player" class="pseudo-page" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/avod/scootv_cat_detail.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: ScooTV Player" data-parent="scootv" style=""><h1 class="aria-focus sco-h-aria-header" tabindex="-1">ScooTV</h1> 
+<!--LAYOUT: STRUCTURE INNER START--> 
+<div class="sco-l-structure-inner sco-h-bg1 sco-h-overflow ds-wapplet-box"> 
+ <!--LAYOUT: CONTAINER FLUID START START--> 
+ <div class="container-fluid ds-wapplet-box"> 
+  <!--LAYOUT: ROW START--> 
+  <div class="row sco-m-one-media ds-wapplet-box"> 
+   <!--LAYOUT: COL START--> 
+   <div class="col-md-8 col-sm-7 sco-h-vert-content-pad ds-wapplet-box"> 
+    <h2 class="sco-m-scootv itk-h-replaced itk-h-center-block sco-h-mar-b-20"><em>SCOOT</em>V</h2> 
+    <!-- SITEBUILDER MOCK START --> 
+    <div class="sb-placeholder ds-wapplet-box"> 
+     <div class="sb-overlay sb-overlay-scootv-details ds-wapplet-box"></div> 
+     <div class="sb-placeholder-overlay ds-wapplet-box">
+      <span> This is a preview for the page layout, the content is not editable because it's generated dynamically. </span>
+     </div> 
+     <div class="pana-m-video-player itk-h-bottom-margin ds-wapplet-box"> 
+      <img alt="" class="pana-m-video-scale" src="./SCOOT_ ScooTV Player_files/16_9.gif"> 
+     </div> 
+     <div class="sco-h-bg2 sco-h-pad-lr-10 sco-h-pad-t-10 sco-h-pad-b-1 sco-t-white sco-h-mar-b-20 ae-comp ds-wapplet-box"> 
+      <h3 class="sco-t-brand1">Movie title</h3> 
+      <p class="ds-wapplet-box"> <strong class="sco-t-brand1 sco-h-mar-b-20"> Genre | Rating | <span> 00:00 </span> </strong> </p> 
+      <p class="ds-wapplet-box"><span>Description</span></p> 
+      <div class="ds-wapplet-box"> 
+       <strong class="sco-t-brand1">Starring:</strong> 
+      </div> 
+      <div class="itk-h-bottom-margin ds-wapplet-box"> 
+       <strong class="sco-t-brand1">Director:</strong> 
+      </div> 
+     </div> 
+     <p class="itk-h-text-right ds-wapplet-box"> <a class="sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-1 sco-h-bkcol-brand1-active sco-h-trans sco-t-brand1 ds-wapplet-box"><span> Play Movie </span></a> </p> 
+    </div> 
+    <!-- SITEBUILDER MOCK END --> 
+    <div class="ae-comp" data-type="JSEngine.PPVAContainer" data-media-uri="&lt;%= urlParams.media %&gt;" data-purchase-type="PPA" data-theme-id="sco" data-language-code="eng" data-currency-code="eur" data-confirmation-required="true"> 
+     <div class="ae-ppva-payment-buttons-container">
+						<div class="pana-m-video-player itk-h-bottom-margin">
+							<img alt="" class="pana-m-video-scale" src="./SCOOT_ ScooTV Player_files/16_9.gif">
+							<div class="ae-comp ae-player-type-VideoPlayer ae-media-loading ae-media-player-error ae-media-player-warning-2002 ae-media-player-warning" data-autoplay="false" data-close-flash-full-screen-on-pa="true" data-close-html-full-screen-on-pa="true" data-media-container-selector="#sco-i-sco-video-player-movies" data-name="video-player" data-poster-parameter-name="p" data-skin-player-controls-config-selector="#ae-media-skin-player-controls" data-type="JSEngine.Media.VideoPlayer" data-uri-parameter-name="media" data-use-skin="true" data-android-hide-player-on-pa="true" data-ios-hide-player-on-pa="true" data-go-fs-on-play="true">
+								<div class="avod-wrapper avod-fs-off"><div id="sco-i-sco-video-player-movies"></div></div>
+								<div class="pana-m-video-error ae-i-video-error-1001 itk-h-element-fill">
+									<p>Bandwidth Allocation Error</p>
+								</div>
+								<div class="pana-m-video-error ae-i-video-error-1002 itk-h-element-fill">
+									<p>Network Bandwidth Allocation Service Unavailable</p>
+								</div>
+								<div class="pana-m-video-error ae-i-video-error-1003 itk-h-element-fill">
+									<p>Bad Request</p>
+								</div>
+								<div class="pana-m-video-error ae-i-video-error-1004 itk-h-element-fill">
+									<p>Media player is not supported on this device</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="sco-h-bg2 sco-h-pad-lr-10 sco-h-pad-t-10 sco-h-pad-b-1 sco-t-white sco-h-mar-b-20 ae-comp hide-in-sitebuilder" data-always-fetch="false" data-collection-type="MediaMetadataCollection" data-json-path-to-media-id="urlParams.media" data-include-wrapping-div="false" data-loading-template="sco-template-generic-load" data-no-data-template="sco-template-generic-nodata" data-page-listeners="activate" data-static-media-id="" data-template="sco-template-MediaMetadataCollection-movies-2" data-type="JSEngine.DynamicContainer">
+
+						<h3 class="sco-t-brand1">The Adventures of Tintin Ep 1</h3>
+						<p>
+							<strong class="sco-t-brand1 sco-h-mar-b-20">
+								Kids
+								|
+								NR
+								|
+								<span class="transform" data-format-type="dateTimeFormat" data-input-format="HH:mm:ss" data-output-format="H:mm">0:30</span>
+							</strong>
+						</p>
+						<p>Watch the adventures of Tintin, a young reporter and his faithful dog, Snowy, as they travel around the world on different assignments.</p>
+						<div>
+							<strong class="sco-t-brand1">Starring:</strong> Colin O'Meara, Thierry Wermuth, Christian Pellissier
+						</div>
+						<div class="itk-h-bottom-margin">
+							<strong class="sco-t-brand1">Director:</strong> Stéphane Bernasconi
+						</div>
+
+					</div>
+
+
+						<p class="itk-h-text-right">
+                    		<a class="sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-1 sco-h-bkcol-brand1-active sco-h-trans sco-t-brand1 hide" href="http://www.scootwifi.com/en_GB/#scootv-player/{&quot;media&quot;:&quot;538&quot;,&quot;cat&quot;:&quot;&quot;,&quot;p&quot;:&quot;http://services.inflightpanasonic.aero/inflight/services/metadata/v1/images/538-1_1_1.jpg&quot;}">Play Movie</a>
+						</p>
+					</div> 
+     <div class="ae-ppva-payment-messages-container" style="display: none;"></div> 
+     <script type="text/template" class="ae-ppva-play-button">
+						<div class="pana-m-video-player itk-h-bottom-margin">
+							<img alt="" class="pana-m-video-scale" src="../project_media/portal_media/img/sco_video_player/16_9.gif" />
+							<div class="ae-comp"
+								data-autoplay                            ="false"
+								data-close-flash-full-screen-on-pa       ="true"
+								data-close-html-full-screen-on-pa        ="true"
+								data-media-container-selector            ="#sco-i-sco-video-player-movies"
+								data-name                                ="video-player"
+								data-poster-parameter-name               ="p"
+								data-skin-player-controls-config-selector="#ae-media-skin-player-controls"
+								data-type                                ="JSEngine.Media.VideoPlayer"
+								data-uri-parameter-name                  ="media"
+								data-use-skin                            ="true"
+								data-android-hide-player-on-pa           ="true"
+								data-ios-hide-player-on-pa               ="true"
+								data-go-fs-on-play                       ="true"
+							>
+								<div id="sco-i-sco-video-player-movies"></div>
+								<div class="pana-m-video-error ae-i-video-error-1001 itk-h-element-fill">
+									<p>Bandwidth Allocation Error</p>
+								</div>
+								<div class="pana-m-video-error ae-i-video-error-1002 itk-h-element-fill">
+									<p>Network Bandwidth Allocation Service Unavailable</p>
+								</div>
+								<div class="pana-m-video-error ae-i-video-error-1003 itk-h-element-fill">
+									<p>Bad Request</p>
+								</div>
+								<div class="pana-m-video-error ae-i-video-error-1004 itk-h-element-fill">
+									<p>Media player is not supported on this device</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="sco-h-bg2 sco-h-pad-lr-10 sco-h-pad-t-10 sco-h-pad-b-1 sco-t-white sco-h-mar-b-20 ae-comp hide-in-sitebuilder"
+							data-always-fetch         ="false"
+							data-collection-type      ="MediaMetadataCollection"
+							data-json-path-to-media-id="urlParams.media"
+							data-include-wrapping-div ="false"
+							data-loading-template     ="sco-template-generic-load"
+							data-no-data-template     ="sco-template-generic-nodata"
+							data-page-listeners       ="activate"
+							data-static-media-id      =""
+							data-template             ="sco-template-MediaMetadataCollection-movies-2"
+							data-type                 ="JSEngine.DynamicContainer"
+							>
+						</div>
+
+
+						<p class="itk-h-text-right">
+                    		<a class="sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-1 sco-h-bkcol-brand1-active sco-h-trans sco-t-brand1 hide" href='#scootv-player/{"media":"<%= urlParams.media %>","cat":"<%= urlParams.cat %>","p":"<%= urlParams.p %>"}'>Play Movie</a>
+						</p>
+					</script> 
+     <script id="sco-template-MediaMetadataCollection-movies-2" type="text/template">
+
+						<h3 class="sco-t-brand1"><%= data.title.eng %></h3>
+						<p>
+							<strong class="sco-t-brand1 sco-h-mar-b-20">
+								<%= data.genre.eng %>
+								|
+								<%= data.rating_description %>
+								|
+								<span class="transform"
+									data-format-type  = "dateTimeFormat"
+									data-input-format = "HH:mm:ss"
+									data-output-format= "H:mm"
+								>
+									<%= data.duration %>
+								</span>
+							</strong>
+						</p>
+						<p><%= data.description.eng %></p>
+						<div>
+							<strong class="sco-t-brand1">Starring:</strong> <%= data.cast.eng %>
+						</div>
+						<div class="itk-h-bottom-margin">
+							<strong class="sco-t-brand1">Director:</strong> <%= data.director.eng %>
+						</div>
+
+					</script> 
+     <!--
+					<p class="itk-h-text-left">
+						<a class="sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans widget" data-type="BackButton">Back</a>
+					</p>
+					--> 
+     <script type="text/template" class="ae-ppva-buy-button">
+						<img alt="" class="pana-m-video-scale" src="<%= urlParams.p %>" />
+						<div class="sco-h-bg2 sco-h-pad-lr-10 sco-h-pad-t-10 sco-h-pad-b-1 sco-t-white sco-h-mar-b-20 ae-comp"
+							data-always-fetch         ="false"
+							data-collection-type      ="MediaMetadataCollection"
+							data-json-path-to-media-id="urlParams.media"
+							data-include-wrapping-div ="false"
+							data-loading-template     ="sco-template-generic-load"
+							data-no-data-template     ="sco-template-generic-nodata"
+							data-page-listeners       ="activate"
+							data-static-media-id      =""
+							data-template             ="sco-template-MediaMetadataCollection-movies-2"
+							data-type                 ="JSEngine.DynamicContainer"
+							>
+						</div>
+
+						<p class="itk-h-text-right">
+                    		<a class="ae-ppva-buy-button-button sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans" href="#">Purchase</a>
+						</p>
+					</script> 
+     <script type="text/template" class="ae-ppva-payment-complete-payed">
+						<img alt="" class="pana-m-video-scale" src="<%= urlParams.p %>" />
+						<div class="sco-h-bg2 sco-h-pad-lr-10 sco-h-pad-t-10 sco-h-pad-b-1 sco-t-white sco-h-mar-b-20 ae-comp"
+							data-always-fetch         ="false"
+							data-collection-type      ="MediaMetadataCollection"
+							data-json-path-to-media-id="urlParams.media"
+							data-include-wrapping-div ="false"
+							data-loading-template     ="sco-template-generic-load"
+							data-no-data-template     ="sco-template-generic-nodata"
+							data-page-listeners       ="activate"
+							data-static-media-id      =""
+							data-template             ="sco-template-MediaMetadataCollection-movies-2"
+							data-type                 ="JSEngine.DynamicContainer"
+							>
+						</div>
+						THANK YOU FOR YOUR PURCHASE
+						<p class="itk-h-text-right">
+							<a href="#" class="ae-ppva-message-dismiss-button sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans">OK</a>
+						</p>
+					</script> 
+     <script type="text/template" class="ae-ppva-payment-confirmation-required">
+						<img alt="" class="pana-m-video-scale" src="<%= urlParams.p %>" />
+						<div class="sco-h-bg2 sco-h-pad-lr-10 sco-h-pad-t-10 sco-h-pad-b-1 sco-t-white sco-h-mar-b-20 ae-comp"
+							data-always-fetch         ="false"
+							data-collection-type      ="MediaMetadataCollection"
+							data-json-path-to-media-id="urlParams.media"
+							data-include-wrapping-div ="false"
+							data-loading-template     ="sco-template-generic-load"
+							data-no-data-template     ="sco-template-generic-nodata"
+							data-page-listeners       ="activate"
+							data-static-media-id      =""
+							data-template             ="sco-template-MediaMetadataCollection-movies-2"
+							data-type                 ="JSEngine.DynamicContainer"
+							>
+						</div>
+							<% if(pay_type !== null && pay_type === "voucher") { %>
+      							Are you sure you want to pay with an <span>Access Code</span>?
+    						<% } else { %>
+								Your card will be charged for <span>$<%= price %></span>
+							<% } %>
+							<p class="itk-h-text-right">
+								<a href="#" class="ae-ppva-purchase-confirm-button itk-h-text-center sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans">OK</a>
+								<a href="#" class="ae-ppva-purchase-cancel-button itk-h-text-center sco-m-btn sco-h-bkcol-brand1 sco-t-brand1 sco-h-bkcol-brand1-active sco-m-btn-skin-1 sco-h-trans">CANCEL</a>
+							</p>
+					</script> 
+     <script type="text/template" class="ae-ppva-payment-complete-already-purchased">
+						<div class="sco-h-bg2 sco-h-pad-lr-10 sco-h-pad-t-10 sco-h-pad-b-1 sco-t-white sco-h-mar-b-20 ae-comp"
+							data-always-fetch         ="false"
+							data-collection-type      ="MediaMetadataCollection"
+							data-json-path-to-media-id="urlParams.media"
+							data-include-wrapping-div ="false"
+							data-loading-template     ="sco-template-generic-load"
+							data-no-data-template     ="sco-template-generic-nodata"
+							data-page-listeners       ="activate"
+							data-static-media-id      =""
+							data-template             ="sco-template-MediaMetadataCollection-movies-2"
+							data-type                 ="JSEngine.DynamicContainer"
+							>
+						</div>
+						You can enjoy the movie and your card was not charged as our records show you already purchased this move.
+						<p class="itk-h-text-right">
+							<a href="#" class="ae-ppva-message-dismiss-button itk-h-text-center">Close</a>
+						</p>
+					</script> 
+     <script type="text/template" class="ae-ppva-payment-error">
+						<div class="sco-h-bg2 sco-h-pad-lr-10 sco-h-pad-t-10 sco-h-pad-b-1 sco-t-white sco-h-mar-b-20 ae-comp"
+							data-always-fetch         ="false"
+							data-collection-type      ="MediaMetadataCollection"
+							data-json-path-to-media-id="urlParams.media"
+							data-include-wrapping-div ="false"
+							data-loading-template     ="sco-template-generic-load"
+							data-no-data-template     ="sco-template-generic-nodata"
+							data-page-listeners       ="activate"
+							data-static-media-id      =""
+							data-template             ="sco-template-MediaMetadataCollection-movies-2"
+							data-type                 ="JSEngine.DynamicContainer"
+							>
+						</div>
+						There was an error processing your payment, please try again later.
+						<p class="itk-h-text-right">
+							<a href="#" class="ae-ppva-message-dismiss-button itk-h-text-center">Close</a>
+						</p>
+					</script> 
+    </div> 
+    <!--LAYOUT: ROW START--> 
+    <div class="row ds-wapplet-box"> 
+     <!--LAYOUT: COL START--> 
+     <div class="col-sm-12 ds-wapplet-box"> 
+      <h3>More programmes in this category</h3> 
+      <hr class="sco-h-hr-line sco-h-bkcol-brand1"> 
+     </div> 
+     <!--LAYOUT: COL END--> 
+    </div> 
+    <!--LAYOUT: ROW END--> 
+    <!-- SITEBUILDER MOCK START --> 
+    <div class="sb-placeholder ds-wapplet-box"> 
+     <div class="row ds-wapplet-box"> 
+      <!--MOCKED MOVIE ENTRY START--> 
+      <div class="col-xs-6 col-sm-3 ds-wapplet-box"> 
+       <a class="sco-m-callout ds-wapplet-box"> <img style="display:block; min-height:79px; background-color:grey; border:1px solid darkgrey;"> 
+        <div class="sco-m-callout__caption sco-h-trans sco-t-brand2 sco-t-brand2-active sco-h-bkcol-brand1-active sco-m-callout__caption-height-restriction ds-wapplet-box"> 
+         <p class="itk-h-text-left ds-wapplet-box"><span>Movie Title</span></p> 
+        </div> </a> 
+      </div> 
+      <!--MOCKED MOVIE ENTRY END--> 
+      <!--MOCKED MOVIE ENTRY START--> 
+      <div class="col-xs-6 col-sm-3 ds-wapplet-box"> 
+       <a class="sco-m-callout ds-wapplet-box"> <img style="display:block; min-height:79px; background-color:grey; border:1px solid darkgrey;"> 
+        <div class="sco-m-callout__caption sco-h-trans sco-t-brand2 sco-t-brand2-active sco-h-bkcol-brand1-active sco-m-callout__caption-height-restriction ds-wapplet-box"> 
+         <p class="itk-h-text-left ds-wapplet-box"><span>Movie Title</span></p> 
+        </div> </a> 
+      </div> 
+      <!--MOCKED MOVIE ENTRY END--> 
+      <!--MOCKED MOVIE ENTRY START--> 
+      <div class="col-xs-6 col-sm-3 ds-wapplet-box"> 
+       <a class="sco-m-callout ds-wapplet-box"> <img style="display:block; min-height:79px; background-color:grey; border:1px solid darkgrey;"> 
+        <div class="sco-m-callout__caption sco-h-trans sco-t-brand2 sco-t-brand2-active sco-h-bkcol-brand1-active sco-m-callout__caption-height-restriction ds-wapplet-box"> 
+         <p class="itk-h-text-left ds-wapplet-box"><span>Movie Title</span></p> 
+        </div> </a> 
+      </div> 
+      <!--MOCKED MOVIE ENTRY END--> 
+      <!--MOCKED MOVIE ENTRY START--> 
+      <div class="col-xs-6 col-sm-3 ds-wapplet-box"> 
+       <a class="sco-m-callout ds-wapplet-box"> <img style="display:block; min-height:79px; background-color:grey; border:1px solid darkgrey;"> 
+        <div class="sco-m-callout__caption sco-h-trans sco-t-brand2 sco-t-brand2-active sco-h-bkcol-brand1-active sco-m-callout__caption-height-restriction ds-wapplet-box"> 
+         <p class="itk-h-text-left ds-wapplet-box"><span>Movie Title</span></p> 
+        </div> </a> 
+      </div> 
+      <!--MOCKED MOVIE ENTRY END--> 
+     </div> 
+     <div class="row ds-wapplet-box"> 
+      <div class="col-xs-12 ds-wapplet-box"> 
+       <p class="itk-h-text-right ds-wapplet-box"> <a class="sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#scootv-genre/{&quot;cat&quot;:&quot;&lt;%= urlParams.cat %&gt;&quot;}"><span>View All</span></a> </p> 
+      </div> 
+     </div> 
+    </div> 
+    <!-- SITEBUILDER MOCK END --> 
+    <!--LAYOUT: ROW START--> 
+    <div class="row ds-wapplet-box"> 
+     <div class="ae-comp hide-in-sitebuilder" data-always-fetch="false" data-collection-type="CategoryMediaCollection" data-include-wrapping-div="false" data-item-limit="4" data-json-path-to-category-id="urlParams.cat" data-loading-template="pana-template-generic-load" data-no-data-template="pana-template-generic-nodata" data-page-listeners="activate" data-template="sco-template-sco-m-scootv-genre-items-detail" data-type="JSEngine.DynamicContainer" data-filter="{&quot;specialFilter&quot; : {&quot;type&quot;: &quot;excludeCurrent&quot;, &quot;params&quot;: {&quot;fieldNameToMatch&quot;: &quot;media_uri&quot;, &quot;value&quot;: &quot;&lt;%= urlParams.media %&gt;&quot;}}}"></div> 
+     <script id="sco-template-sco-m-scootv-genre-items-detail" type="text/template">
+
+						<!--LAYOUT: COL START-->
+						<div class="col-xs-6 col-sm-3">
+
+							<!--MODULE: CALLOUT START-->
+							<a class="sco-m-callout" href='#scootv-player/{"media":"<%= data.media_uri %>","cat":"<%= urlParams.cat %>","p":"<%= data.synopsis_url.size_1 %>"}'>
+								<img alt="<%= data.title.eng%>" src="<%= data.synopsis_url.size_1 %>" />
+								<div class="sco-m-callout__caption sco-h-trans sco-t-brand2 sco-t-brand2-active sco-h-bkcol-brand1-active sco-m-callout__caption-height-restriction">
+									<p class="itk-h-text-left"><%= data.title.eng%></p>
+								</div>
+							</a>
+							<!--MODULE: CALLOUT END-->
+
+						</div>
+						<!--LAYOUT: COL END-->
+
+					</script> 
+    </div> 
+    <!--LAYOUT: ROW END--> 
+    <!--LAYOUT: ROW START--> 
+    <div class="row ds-wapplet-box"> 
+     <!--LAYOUT: COL START--> 
+     <div class="col-xs-12 ds-wapplet-box"> 
+      <div class="ae-comp" data-always-fetch="false" data-collection-type="CategoriesCollection" data-include-wrapping-div="false" data-loading-template="sco-generic-load" data-no-data-template="sco-generic-no-data" data-page-listeners="activate" data-filter="{ &quot;id&quot;: &quot;&lt;%= urlParams.cat %&gt;&quot; }" data-template="sco-template-sco-m-scootv-cat_title-detail" data-type="JSEngine.DynamicContainer">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="itk-h-text-center">No Data</p>
+            </div>
+        </div>
+    </div> 
+      <script id="sco-template-sco-m-scootv-cat_title-detail" type="text/template">
+							<p class="itk-h-text-right">
+								<a class="sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans" href='#scootv-genre/{"cat":"<%= urlParams.cat %>"}'>View All</a>
+							</p>
+						</script> 
+     </div> 
+     <!--LAYOUT: COL END--> 
+    </div> 
+    <!--LAYOUT: ROW END--> 
+   </div> 
+   <!--LAYOUT: COL END--> 
+   <!--LAYOUT: COL START--> 
+   <!--INCLUDE: MEDIA AD START--> 
+   <div class="col-md-4 col-sm-5 sco-h-grey-background page-segment hide-in-sitebuilder ds-wapplet-box" data-segment-load-url="portal_media/html/include_media_ad.html"><div class="sb-placeholder sb-placeholder-include ds-wapplet-box"> 
+ <div class="sb-placeholder-overlay ds-wapplet-box"> 
+  <span> This content is included to the following pages: </span> 
+  <br> 
+  <ul class="ds-wapplet-box"> 
+   <li class="ds-wapplet-box"><span>ScooTv</span></li> 
+   <li class="ds-wapplet-box"><span>ScooTv Category</span></li> 
+   <li class="ds-wapplet-box"><span>ScooTv Player</span></li> 
+  </ul> 
+ </div> 
+</div> 
+<!--MODULE: MEDIA AD START--> 
+<div class="ae-comp sco-h-mar-b-20 itk-h-text-center" data-type="JSEngine.Widgets.SoftwareInstallWidget" data-require-install="android">
+
+		<div class="ae-comp" data-always-fetch="true" data-collection-type="CategoryMediaCollection" data-include-wrapping-div="false" data-json-path-to-category-id="" data-loading-template="sco-generic-load" data-no-data-template="sco-generic-no-data" data-page-listeners="activate" data-static-category-id="100" data-item-limit="1" data-template="sco-template-sco-m-scootv-buynow" data-type="JSEngine.DynamicContainer" data-use-sorting="true" data-sort-string="attributes.sequence_num">
+        <div class="ae-comp" data-type="JSEngine.PPVAContainer" data-media-uri="483" data-purchase-type="PPA" data-theme-id="sco" data-language-code="eng" data-currency-code="eur" data-confirmation-required="true" data-is-nested="true">
+            <div class="ae-ppva-payment-buttons-container">
+            <div class="sco-scootv-banner sco-m-scootv-buynow-en"></div>
+            </div>
+            <div class="ae-ppva-payment-messages-container" style="display: none;"></div>
+            <script type="text/template" class="ae-ppva-play-button">
+            <div class="sco-scootv-banner sco-m-scootv-buynow-en"></div>
+            </script>
+            <script type="text/template" class="ae-ppva-buy-button">
+            <p class="itk-h-text-center">
+                <a class="ae-ppva-buy-button-button sco-scootv-banner sco-m-scootv-buynow-en"
+                   href="#"> </a>
+            </p>
+            </script>
+            <script type="text/template" class="ae-ppva-payment-complete-payed">
+            <div class="sco-scootv-banner sco-m-scootv-buynow-en"></div>
+            THANK YOU FOR YOUR PURCHASE
+            <p class="itk-h-text-right">
+                <a href="#"
+                   class="ae-ppva-message-dismiss-button sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans">OK</a>
+            </p>
+            </script>
+            <script type="text/template" class="ae-ppva-payment-confirmation-required">
+            <div class="sco-scootv-banner sco-m-scootv-buynow-en"></div>
+            <% if(pay_type !== null && pay_type === "voucher") { %> Are you sure you want to pay with an
+            <span>Access Code</span>
+            ? <% } else { %> Your card will be charged for
+            <span>$<%= price %></span>
+            <% } %>
+            <p class="itk-h-text-right">
+                <a href="#"
+                   class="ae-ppva-purchase-confirm-button itk-h-text-center sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans">OK</a> <a href="#"
+                                                                                                                                                                     class="ae-ppva-purchase-cancel-button itk-h-text-center sco-m-btn sco-h-bkcol-brand1 sco-t-brand1 sco-h-bkcol-brand1-active sco-m-btn-skin-1 sco-h-trans">CANCEL</a>
+            </p>
+            </script>
+            <script type="text/template" class="ae-ppva-payment-complete-already-purchased">
+            <div class="sco-scootv-banner sco-m-scootv-buynow-en"></div>
+            You can enjoy the movie and your card was not charged as our records show you already purchased this move.
+            <p class="itk-h-text-right">
+                <a href="#"
+                   class="ae-ppva-message-dismiss-button itk-h-text-center">Close</a>
+            </p>
+            </script>
+            <script type="text/template" class="ae-ppva-payment-error"> <a class="sco-scootv-banner ae-ppva-buy-button-button sco-m-scootv-buynow-en"
+                                                                        href="#"> </a> There was an error processing your payment, please try again later.
+            <p class="itk-h-text-right">
+                <a href="#"
+                   class="ae-ppva-message-dismiss-button itk-h-text-center">Close</a>
+            </p>
+            </script>
+        </div>
+    </div>
+	</div> 
+<!--MODULE: MEDIA AD END--> 
+<!--MODULE: ONE MEDIA START--> 
+<div class="widget ae-one-media-banner ds-wapplet-box" data-type="OneMediaBanner" data-icao="SCO" data-default="{&quot;zonePath&quot;:&quot;b_scootv_en&quot;, &quot;width&quot;:280, &quot;height&quot;:400}" data-template="#one-media-responsive-banner-8"> 
+ <script type="text/template" id="one-media-responsive-banner-8">
+	<div class="sco-m-one-media__col__banner sco-m-one-media__col__banner--tall">
+		<% if(!_.isEmpty(banner.destination)) { %>
+			<a
+			  class="ae-comp"
+			  href="<%= banner.click_through_url %>"
+			  target="<%= banner.target %>"
+			  data-type="wispUrl"
+			  data-error-page="#error"
+			  data-captcha-page="captcha"
+			  data-destination ="<%= banner.destination %>"
+			>
+				<img alt="" src="<%= banner.content_url %>" />
+			</a>
+		<% } else { %>
+			<img alt="" src="<%= banner.content_url %>" />
+		<% } %>
+	</div>
+  </script> 
+</div> 
+<!--MODULE: ONE MEDIA END--> 
+<h2 class="sco-m-media-ad itk-h-text-center itk-h-center-block">ScooTV Quick Facts
+ <div>
+  <br>
+ </div>
+ <div>
+  &nbsp;
+ </div></h2> 
+<ul class="itk-h-center-block sco-m-media-qf ds-wapplet-box"> 
+ <li class="sco-h-mar-b-20 ds-wapplet-box"><span> Your purchase is valid throughout this entire flight sector </span></li> 
+ <li class="sco-h-mar-b-20 ds-wapplet-box"><span> Mobile phones, tablets &amp; laptops compatible </span></li> 
+ <li class="sco-h-mar-b-20 ds-wapplet-box"><span>Supported systems: iOS 7, Mac OS X 10.8, Windows 7 &amp; 8, Android 5 (or above)</span></li> 
+ <li class="sco-h-mar-b-20 ds-wapplet-box"><span>Supported browsers: Safari 6, Chrome 30, Firefox 20, Internet Explorer 9 &amp; 11,&nbsp;Flash Player 10.3&nbsp;(or above)</span></li> 
+ <li class="sco-h-mar-b-20 ds-wapplet-box"><span>Internet Explorer 10 is not supported</span></li> 
+ <li class="sco-h-mar-b-20 ds-wapplet-box"><span>Mastercard, Visa &amp; American Express are accepted </span></li> 
+</ul></div> 
+   <!-- SITEBUILDER PLACEHOLDER START --> 
+   <div class="sco-m-promos ae-comp widget sb-placeholder ds-wapplet-box"> 
+    <div class="sb-overlay ds-wapplet-box"></div> 
+    <div class="sb-placeholder-overlay ds-wapplet-box">
+     <span> To edit this content, navigate to the sitemap and select Media Ad page </span>
+    </div> 
+   </div> 
+   <!-- SITEBUILDER PLACEHOLDER END --> 
+   <!--INCLUDE: MEDIA AD END--> 
+   <!--LAYOUT: COL END--> 
+  </div> 
+  <!--LAYOUT: ROW END--> 
+ </div> 
+ <!--LAYOUT: CONTAINER FLUID START END--> 
+</div> 
+<!--LAYOUT: STRUCTURE INNER END--> 
+<!--LAYOUT: STRUCTURE INNER START--> 
+<!--INCLUDE: PROMOS START--> 
+<div class="sco-l-structure-inner sco-h-mar-t--10 page-segment ds-wapplet-box" data-segment-load-url="portal_media/html/include_promos.html"><div class="sb-placeholder sb-placeholder-include ds-wapplet-box"> 
+ <div class="sb-placeholder-overlay ds-wapplet-box"> 
+  <span spellcheck="false"> This content is included to the following pages: </span> 
+  <br> 
+  <ul class="ds-wapplet-box"> 
+   <li class="ds-wapplet-box"><span spellcheck="false">About Scoot</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">Destinations</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">Error</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">FAQ</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">Home</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">Privacy Security</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">Scoot Café</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">ScooTv Category</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">ScooTv Player</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">ScooTv</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">Security</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">Shopping</span></li> 
+   <li class="ds-wapplet-box"><span spellcheck="false">Terms and conditions</span></li> 
+  </ul> 
+ </div> 
+</div> 
+<!--MODULE: PROMOS START--> 
+<div class="sco-m-promos ae-comp widget ds-wapplet-box" data-type="MatchDimensions" data-selectors-to-match=".sco-m-promo" data-critical-to-match="height"> 
+ <ul class="sco-m-promos__list itk-m-list-unsigned itk-h-clearfix ds-wapplet-box"> 
+  <li class="ds-wapplet-box"> 
+   <!--MODULE: PROMO START--> <span class="sco-m-promo sco-m-promo--power sco-t-brand2 sco-h-trans" spellcheck="false" style="height: 62px;"> <span class="sco-t-text-shadow-2"> <i class="sco-m-promos__clipart"></i> <em class="sco-t-uppercase"> <strong>IN-SEAT POWER - S$5-8</strong></em> <em class="sco-t-uppercase sco-t-10">Approach our SCOOTEES</em> <em class="sco-t-10 sco-t-red sco-h-pad-t-5"><strong>FREE in ScootBiz!</strong></em> </span> </span> 
+   <!--MODULE: PROMO END--> </li> 
+  <li class="ds-wapplet-box"> 
+   <!--MODULE: PROMO START--> <span class="sco-m-promo sco-m-promo--upgrade sco-t-brand2 sco-h-trans" spellcheck="false" style="height: 62px;"> <span class="sco-t-text-shadow-2"> <i class="sco-m-promos__clipart"></i> <em class="sco-t-uppercase"> <strong>GET MORE LEGROOM</strong></em> <em class="sco-t-uppercase sco-t-10">Approach our SCOOTEES</em> </span> </span> 
+   <!--MODULE: PROMO END--> </li> 
+  <li class="ds-wapplet-box"> 
+   <!--MODULE: PROMO START--> <a class="sco-m-promo sco-m-promo--signup sco-t-brand2 sco-h-trans ae-comp ds-wapplet-box" href="https://www.flyscoot.com/index.php/en/signup.html" target="_blank" data-captcha-page="captcha" data-error-page="#error" data-type="wispUrl" data-open-external="true" style="height: 62px;"> <span class="sco-t-text-shadow-2" spellcheck="false"> <i class="sco-m-promos__clipart"></i> <em class="sco-t-uppercase"> <strong>Sign up now!</strong> </em> <em class="sco-t-uppercase sco-t-10">To receive</em> <em class="sco-t-uppercase sco-t-10">Fare deals &amp; news</em> </span> </a> 
+   <!--MODULE: PROMO END--> </li> 
+  <li class="ds-wapplet-box"> 
+   <!--MODULE: PROMO START--> <a class="sco-m-promo sco-m-promo--shopping sco-t-brand2 sco-h-trans ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#shopping" style="height: 62px;"> <span class="sco-t-text-shadow-2" spellcheck="false"> <i class="sco-m-promos__clipart"></i> <em class="sco-t-uppercase"> <strong>Duty free shopping</strong> </em> <em class="sco-t-uppercase sco-t-10">Travel exclusives &amp; gifts</em> </span> </a> 
+   <!--MODULE: PROMO END--> </li> 
+ </ul> 
+</div> 
+<!--MODULE: PROMOS END--></div> 
+<!--INCLUDE: PROMOS END--> 
+<!--LAYOUT: STRUCTURE INNER END--></div> 
+      <!--PSEUDO PAGE: SCOOTV DETAIL END--> 
+      <!--PSEUDO PAGE: SCOOTV PLAYER MOBILE START--> 
+      <div id="scootv-player-mobile" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/avod/scootv_player_mobile.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: ScooTV Player Mobile" data-parent="scootv"> 
+      </div> 
+      <!--PSEUDO PAGE: SCOOTV PLAYER MOBILE END--> 
+      <!--PSEUDO PAGE: CAPTCHA START--> 
+      <div id="captcha" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/captcha.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Security"> 
+      </div> 
+      <!--PSEUDO PAGE: CAPTCHA END--> 
+      <!--PSEUDO PAGE: ERROR START--> 
+      <div id="error" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/error.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Error"> 
+      </div> 
+      <!--PSEUDO PAGE: ERROR END--> 
+      <!--PSEUDO PAGE: TERMS AND CONDITIONS START--> 
+      <div id="tc" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/terms_conditions.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Terms and Conditions" data-reporting-string="Terms-en"> 
+      </div> 
+      <!--PSEUDO PAGE: TERMS AND CONDITIONS END--> 
+      <!--PSEUDO PAGE: PRIVACY AND SECURITY START--> 
+      <div id="privacy" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/privacy_security.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Privacy and Security" data-reporting-string="Privacy-en"> 
+      </div> 
+      <!--PSEUDO PAGE: PRIVACY AND SECURITY END--> 
+      <!--PSEUDO PAGE: FREQUENTLY ASKED QUESTIONS START--> 
+      <div id="faq" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/faq.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Frequently Asked Questions" data-reporting-string="FAQ-en"></div> 
+      <!--PSEUDO PAGE: FREQUENTLY ASKED QUESTIONS END--> 
+      <!--PSEUDO PAGE: MODULES START--> 
+      <div id="modules" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/modules.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: Modules" data-parent="inactive-page"> 
+      </div> 
+      <!--PSEUDO PAGE: MODULES END--> 
+      <!--PSEUDO PAGE: MEDIA ONE TEST PAGE START--> 
+      <div id="one-media-test" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/one_media_test.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="SCOOT: One Media" data-reporting-string="One_Media-en" data-parent="inactive-page"> 
+      </div> 
+      <!--PSEUDO PAGE: MEDIA ONE TEST PAGE END--> 
+      <!--PSEUDO PAGE: MEDIA ONE TEST PAGE START--> 
+      <div id="include-media-ad-test" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_media_ad.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="Media ad" data-reporting-string="Include_media_ad-en" data-parent="included-pages"></div> 
+      <div id="include-promos" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_promos.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="Promos" data-reporting-string="Include_promos-en" data-parent="included-pages"></div> 
+      <div id="include-onemedia1" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_onemedia_1.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="One Media 1" data-reporting-string="Include_onemed1-en" data-parent="included-pages"> 
+      </div> 
+      <div id="include-onemedia2" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_onemedia_2.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="One Media 2" data-reporting-string="Include_onemed2-en" data-parent="included-pages"> 
+      </div> 
+      <div id="include-onemedia3" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_onemedia_3.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="One Media 3" data-reporting-string="Include_onemed3-en" data-parent="included-pages"> 
+      </div> 
+      <div id="include-onemedia4" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_onemedia_4.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="One Media 4" data-reporting-string="Include_onemed4-en" data-parent="included-pages"> 
+      </div> 
+      <div id="include-onemedia5" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_onemedia_5.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="One Media 5" data-reporting-string="Include_onemed5-en" data-parent="included-pages"> 
+      </div> 
+      <div id="include-onemedia6" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_onemedia_6.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="One Media 6" data-reporting-string="Include_onemed6-en" data-parent="included-pages"> 
+      </div> 
+      <div id="include-onemedia7" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_onemedia_7.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="One Media 7" data-reporting-string="Include_onemed7-en" data-parent="included-pages"> 
+      </div> 
+      <div id="include-onemedia8" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_onemedia_8.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="One Media 8" data-reporting-string="Include_onemed8-en" data-parent="included-pages"> 
+      </div> 
+      <div id="include-onemedia9" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-load-url="portal_media/html/include_onemedia_9.html" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="One Media 9" data-reporting-string="Include_onemed9-en" data-parent="included-pages"> 
+      </div> 
+      <!--PSEUDO PAGE: MEDIA ONE TEST PAGE END--> 
+      <!--PSEUDO PAGE: DEVICE SUPPORT NOTIFICATION START--> 
+      <div id="device-support-notification" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-scroll-to-top="true" data-parent="inactive-page"> 
+       <h1>Device support notification</h1> 
+      </div> 
+      <!--PSEUDO PAGE: DEVICE SUPPORT NOTIFICATION END--> 
+      <!--PSEUDO PAGE: SITEBUILDER NOT ACTIVE PAGES START--> 
+      <div id="inactive-page" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="Inactive pages" data-reporting-string="disabled-en" data-parent="inactive-page"> 
+       <h1>Inactive pages parent page</h1> 
+      </div> 
+      <!--PSEUDO PAGE: SITEBUILDER NOT ACTIVE PAGES END--> 
+      <!--PSEUDO PAGE: SITEBUILDER INCLUDED PAGES START--> 
+      <div id="included-pages" class="pseudo-page hide ae-hide" data-page-load-stratergy="CACHE" data-page-transition-handler="FadeInOutTransitionHandler" data-scroll-to-top="true" data-title="Included page components" data-reporting-string="included-en"> 
+       <h1>Included pages parent page</h1> 
+      </div> 
+      <!--PSEUDO PAGE: SITEBUILDER INCLUDED PAGES END--> 
+     </div> 
+     <!--PSEUDO PAGE WRAPPER END--> 
+    </main> 
+    <!--MAIN END--> 
+    <!--MODULE: FOOTER START--> 
+    <footer class="global-container sco-m-footer sco-t-white itk-h-anim-delay-50 ds-wapplet-box"> 
+     <div class="sco-l-structure-inner itk-h-center-block ds-wapplet-box"> 
+      <!--LAYOUT: CONTAINER FLUID START--> 
+      <div class="container-fluid ds-wapplet-box"> 
+       <!--LAYOUT: ROW START--> 
+       <div class="row ds-wapplet-box"> 
+        <!--LAYOUT: COL START--> 
+        <div class="col-xs-12 col-md-6 ds-wapplet-box"> 
+         <ul class="itk-m-list-unsigned itk-m-list-hor sco-t-10 ds-wapplet-box"> 
+          <li class="ds-wapplet-box"> <a class="sco-t-uppercase sco-t-no-und sco-t-10 sco-t-brand1 sco-t-white-active sco-h-trans ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#tc"><span spellcheck="false">Terms of use </span></a> </li> 
+          <li class="ds-wapplet-box"> <a class="sco-t-uppercase sco-t-no-und sco-t-10 sco-t-brand1 sco-t-white-active sco-h-trans ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#privacy"><span spellcheck="false">Privacy Policy </span></a> </li> 
+          <li class="ds-wapplet-box"> <a class="sco-t-uppercase sco-t-no-und sco-t-10 sco-t-brand1 sco-t-white-active sco-h-trans ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#faq"><span spellcheck="false">Help &amp; FAQs </span></a> </li> 
+         </ul> 
+        </div> 
+        <!--LAYOUT: COL END --> 
+        <!--LAYOUT: COL START--> 
+        <div class="col-xs-9 col-md-6 ds-wapplet-box"> 
+         <p class="sco-t-uppercase sco-t-10 ds-wapplet-box"><span spellcheck="false">©Copyright 2014 Scoot™ Pte Ltd (BRN 201114431W). All rights reserved.</span> </p> 
+        </div> 
+        <!--LAYOUT: COL END --> 
+       </div> 
+       <!--LAYOUT: ROW END--> 
+      </div> 
+      <!--LAYOUT: CONTAINER FLUID END--> 
+     </div> 
+     <!-- MODULE: AMBIENCE OPT START --> 
+     <div class="sco-m-ambience-opt ds-wapplet-box"> 
+      <!-- MODULE: AMBIENCE OPT TAB START --> 
+      <div class="sco-m-ambience-opt__tab itk-h-text-center ds-wapplet-box"> 
+       <a class="sco-m-ambience-opt__tab__btn widget sco-t-uppercase sco-t-no-und sco-t-10 sco-t-white sco-t-brand1-active sco-h-trans ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#" title="Ambience Panel" data-element-selector=".sco-m-ambience-opt" data-toggle-class="sco-s-active" data-toggle-hide-on-page-changed="true" data-toggle-type="toggle" data-type="ToggleButton"> <i class="icon-adjust" spellcheck="false"></i> </a> 
+      </div> 
+      <!-- MODULE: AMBIENCE OPT TAB END --> 
+      <!-- MODULE: AMBIENCE OPT DROPDOWN START
+        --> 
+      <div class="sco-m-ambience-opt__dropdown ds-wapplet-box" id="sco-m-ambience-opt__dropdown"> 
+       <div class="sco-m-ambience-opt__dropdown__panel ds-wapplet-box"> 
+        <div class="itk-h-clearfix ds-wapplet-box"> 
+         <span class="sco-t-white sco-t-15 sco-h-mar-b-10 sco-h-display-in-b" spellcheck="false">Auto Brightness</span> 
+         <a class="sco-m-ambience-opt__dropdown__panel_btn widget sco-t-no-und ds-wapplet-box" href="http://www.scootwifi.com/en_GB/#" title="Ambience Auto Switch" data-element-selector="html" data-toggle-class="auto-dim" data-toggle-hide-on-page-changed="false" data-toggle-multiple-events="on" data-toggle-type="toggle" data-type="ToggleButton"> 
+          <div class="ds-wapplet-box"> 
+           <div class="ds-wapplet-box"></div> 
+          </div> </a> 
+        </div> 
+        <span class="sco-h-block sco-t-10 sco-t-line-height-1-8 sco-t-white itk-h-text-center hidden-xs hidden-sm" spellcheck="false">Optimise the Scoot portal experience for the cabin conditions.</span> 
+       </div> 
+      </div> 
+      <!-- MODULE: AMBIENCE OPT TAB END --> 
+     </div> 
+     <!-- MODULE: AMBIENCE OPT END --> 
+    </footer> 
+    <!--MODULE: FOOTER END--> 
+   </div> 
+   <!--WRAPPER END--> 
+   <!--TEMPLATING: DEVICE ROUTING START--> 
+   <script id="device-routing" type="text/template">
+        [
+        {
+        "type" : "UADeviceChecker",
+        "regex": "MSIE 6",
+        "flags": "i",
+        "page" : "device-support-notification/"
+        },
+        {
+        "type" : "UADeviceChecker",
+        "regex": ".*",
+        "flags": "i",
+        "page" : "home/"
+        }
+        ]
+    </script> 
+   <!--TEMPLATING: DEVICE ROUTING
+END--> 
+   <!--TEMPLATING: PA MESSAGE BOX START--> 
+   <script id="paMessageBox" type="text/template">
+        <div class="sco-m-pa">
+            <div class="sco-m-pa__outer itk-h-faux-table">
+                <div class="itk-h-faux-table-cell">
+                    <div class="sco-m-pa__outer__inner-container__message animated fadeIn itk-h-anim-delay-20 sco-h-bkcol-brand itk-h-faux-table">
+                        <div class="itk-h-faux-table-cell">
+                            <div class="sco-m-pa__outer__inner-container__message__icon itk-h-text-center sco-t-brand2">
+                                <i class="icon-mic"></i>
+                            </div>
+                            <h2 class="sco-t-pa-title sco-t-20 sco-t-text-shadow-1"><%= title %></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script> 
+   <!--TEMPLATING: PA MESSAGE
+BOX END--> 
+   <!--TEMPLATING: PA MESSAGE OVERLAY START--> 
+   <div class="sco-m-pa__overlay sco-h-bkcol-brand1 ds-wapplet-box"></div> 
+   <!--TEMPLATING: PA MESSAGE OVERLAY
+END--> 
+   <!-- TEMPLATING: APP CONFIG START --> 
+   <script id="app-config" type="text/template">
+        {
+        "drm":
+        {
+        "autoInit": true,
+        "softwareInstallMessages":
+        {
+        "drmPlugin": "A Premium Content plugin must be installed in order to play this media. Please restart your browser after installation is complete.",
+        "flashPlugin": "Adobe Flash is required to view this media. Please click here to download.",
+        "iosApplication": "An iOS application must be installed in order to play this Premium Content media",
+        "androidApplication": "ANDROID USERS Click here to download a Media Player app to enjoy ScooTV!"
+        },
+        "pluginURLs":
+        {
+        "flash": "",
+        "iosApp": "",
+        "androidApp": ""
+        }
+        },
+        "messages":
+        {
+        "paMessages":
+        {
+        "paAudio":
+        {
+        "title"  : "pa announcement",
+        "message": "Lorem Ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum"
+        },
+        "paVideo":
+        {
+        "title"  : "pa announcement",
+        "message": "Lorem Ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum"
+        },
+        "paVideoA":
+        {
+        "title"  : "pa announcement",
+        "message": "Lorem Ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum"
+        },
+        "paOther":
+        {
+        "title"  : "pa announcement",
+        "message": "Lorem Ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum"
+        }
+        }
+        },
+        "audioTrackTuncationInPlayer":20,
+        "language" : "en-gb",
+        "reporting": { "logType": "screenChange", "timeout": 6000, "baseUrl": "" },
+        "jsonPathResultToScalar": true
+        }
+    </script> 
+   <!-- TEMPLATING: APP CONFIG
+END--> 
+   <!--TEMPLATING: ENGINE COLLECTIONS START--> 
+   <script id="sco-generic-load" type="text/template">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="itk-h-text-center">Loading...</p>
+            </div>
+        </div>
+    </script> 
+   <script id="sco-generic-no-data" type="text/template">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="itk-h-text-center">No Data</p>
+            </div>
+        </div>
+    </script> 
+   <!-- Template: All You Can
+Watch Banner --> 
+   <script id="sco-template-sco-m-scootv-buynow" type="text/template">
+        <div class="ae-comp"
+             data-type="JSEngine.PPVAContainer"
+             data-media-uri="<%= data.media_uri %>"
+             data-purchase-type="PPA"
+             data-theme-id="sco"
+             data-language-code="eng"
+             data-currency-code="eur"
+             data-confirmation-required="true"
+             data-is-nested="true">
+            <div class="ae-ppva-payment-buttons-container"></div>
+            <div class="ae-ppva-payment-messages-container"
+                 style="display: none;"></div>
+            <scr+ipt type="text/template" class="ae-ppva-play-button">
+            <div class="sco-scootv-banner sco-m-scootv-buynow-en"></div>
+            </scr+ipt>
+            <scr+ipt type="text/template" class="ae-ppva-buy-button">
+            <p class="itk-h-text-center">
+                <a class="ae-ppva-buy-button-button sco-scootv-banner sco-m-scootv-buynow-en"
+                   href="#"> </a>
+            </p>
+            </scr+ipt>
+            <scr+ipt type="text/template" class="ae-ppva-payment-complete-payed">
+            <div class="sco-scootv-banner sco-m-scootv-buynow-en"></div>
+            THANK YOU FOR YOUR PURCHASE
+            <p class="itk-h-text-right">
+                <a href="#"
+                   class="ae-ppva-message-dismiss-button sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans">OK</a>
+            </p>
+            </scr+ipt>
+            <scr+ipt type="text/template" class="ae-ppva-payment-confirmation-required">
+            <div class="sco-scootv-banner sco-m-scootv-buynow-en"></div>
+            <+% if(pay_type !== null && pay_type === "voucher") { %> Are you sure you want to pay with an
+            <span>Access Code</span>
+            ? <+% } else { %> Your card will be charged for
+            <span>$<+%= price %></span>
+            <+% } %>
+            <p class="itk-h-text-right">
+                <a href="#"
+                   class="ae-ppva-purchase-confirm-button itk-h-text-center sco-m-btn sco-h-bkcol-brand1 sco-t-brand1-active sco-m-btn-skin-2 sco-h-trans">OK</a> <a href="#"
+                                                                                                                                                                     class="ae-ppva-purchase-cancel-button itk-h-text-center sco-m-btn sco-h-bkcol-brand1 sco-t-brand1 sco-h-bkcol-brand1-active sco-m-btn-skin-1 sco-h-trans">CANCEL</a>
+            </p>
+            </scr+ipt>
+            <scr+ipt type="text/template" class="ae-ppva-payment-complete-already-purchased">
+            <div class="sco-scootv-banner sco-m-scootv-buynow-en"></div>
+            You can enjoy the movie and your card was not charged as our records show you already purchased this move.
+            <p class="itk-h-text-right">
+                <a href="#"
+                   class="ae-ppva-message-dismiss-button itk-h-text-center">Close</a>
+            </p>
+            </scr+ipt>
+            <scr+ipt type="text/template" class="ae-ppva-payment-error"> <a class="sco-scootv-banner ae-ppva-buy-button-button sco-m-scootv-buynow-en"
+                                                                        href="#"> </a> There was an error processing your payment, please try again later.
+            <p class="itk-h-text-right">
+                <a href="#"
+                   class="ae-ppva-message-dismiss-button itk-h-text-center">Close</a>
+            </p>
+            </scr+ipt>
+        </div>
+    </script> 
+   <!--TEMPLATING: ENGINE COLLECTIONS
+END--> 
+   <!--TEMP DEV SCRIPT--> 
+   <script type="text/javascript">
+        setTimeout
+        (
+                function () {
+                    $j('.sco-m-dev-button').click
+                    (
+                            function () {
+                                $j('html').toggleClass('sco-dev');
+                            }
+                    );
+                    ///turn off animations on header, main and footer to prevent flickering on tablets when scrolling, do this after all animations have completed
+                    $j('html').addClass('sco-m-animations-off');
+
+                }
+                , 5000
+        );
+    </script> 
+  </div> 
+  <!--MASTER PAGE END-->  
+ 
+</body></html>
